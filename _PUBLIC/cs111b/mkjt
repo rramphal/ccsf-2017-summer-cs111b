@@ -1,0 +1,233 @@
+#!/bin/ksh
+# Author:  Abbas Moghtaeni
+
+################################mk_header()###############################/
+mk_header()
+{
+   if (( $# == 0 )); then
+      print "missing argument in mk_header"
+      exit 1
+   fi
+   funcname=$1
+   n=$((( 72 - ${#funcname} )/2 ))
+   t=$n
+   s="/*"
+   funcname=$funcname'()'
+   while (( n != 0 )); do
+      s=$s"*"
+      (( n -= 1 ))
+   done
+   s=$s$funcname
+   while (( t != 0 )); do
+      s=$s"*"
+      (( t -= 1 ))
+   done
+   s=$s"*/"
+   print "$s"
+}
+####################################usage()##################################
+usage()
+{
+   print "usage:$(basename $0) <-c><-f config_file><-h><-r><-t><-v> filename"
+   print -- "-c:  compile the class"
+   print -- "-C:  compile the test class"
+   print -- "-f:  config_file: specify the config_file name"
+   print -- "-h:  displys this help"
+   print -- "-r:  runs the test program"
+   print -- "-t:  creates the test program"
+   print -- "-v:  verbose mode"
+}
+#################################compile()###################################
+compile()
+{
+   (( $# == 0 )) && { print "usage: compile filename"; exit 1;}
+   [[ ! -f "$1" ]] && { print "$1 does not exist"; exit 2;}
+   (( $vflag == 1 )) && print "Compiling $1 ..."
+   javac $1
+}
+################################first_upper()################################
+first_upper()    #converts the first character to upper
+{
+   (( $# == 0 )) && { print "usage: first_upper string"; exit 1; }
+   first_char=$(echo $1 | cut -c1 | tr 'a-z' 'A-Z')
+   rest=$(echo $1 | cut -c2-)
+   print $first_char"$rest"
+}
+################################get_value()#################################
+get_value()
+{
+   (( $# == 0 )) && { print "usage get_value data_type"; exit 4; }
+   [[ $1 = "int" || $1 = "short" || $1 = "byte" || $1 = "long" ]] && \
+   { print "$RANDOM"; return 0; }
+   [[ $1 = "boolean" ]] && { print "true"; return 0; }
+   [[ $1 = "float" || $1 = "double" ]] && { print "3.1415"; return 0; }
+   [[ $1 = "char" ]] && { print "'B'"; return 0; }
+   [[ $1 = "String" ]] && { print "\"Hello Java\""; return 0; }
+}
+############################################################################   
+hflag=0
+tflag=0
+cflag=0
+Cflag=0
+vflag=0
+rflag=0
+conf_file="mkjt.conf"         
+
+while getopts ":hf:tCcvr"  OPT; do
+   case $OPT in
+      h)   hflag=1;;   #display help
+      t)   tflag=1;;   #create a test program
+      c)   cflag=1;;   #compile the program
+      C)   Cflag=1;;   #compile the test program
+      v)   vflag=1;;   #verbose
+      r)   rflag=1;;   #run the program
+      f)   conf_file=$optarg;;
+      *)   print "Invalid option"; exit 1;;
+    esac
+done
+(( hflag == 1 )) && { usage; exit 0; } 
+shift $(( OPTIND - 1 ))
+filename=$1
+[[ -z $filename ]] && { print "filename is missing from command line";exit 1; }
+
+[ ! -f "$conf_file" ] && { print "$conf_file does not exist";exit 1; }
+
+a=$(echo $filename | grep "\.java$")
+[ -z "$a" ] && { print "Invalid java file name."; exit 1; }
+
+(( $cflag == 1 )) && [ -f $filename ] && { compile $filename; exit 0; }
+if (( $tflag == 1 )); then
+   [ ! -f $filename ] && { print "$filename does not exist"; exit 3; }
+   testfile="Test"$filename
+   tclassname=$(echo $filename | cut -d'.' -f1)
+   uclassname=$(echo $testfile | sed "s/\.java$//")
+   u=$(echo "$tclassname" | cut -c1 | tr 'A-Z' 'a-z')
+   P="System.out.println"
+
+   if [ -f $testfile ]; then
+      print -n "$testfile already exists, override (Y/N)? "
+      read ans
+      [ $ans = "N" -o $ans = "n" ]  && exit 0
+   fi    
+   (( $vflag == 1 )) && print "creating the test class file: $testfile..."
+
+   > $testfile
+   print "public class $uclassname"                    >> $testfile
+   print "{"                                           >> $testfile
+   print "   public static void main(String args[])"   >> $testfile
+   print "   { "                                       >> $testfile
+   print "      $tclassname $u = new $tclassname(); "  >> $testfile
+   
+   exec < $conf_file
+   while read line; do
+      (( ${#line} == 0 )) && continue
+      a=$(echo "$line" | egrep "^#|^ *#")
+      [ -n "$a" ] && continue
+      line=$(echo "$line" | sed "s/;//g") # delete ; from end of each line
+      set -- $line
+      (( $# < 3 )) && { print "Invalid declaration in $conf_file";exit 2; }
+      
+      status=$1; data_type=$2; shift 2; vars=$*
+      
+      [[ $status != "private" && $status != "public" ]] && \
+      { print "Error: public or private only"; exit 3; }
+      data=$(get_value $data_type)
+      vars=$(echo "$vars" | tr ',' ' ')
+         for var in $vars; do
+           orig_var=$var
+           if [ $status = "public" ]; then
+              print "      $u.$var = $data; "                   >> $testfile  
+              print "      $P(\"$var = \"+$u.$var); "           >> $testfile 
+           else
+              var=$(first_upper $var)
+              print "      $u.set$var($data);  "                >> $testfile
+              print "      $P(\"$orig_var = \"+$u.get$var());"  >> $testfile
+           fi
+         done   
+
+      #To BE CONTINUED ################################ 
+   done
+   print "   } "                                              >> $testfile
+   print "} "                                                 >> $testfile
+exit 0
+fi
+if (( $Cflag == 1 )); then
+   [ ! -f "$filename" ] && { print "$filename does not exist"; exit 4; }
+   tfilename="Test"$filename
+#  (( $vflag == 1 )) && print "Compiling $tfilename ..."
+   compile $tfilename
+   exit 0
+fi
+
+if (( $rflag == 1 )); then
+   filename=$(echo $filename | sed "s/\.java$//")
+   rtfilename="Test"${filename}.class
+   rfilename="Test"$filename
+   [ ! -f "$rtfilename" ] && { print "$rtfilename does not exist"; exit 6; }
+   (( $vflag == 1 )) && print "Running $rfilename ... "
+   java $rfilename
+   exit 0
+fi
+    
+classname=$(echo $filename | cut -d'.' -f1)
+
+if [ -f $filename ]; then
+   print -n "$filename already exists, override (Y/N)? "
+   read ans
+   [ $ans = "N" -o $ans = "n" ]  && exit 0
+fi    
+
+(( $vflag == 1 )) && print "Creating $filename ..."
+> $filename
+print "class $classname"                     >> $filename
+print "{"                                    >> $filename
+exec < $conf_file
+while read line; do
+   (( ${#line} == 0 )) && continue
+   a=$(echo "$line" | egrep "^#|^ *#")
+   [ -n "$a" ] && continue
+   line=$(echo "$line" | sed "s/;//g") # delete ; from end of each line
+   set -- $line
+   (( $# < 3 )) && { print "Invalid declaration in $conf_file";exit 2; }
+   print "   $line;\n"                       >> $filename
+done
+exec < $conf_file
+while read line; do
+   (( ${#line} == 0 )) && continue
+   a=$(echo "$line" | egrep "^#|^ *#")
+   [ -n "$a" ] && continue
+   line=$(echo "$line" | sed "s/;//g") # delete ; from end of each line
+   set -- $line
+   (( $# < 3 )) && { print "Invalid declaration in $conf_file";exit 2; }
+   #print "   $line;\n"                       >> $filename
+   
+   status=$1; data_type=$2; shift 2; vars=$*
+   [[ $status != "private" && $status != "public" ]] && \
+   { print "Error: public or private only"; exit 3; }
+   if [ $status = "private" ]; then
+      vars=$(echo "$vars" | tr ',' ' ')
+      for var in $vars; do
+         orig_var=$var
+         arg=$(echo $var | cut -c1)
+         var=$(first_upper $var) 
+         # generate the setter method
+         header_line=$(mk_header "set$var")
+         print "$header_line"                            >> $filename 
+         print "  public void set$var($data_type $arg)"  >> $filename
+         print "  {"                                     >> $filename
+         print "      $orig_var = $arg;"                 >> $filename 
+         print "  }"                                     >> $filename
+         # generate the getter method
+         header_line=$(mk_header "get$var")
+         print "$header_line"                            >> $filename 
+         print "  public $data_type get$var()"           >> $filename
+         print "  {"                                     >> $filename
+         print "       return($orig_var);"               >> $filename 
+         print "  }"                                     >> $filename
+      done
+   fi
+done 
+print "}"                                                >> $filename
+(( $cflag == 1 )) && compile $filename
+
+

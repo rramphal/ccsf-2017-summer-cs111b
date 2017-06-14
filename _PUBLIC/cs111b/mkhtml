@@ -1,0 +1,58 @@
+#!/bin/ksh
+# Author: Abbas Moghtanei
+# Date  : One day in March 2002
+#
+   if (( $# == 0 )); then
+      echo "Usage: $(basename $0) filename.java" && exit 1
+   fi
+
+   a=$(echo $1 | grep "\.java$")
+   if [ -z "$a" ]; then
+      echo "Invalid filename, missing .java extension" && exit 2
+   fi
+   if [ ! -f $1 ]; then
+      echo "error-- $1 does not exist" && exit 3
+   fi
+
+   filename=$(echo $1 | sed "s/\.java$/.html/")
+   if [ -f "$filename" ]; then
+      cp $filename ${filename}.bak # make a backup, if already exists
+   fi
+   fname=$(echo $1 | sed "s/\.*java//") 
+   a=$(grep -i "<applet" $1|grep -i "code"|grep -i "width"|grep -i "height")
+   if [ -z "$a" ]; then
+      w="width=500"
+      h="height=400"
+      f="code=\"$fname\""
+   else
+      a=$(echo $a | sed "s/.*<applet/<applet/")
+      a=$(echo $a | tr '[a-z]' '[A-Z]')
+      a=$(echo $a | tr -s ' ' ' ')
+      a=$(echo $a | sed -e 's/CODE *= */CODE=/'   -e \
+                           's/WIDTH *= */WIDTH=/' -e \
+                           's/HEIGHT *= */HEIGHT=/')
+      set -- $a
+      f="CODE=\"$fname\""
+      w="$3"
+      h="$4"
+      OIFS="$IFS"
+      IFS='>'
+      set -- $h
+      h="$1"
+      IFS="$OIFS"
+      #echo '$a='$a
+      #echo '$h='$h
+    fi
+    echo "<HTML>"                                           >  $filename
+    echo "<!-- This HTML file is created automatically -->" >> $filename
+    echo "<!-- Date: $(date)      -->"                      >> $filename
+    echo "   <HEAD>"                                        >> $filename
+    echo "      <TITLE> Demo $fname </TITLE>"               >> $filename
+    echo "   </HEAD>"                                       >> $filename
+    echo "       <BODY>"                                    >> $filename
+    echo "          <APPLET $f $w $h>"                      >> $filename
+    echo "<!-- If you have <PARAM>, insert them here   -->" >> $filename
+    echo "          </APPLET>"                              >> $filename
+    echo "       </BODY>"                                   >> $filename
+    echo "</HTML>"                                          >> $filename
+    echo "Done!"

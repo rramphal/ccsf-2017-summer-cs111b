@@ -1,0 +1,16 @@
+#!/usr/bin/ksh
+#                 
+# Author:  Abbas Moghtanei
+# Date  :  03/10/13        
+# Program Name: xav 
+# This script runs any applet on hills.
+(( $# != 2 )) && echo "xav userid filename" && exit 1
+userid=$1
+filename=$2
+
+x=$(echo $filename | grep "\.html$")
+[ -z "$x" ] && filename=${filename}."html"
+url="http://hills.ccsf.edu/~"${userid}"/"${filename}
+#echo $url
+appletviewer $url
+

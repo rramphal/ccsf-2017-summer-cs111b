@@ -1,0 +1,7 @@
+String s="76";
+
+p(s);
+int x = Integer.parseInt(s);
+p(x);
+
+

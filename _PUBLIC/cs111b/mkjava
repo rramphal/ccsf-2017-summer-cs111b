@@ -1,0 +1,340 @@
+#!/bin/bash
+# Author: Abbas Moghtanei
+# Date  : 5/30/03
+# Modified: 7/21/07, 7/26/07, 3/8/08, 11/16/18,  11/19/16
+# Syntax: mkjava <-a><-c><-e editor><-p><-v><-n><-h><-s><-S><-x> filename <java code>
+# 
+# This program creates a java program,applet and stand-alone graphics program.
+# Then it calls jcr to compile and run it (if -c is used).
+# -v means verbose, -a means create applet, -p means copy the created
+# applet and the html file to the public_html directory. If this directory
+# does not exist, it will be created.
+# -n means do not invoke the text editor, -h flag displays help.
+# -s means create standalone graphics program using Swing.
+# -S means create standalone graphics program using AWT.
+# -e allows to select the text editor.
+# -x allows using javaFX.
+
+aflag=0; cflag=0; pflag=0; vflag=0; nflag=0; hflag=0; sflag=0
+Sflag=0; xflag=0
+TEXT_EDITOR=${EDITOR:- "vi"}
+OPTERR=0 # disable displaying error in getopts
+
+shopt -s expand_aliases
+alias print='echo'
+
+
+##################################help()#################################
+help()
+{
+   cat <<EOF
+   
+   usage: mkjava <options> java filename
+   where options are:
+
+   -a:  create applet
+   -c:  compile and run the java program/applet
+   -e text_editor: allows to select the text editor (default is vi)
+   -h:  display this help
+   -n:  do not invoke the text editor
+   -p:  copy the class and html files to the public_html directory.
+        If public_html does not exist, it will be created.
+   -s:  create standalone graphics program using JFrame in Swing
+   -S:  create standalone graphics program using Frame in AWT
+   -v:  verbose
+   -x:  create standalone graphics program using javaFX
+
+EOF
+   exit 0
+}
+#########################################################################
+(( $# == 0 )) && help
+
+while getopts ":avce:pnhsSx" option
+do
+  case $option in
+   "a" )    aflag=1;;
+   "c" )    cflag=1;;
+   "e" )    TEXT_EDITOR=$OPTARG;; 
+   "h" )    hflag=1;;
+   "n" )    nflag=1;;
+   "p" )    pflag=1;;
+   "s" )    sflag=1;;
+   "S" )    Sflag=1;;
+   "v" )    vflag=1;;
+   "x" )    xflag=1;;
+    \? )    help;;
+  esac
+done
+
+shift $(( OPTIND - 1 ))
+
+(( $hflag == 1 )) && help
+(( $# == 0 )) && { print "filename is missing"; exit 1; }
+filename=$1
+shift
+rest="$@"
+x=$(echo $filename | grep "\.java$")
+[[ -z $x || $x = ".java" ]] && { print "Invalid java filename"; exit 3; }
+fname=$(echo $filename | sed "s/\.java$//")
+if [ -f "$filename" ]; then
+   print -n "$filename exists, over write (y/n)? "
+   read ans 
+   [ $ans = "n" -o $ans = "N" ] && exit 0
+fi
+> $filename
+d=$(date "+%m/%d/%y")
+finger 2>/dev/null 1>&2 # to see if finger exists or not 
+if (( $? != 0 )); then
+   your_name=${MYNAME:-" put your name here"}
+else
+
+   your_name=$(finger $(whoami) | grep -i "Name:" | cut -d: -f3)
+   #your_name=$(finger $(whoami)|grep -i "in real life"|cut -d: -f3)
+fi
+##########################################################################
+if (( $aflag == 1 )); then
+   (( $vflag == 1 )) && print "making the $filename applet" 
+   cat <<EOJ >> $filename
+   /*                                
+                                     
+    Author: $your_name               
+    Date  : $d                       
+    Program Name: $filename          
+                                     
+   */                                
+                                     
+   import java.awt.*;                
+   import java.awt.event.*;          
+   import java.applet.*;             
+                                     
+   //<applet code="$fname" align=middle width=500 height=400>
+   //</applet>                       
+                                     
+   public class $fname extends Applet 
+   {                                 
+   /********************************init()*****************************/
+       public void init()            
+       {                             
+EOJ
+##########################################################################
+   if [ -n "$rest" ]; then
+      str=""
+      for code in "$rest"; do
+          str=$str$code
+      done
+
+      IFS=";"
+      set -- $str
+     
+      for code in "$@"; do    
+          print "     $code;"                >> $filename
+      done 
+   fi
+##########################################################################
+   cat <<EOZ >> $filename
+
+       }
+    /*******************************paint()*******************************/
+       public void paint(Graphics g)
+       {
+          g.setFont(new Font("SansSerif", Font.BOLD, 35));
+          g.drawString("Hello World!", 60, 60);
+          // put your code here
+       }
+   }
+EOZ
+##########################################################################
+elif (( $sflag == 1 )); then
+   (( $vflag == 1 )) && print "making the $filename standalone program" 
+   cat <<EOK >> $filename
+   /*
+                                      
+     Author: $your_name               
+     Date  : $d                       
+     Program Name: $filename          
+                                      
+    */                                
+                                      
+    import java.awt.*;                
+    import java.awt.event.*;          
+    import java.applet.*;             
+    import javax.swing.*;             
+                                      
+    public class $fname extends JFrame 
+    {                                 
+    /****************************$fname()****************************/
+        public $fname()               
+        {                               
+           setTitle("My Frame");      
+           setSize(500, 400);           
+           setVisible(true);            
+           setLayout(new FlowLayout()); 
+           setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        }                               
+    /*******************************paint()*******************************/
+       public void paint(Graphics g)
+       {
+          g.setFont(new Font("SansSerif", Font.BOLD, 35));
+          g.drawString("Hello World!", 60, 60);
+          // put your code here
+       }
+    /*********************************main()******************************/
+        public static void main(String args[]) 
+        {                             
+           SwingUtilities.invokeLater(new Runnable()  
+           {                          
+              public void run()       
+              {                       
+                 $fname f = new $fname();  
+              }                       
+           });                        
+        // put your code here         
+        }                             
+  
+    }                                 
+EOK
+##########################################################################
+elif (( $Sflag == 1 )); then
+   (( $vflag == 1 )) && print "making the $filename standalone program" 
+   cat <<EOV >> $filename
+   /*
+                                      
+     Author: $your_name               
+     Date  : $d                       
+     Program Name: $filename          
+                                      
+    */                                
+                                      
+    import java.awt.*;                
+    import java.awt.event.*;          
+    import java.applet.*;             
+                                      
+    public class $fname extends Frame 
+    {                                 
+        public $fname()               
+        {                               
+           setTitle("My Frame");      
+           setSize(500, 400);           
+           setVisible(true);            
+           setLayout(new FlowLayout()); 
+           closeFrame(this);
+        }                               
+    /****************************closeFrame()*****************************/
+       public static void closeFrame(Frame f)
+       {
+           f.addWindowListener(new WindowAdapter()
+           {
+               public void windowClosing(WindowEvent we)
+               {
+                   System.exit(0);
+               }
+           });
+       }
+    /*******************************paint()*******************************/
+       public void paint(Graphics g)
+       {
+          g.setFont(new Font("SansSerif", Font.BOLD, 35));
+          g.drawString("Hello World!", 60, 60);
+          // put your code here
+       }
+    /*********************************main()******************************/
+       public static void main(String args[]) 
+       {                             
+           $fname f = new $fname();  
+           // put your code here         
+       }                             
+    }                                 
+EOV
+##########################################################################
+elif (( $xflag == 1 )); then
+   (( $vflag == 1 )) && print "making the $filename standalone program" 
+   cat <<EOX >> $filename
+   /*
+                                      
+     Author: $your_name               
+     Date  : $d                       
+     Program Name: $filename          
+                                      
+    */                                
+                                      
+    import javafx.application.*;                
+    import javafx.scene.*;                
+    import javafx.stage.*;                
+    import javafx.scene.layout.*;                
+    import javafx.scene.control.*;          
+    import javafx.event.*;          
+    import javafx.geometry.*;          
+                                      
+    public class $fname extends Application 
+    {                                 
+        public void start(Stage stg)
+        {
+           stg.setTitle("No Title");
+           FlowPane root = new FlowPane();
+           root.setAlignment(Pos.CENTER);
+           Scene scn = new Scene(root,500, 500);
+           stg.setScene(scn);
+           stg.show();
+        }
+        public static void main(String ... args)
+        {
+           launch(args);
+        }
+    }
+EOX
+##########################################################################
+else
+   (( $vflag == 1 )) && print "making the $filename program" 
+   cat <<EOW >> $filename
+    /*                                        
+                                              
+     Author: $your_name                       
+     Date  : $d                               
+     Program Name: $filename                  
+                                              
+    */                                        
+                                              
+    //import java.awt.*;                      
+    //import java.applet.*;                   
+    //import java.util.*;                     
+    //import java.io.*;                       
+    //import javax.swing.*;                   
+                                              
+    class $fname                                
+    {                                         
+    /*******************************main()*****************************/
+       public static void main(String args[]) 
+       {                                      
+                                              
+EOW
+   if [ -n "$rest" ]; then
+      str=""
+      for code in "$rest"; do
+          str=$str$code
+      done
+
+      IFS=";"
+      set -- $str
+     
+      for code in "$@"; do
+          print "     $code;"                            >> $filename
+      done 
+   fi
+   print "          // put your code here"               >> $filename
+   print "  "                                            >> $filename
+   print "       }"                                      >> $filename
+   print "    }"                                         >> $filename
+fi
+
+if (( $nflag == 0 )); then
+  (( $vflag == 1 )) && print "invoking the text editor"
+  [ -n "$TEXT_EDITOR" ] && $TEXT_EDITOR $filename || $EDITOR $filename
+fi
+if (( $cflag == 1 )); then
+   [ ! -f "jcr" ] && { print "can not find the jcr program"; exit 1; }  
+   (( $vflag == 1 )) && { vf="-v"; print "invoking jcr"; }
+   (( $pflag == 1 )) &&  pf="-p"
+   jcr $pf $vf $filename
+fi
+          

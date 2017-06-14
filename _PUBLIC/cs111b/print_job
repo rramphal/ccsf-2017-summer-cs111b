@@ -1,0 +1,48 @@
+#!/bin/bash
+# Author: Abbas Moghtanei
+# This script recieves the java filename from its command line, displays
+# the file, and then runs it. Finally sends the listing and the output
+# to the local printer.
+# The option "-d print_name" could be used to designate a certain printer.
+
+#---------------------------------usage()--------------------------------
+usage()
+{
+   echo "usage:$script_name <-d printer_name> java_file_name"
+   exit 1
+}
+#------------------------------------------------------------------------   
+script_name=$(basename $0)
+(( $# == 0 )) && usage 
+if (( $# == 3 )); then
+   if [[ $1 == "-d" ]]; then
+      printer_name="$2"
+      shift 2
+   else
+      echo "invalid option"
+      exit 2
+   fi
+elif (( $# == 2 )); then
+      usage
+else
+      printer_name="iclpr1"
+fi 
+
+
+fname="$1"
+[[ ${fname:0:1} == "-" ]] && usage
+[[ ${fname: -5} != ".java" ]] && echo "not a java file" && exit 3 
+
+fname=$(basename "$fname")
+filename="${fname%.*}"
+
+[ ! -f "$fname" ] && echo "$fname does not exist." && exit 2
+classfile=${filename}.class
+[ ! -f "$classfile" ] && echo "$fname is not compiled." && exit 3
+
+script  -q  -c "cat $fname; echo;echo; java $filename" out_script$$
+
+#lp -d icl_pr1 out_script$$
+rm -f out_script$$
+
+ 

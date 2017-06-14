@@ -1,0 +1,46 @@
+//*********************************rand()*********************************
+   private static int rand(int a, int b)
+   {
+      return((int)((b-a+1)*Math.random() + a));
+   }
+//**********************************print()*******************************
+   public static void print(String str)
+   {
+      System.out.print(str);
+   }
+//**********************************println()*****************************
+   public static void println(Object ... o)
+   {
+      if(o.length == 0)
+      {
+         System.out.print("");
+      }
+      else if(o.length == 1)
+      {
+         System.out.print("" + o[0]);
+      }
+      else for(Object obj : o)
+      {
+         System.out.print("" + obj + "\t");
+      }
+      System.out.println("");
+   }
+//**********************************die()*********************************
+   public static void die(String ... msg)
+   {
+      if(msg.length == 0) System.exit(1);
+      else 
+      {
+         System.err.println(msg[0]); 
+         System.exit(1);
+      }
+   }
+//********************************sleep()********************************
+   public static void sleep(long ms)
+   {
+      try
+      {
+          Thread.sleep(ms);
+      }catch(InterruptedException e){}
+   }
+
