@@ -46,14 +46,14 @@ rsync -arvxz -e ssh rramphal@hills.ccsf.edu:/pub/cs/amoghtan/cs111b/ /Users/rram
 
 * two types of variables:
     * variables: `int age = 89`
-    * constants:
+    * ***constants***:
         * `final int DAYS_IN_WEEK = 7` // convention: caps, underscores
         * `final` makes the variable immutable
 
 ### Methods
 
 * methods are the foundation of Java
-* "argument" and "parameter" mean the same thing
+* "***argument***" and "parameter" mean the same thing
 * basic method:
     ```java
     public static void hello()

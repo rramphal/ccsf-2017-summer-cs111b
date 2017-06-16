@@ -35,10 +35,10 @@
         }
     ```
 * any Java program that is executable MUST have a `main` method
-* an object is an instance of a class in memory
+* an ***object*** is an instance of a class in memory
 * to create an object (an instance of a class), you must use the keyword `new`
 * an object without any data is not very useful
-* we don't want to access variables directly - let's add protection with `private` and getters/setters
+* we don't want to access variables directly - let's add protection with `private` and ***getters/setters***
 * setters and getters are ALWAYS `public`
 * setters ALWAYS return `void`
     ```java
@@ -106,7 +106,7 @@
         }
     ```
 * `static` methods only work within static environments (`main`)
-* Java allows us to replace many setters with one constructor
+* Java allows us to replace many setters with one ***constructor***
     ```java
         class Box
         {
@@ -135,7 +135,7 @@
             }
         }
     ```
-* parameterized constructors help us initialize state
+* ***parameterized constructors*** help us initialize state
 * there are no relationships between different instances of the same class
     ```java
         class Box
