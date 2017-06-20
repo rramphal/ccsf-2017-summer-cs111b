@@ -1,16 +1,16 @@
 # [CS111B] 2017.06.15
 
-***Chapter 6 & Chapter 7***
+**Chapter 6 & Chapter 7**
 
 ### Testing
 
 * you must test vigorously
-* ***QA Engineers*** are hired to find problems
-* ***beta*** - a project that is released without complete QA approval
+* **QA Engineers** are hired to find problems
+* **beta** - a project that is released without complete QA approval
 
 ### Overloading
 
-* ***overloading methods*** - allows a function of a given name to accept variable number of arguments and variable types of arguments (`sum` can deal with both `int`-s and `double`-s)
+* **overloading methods** - allows a function of a given name to accept variable number of arguments and variable types of arguments (`sum` can deal with both `int`-s and `double`-s)
     ```java
     // Demo.java
     class Demo
@@ -43,7 +43,7 @@
 
 ### Constructors
 
-* if you don't make your own constructor, a ***default constructor*** will be created for you
+* if you don't make your own constructor, a **default constructor** will be created for you
     ```java
     // Demo.java
     class Demo
@@ -149,7 +149,7 @@
     }
     ```
 
-* if you put these in one file, the ***filename*** should be the name of the class that contains `main`
+* if you put these in one file, the **filename** should be the name of the class that contains `main`
 
 ### `toString`
 

@@ -4,10 +4,10 @@
 
 #### Go to ACRC to learn:
 
-1. ***how to open a terminal window***
-2. ***how to log into `hills` remotely***
-3. ***how to use wi-fi:*** `CCSF Student` is fastest; log in with RAM ID
-4. ***how to log into `hills`:*** `ssh [USERNAME]@hills.ccsf.edu`
+1. **how to open a terminal window**
+2. **how to log into `hills` remotely**
+3. **how to use wi-fi:** `CCSF Student` is fastest; log in with RAM ID
+4. **how to log into `hills`:** `ssh [USERNAME]@hills.ccsf.edu`
 
 #### To sync files from `hills` to computer:
 
@@ -28,7 +28,7 @@ rsync -arvxz -e ssh rramphal@hills.ccsf.edu:/pub/cs/amoghtan/cs111b/ /Users/rram
 # When not using "/" at the end of destination folder, rsync will create a folder with that name and paste the data inside that folder.
 ```
 
-***NOTE: In this class, we have skipped over first 5 chapters of *Java - The Complete Reference [9ed]****
+**NOTE: In this class, we have skipped over first 5 chapters of *Java - The Complete Reference [9ed]***
 
 ### Erroring
 
@@ -46,14 +46,14 @@ rsync -arvxz -e ssh rramphal@hills.ccsf.edu:/pub/cs/amoghtan/cs111b/ /Users/rram
 
 * two types of variables:
     * variables: `int age = 89`
-    * ***constants***:
+    * **constants**:
         * `final int DAYS_IN_WEEK = 7` // convention: caps, underscores
         * `final` makes the variable immutable
 
 ### Methods
 
 * methods are the foundation of Java
-* "***argument***" and "parameter" mean the same thing
+* "**argument**" and "parameter" mean the same thing
 * basic method:
     ```java
     public static void hello()
@@ -134,7 +134,7 @@ rsync -arvxz -e ssh rramphal@hills.ccsf.edu:/pub/cs/amoghtan/cs111b/ /Users/rram
         }
     }
     ```
-* ***NEVER*** import `java.lang.*`
+* **NEVER** import `java.lang.*`
 
 ### Example of a method that returns something
 
