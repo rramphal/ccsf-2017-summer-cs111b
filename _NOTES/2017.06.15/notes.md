@@ -43,7 +43,7 @@
 
 ### Constructors
 
-* if you don't make your own constructor, a **default constructor** will be created for you
+* if you don't make your own constructor, a **default constructor / no-argument constructor** will be created for you
     ```java
     // Demo.java
     class Demo

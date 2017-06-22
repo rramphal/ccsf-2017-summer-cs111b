@@ -158,9 +158,10 @@
 
 ### Providing data
 
-* hardcoding is the worst option
+* hardcoding (batch programming)
     * advantage: simple
     * disadvantage: not reusable
+    * the worst option
 
     ```java
     // Demo1.java
@@ -246,3 +247,4 @@
     * any command-line command consists of two parts:
         * command
         * data
+    (cont.)
