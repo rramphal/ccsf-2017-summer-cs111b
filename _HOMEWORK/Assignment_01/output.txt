@@ -1,0 +1,63 @@
+> javac Box.java
+> javac DemoBox.java
+> java DemoBox
+
+================================================
+
+TESTING CREATION OF BOX WITH THREE DIMENSIONS
+
+    * For a box of height 3, width 6, and depth 9, the volume returned is: 162
+
+    * Created: (instance of Box: @height = 3; @width = 6; @depth = 9)
+
+    * Info:
+
+height : 3
+width  : 6
+depth  : 3
+
+================================================
+
+TESTING CREATION OF CUBE
+
+    * For a box of height 5, width 5, and depth 5, the volume returned is: 125
+
+    * Created: (instance of Box: @height = 5; @width = 5; @depth = 5)
+
+    * Info:
+
+height : 5
+width  : 5
+depth  : 5
+
+================================================
+
+TESTING CREATION OF A BOX BY CLONING ANOTHER BOX
+
+    * (instance of Box: @height = 3; @width = 3; @depth = 3) and (instance of Box: @height = 3; @width = 3; @depth = 3) are equal
+
+    * (instance of Box: @height = 3; @width = 3; @depth = 3) and (instance of Box: @height = 4; @width = 4; @depth = 4) are not equal
+
+    * For a box of height 3, width 3, and depth 3, the volume returned is: 27
+
+    * Created: (instance of Box: @height = 3; @width = 3; @depth = 3)
+
+    * Info:
+
+height : 3
+width  : 3
+depth  : 3
+
+================================================
+
+TESTING CREATION OF DEFAULT ZERO-DIMENSION BOX
+
+    * For a box of height 0, width 0, and depth 0, the volume returned is: 0
+
+    * Created: (instance of Box: @height = 0; @width = 0; @depth = 0)
+
+    * Info:
+
+height : 0
+width  : 0
+depth  : 0
