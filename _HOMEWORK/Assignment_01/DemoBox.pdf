@@ -1,0 +1,1559 @@
+%PDF-1.3
+%âãÏÓ
+2 0 obj
+<<
+/Length 6635
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(06/22/17)Tj
+-0.0552 -1.0667 TD
+(18:18:15)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+14 0 0 14 255.3154 786.5 Tm
+0 g
+(DemoBox.java)Tj
+/TT8 1 Tf
+10 0 0 10 54 769 Tm
+(1:)Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(2:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * This program provides a series of tests and sample calls to demo the usage)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(3:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * and features of the ‘Box‘ class.)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(4:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( *)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(5:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @author  Ravi S. Ramphal)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(6:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @class   CCSF CS111B)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(7:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @date    2017.06.22)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(8:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @version 1.0)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(9:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+(10:)Tj
+T*
+(11:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( DemoBox)Tj
+-9.6 -1.1 TD
+[(12:)-599.7({)]TJ
+T*
+[(13:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(14:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This is a helper method used to print a line above and below a given)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(15:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * message \(from the middle\).)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(16:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(17:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param message The message that you would like to pad)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(18:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(19:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( mid\(String message\))Tj
+-16.2 -1.1 TD
+[(20:)-599.7(    {)]TJ
+T*
+[(21:)-599.7(        System.out.println\(message\);)]TJ
+T*
+[(22:)-599.7(        System.out.println\(\);)]TJ
+T*
+[(23:)-599.7(    })]TJ
+T*
+(24:)Tj
+T*
+[(25:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(26:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This is a helper method used to print a horizontal rule above a given)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(27:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * message.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(28:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(29:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param message The message that you would like to preprend to)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(30:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(31:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( pre\(String message\))Tj
+-16.2 -1.1 TD
+[(32:)-599.7(    {)]TJ
+T*
+[(33:)-599.7(        System.out.println\(\);)]TJ
+T*
+[(34:)-599.7(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+18.6 0 TD
+("================================================")Tj
+/TT8 1 Tf
+0 g
+30 0 TD
+(\);)Tj
+-48.6 -1.1 TD
+[(35:)-599.7(        System.out.println\(\);)]TJ
+T*
+[(36:)-599.7(        mid\(message\);)]TJ
+T*
+[(37:)-599.7(    })]TJ
+T*
+(38:)Tj
+T*
+[(39:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(40:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method takes an instance of ‘Box‘ and calls ‘@volume‘ on it)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(41:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * providing additional information on dimensions so the user can ensure)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(42:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * that the correct volume is printed for the given dimensions.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(43:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(44:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param box An instance of ‘Box‘ that you would like to print volume for)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(45:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(46:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( testVolume\(Box box\))Tj
+-16.2 -1.1 TD
+[(47:)-599.7(    {)]TJ
+T*
+[(48:)-599.7(        mid\()]TJ
+T*
+[(49:)-599.7(            )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9.6 0 TD
+("    * For a box of height ")Tj
+/TT8 1 Tf
+0 g
+16.8 0 TD
+( + box.height + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9.6 0 TD
+(", width ")Tj
+/TT8 1 Tf
+0 g
+6 0 TD
+( + box.width +)Tj
+-42 -1.1 TD
+[(50:)-599.7(            )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9.6 0 TD
+(", and depth ")Tj
+/TT8 1 Tf
+0 g
+8.4 0 TD
+( + box.depth + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(", the volume returned is: ")Tj
+/TT8 1 Tf
+0 g
+16.8 0 TD
+( +)Tj
+-43.8 -1.1 TD
+[(51:)-599.7(            box.volume\(\))]TJ
+T*
+[(52:)-599.7(        \);)]TJ
+T*
+[(53:)-599.7(    })]TJ
+T*
+(54:)Tj
+T*
+[(55:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(56:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method takes an instance of ‘Box‘ and calls ‘@toString\(\)‘ on it)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(57:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * in the context of concatenation.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(58:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(59:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param box An instance of ‘Box‘ that you would like to cast as a string)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(60:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(61:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( testToString\(Box box\))Tj
+-16.2 -1.1 TD
+[(62:)-599.7(    {)]TJ
+T*
+[(63:)-599.7(        mid\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9.6 0 TD
+("    * Created: ")Tj
+/TT8 1 Tf
+0 g
+10.2 0 TD
+( + box\);)Tj
+-19.8 -1.1 TD
+[(64:)-599.7(    })]TJ
+T*
+(65:)Tj
+T*
+[(66:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(67:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method takes an instance of ‘Box‘ and calls ‘@show\(\)‘ on it.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(68:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+13 0 obj
+<<
+/Length 6992
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(06/22/17)Tj
+-0.0552 -1.0667 TD
+(18:18:15)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(2)Tj
+/TT6 1 Tf
+14 0 0 14 255.3154 786.5 Tm
+0 g
+(DemoBox.java)Tj
+/TT8 1 Tf
+10 0 0 10 48 769 Tm
+0.698 0.133 0.133 rg
+(69:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param box An instance of ‘Box‘ that you would like to call ‘show‘ on)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(70:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(71:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( testShow\(Box box\))Tj
+-16.2 -1.1 TD
+[(72:)-599.7(    {)]TJ
+T*
+[(73:)-599.7(        mid\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9.6 0 TD
+("    * Info:")Tj
+/TT8 1 Tf
+0 g
+7.8 0 TD
+(\);)Tj
+-17.4 -1.1 TD
+[(74:)-599.7(        box.show\(\);)]TJ
+T*
+[(75:)-599.7(    })]TJ
+T*
+(76:)Tj
+T*
+[(77:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(78:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method takes two instances of ‘Box‘ and calls ‘@equals\(\)‘ to compare)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(79:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * them and prints the result.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(80:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(81:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param box1 The first instance of ‘Box‘ that you would like to compare)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(82:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param box2 The second instance of ‘Box‘ that you would like to compare)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(83:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(84:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( testEquals\(Box box1, Box box2\))Tj
+-16.2 -1.1 TD
+[(85:)-599.7(    {)]TJ
+T*
+[(86:)-599.7(        String qualifier = \(box2.equals\(box1\)\) ? )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+31.8 0 TD
+("are")Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( : )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+1.8 0 TD
+("are not")Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+(;)Tj
+-42 -1.1 TD
+(87:)Tj
+T*
+[(88:)-599.7(        mid\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9.6 0 TD
+("    * ")Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( + box1 + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+6 0 TD
+(" and ")Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( + box2 + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+6 0 TD
+(" ")Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( + qualifier + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(" equal")Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+(\);)Tj
+-46.2 -1.1 TD
+[(89:)-599.7(    })]TJ
+T*
+(90:)Tj
+T*
+[(91:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(92:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This is a testing method used to create a box with three dimensions and)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(93:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * test ‘volume‘, ‘toString‘, and ‘show‘.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(94:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(95:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( testThreeDimensions\(\))Tj
+-16.2 -1.1 TD
+[(96:)-599.7(    {)]TJ
+T*
+[(97:)-599.7(        pre\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9.6 0 TD
+("TESTING CREATION OF BOX WITH THREE DIMENSIONS")Tj
+/TT8 1 Tf
+0 g
+28.2 0 TD
+(\);)Tj
+-37.8 -1.1 TD
+(98:)Tj
+T*
+[(99:)-599.7(        Box box = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+13.2 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Box\(3, 6, 9\);)Tj
+-15.6 -1.1 TD
+(100:)Tj
+T*
+[(101:)-599.6(        testVolume\(box\);)]TJ
+T*
+[(102:)-599.6(        testToString\(box\);)]TJ
+T*
+[(103:)-599.6(        testShow\(box\);)]TJ
+T*
+[(104:)-599.6(    })]TJ
+T*
+(105:)Tj
+T*
+[(106:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(107:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This is a testing method used to create a cube and)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(108:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * test ‘@volume\(\)‘, ‘@toString\(\)‘, and ‘@show\(\)‘ via helper methods.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(109:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(110:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( testCube\(\))Tj
+-16.8 -1.1 TD
+[(111:)-599.6(    {)]TJ
+T*
+[(112:)-599.6(        pre\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+("TESTING CREATION OF CUBE")Tj
+/TT8 1 Tf
+0 g
+15.6 0 TD
+(\);)Tj
+-25.8 -1.1 TD
+(113:)Tj
+T*
+[(114:)-599.6(        Box box = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Box\(5\);)Tj
+-15.6 -1.1 TD
+(115:)Tj
+T*
+[(116:)-599.6(        testVolume\(box\);)]TJ
+T*
+[(117:)-599.6(        testToString\(box\);)]TJ
+T*
+[(118:)-599.6(        testShow\(box\);)]TJ
+T*
+[(119:)-599.6(    })]TJ
+T*
+(120:)Tj
+T*
+[(121:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(122:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This is a testing method used to create a box by cloning another box and)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(123:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * test ‘@volume\(\)‘, ‘@toString\(\)‘, and ‘@show\(\)‘ via helper methods. It)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(124:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * also compares it to the original via ‘@equals\(\)‘ and compares it to)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(125:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * another cube of different dimensions.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(126:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(127:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( testClone\(\))Tj
+-16.8 -1.1 TD
+[(128:)-599.6(    {)]TJ
+T*
+[(129:)-599.6(        pre\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+("TESTING CREATION OF A BOX BY CLONING ANOTHER BOX")Tj
+/TT8 1 Tf
+0 g
+30 0 TD
+(\);)Tj
+-40.2 -1.1 TD
+(130:)Tj
+T*
+[(131:)-599.6(        Box box1 = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Box\(3\);)Tj
+-16.2 -1.1 TD
+[(132:)-599.6(        Box box2 = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Box\(box1\);)Tj
+-16.2 -1.1 TD
+[(133:)-599.6(        Box box3 = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Box\(4\);)Tj
+-16.2 -1.1 TD
+(134:)Tj
+T*
+[(135:)-599.6(        testEquals\(box1, box2\);)]TJ
+T*
+[(136:)-599.6(        testEquals\(box2, box3\);)]TJ
+ET
+endstream
+endobj
+14 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+16 0 obj
+<<
+/Length 2808
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(06/22/17)Tj
+-0.0552 -1.0667 TD
+(18:18:15)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(3)Tj
+/TT6 1 Tf
+14 0 0 14 255.3154 786.5 Tm
+0 g
+(DemoBox.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+[(137:)-599.6(        testVolume\(box2\);)]TJ
+0 -1.1 TD
+[(138:)-599.6(        testToString\(box2\);)]TJ
+T*
+[(139:)-599.6(        testShow\(box2\);)]TJ
+T*
+[(140:)-599.6(    })]TJ
+T*
+(141:)Tj
+T*
+[(142:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(143:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This is a testing method used to create a box of zero dimensions using)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(144:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * the default constructor and then runs tests to)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(145:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * test ‘@volume\(\)‘, ‘@toString\(\)‘, and ‘@show\(\)‘ via helper methods.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(146:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(147:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( testDefault\(\))Tj
+-16.8 -1.1 TD
+[(148:)-599.6(    {)]TJ
+T*
+[(149:)-599.6(        pre\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+("TESTING CREATION OF DEFAULT ZERO-DIMENSION BOX")Tj
+/TT8 1 Tf
+0 g
+28.8 0 TD
+(\);)Tj
+-39 -1.1 TD
+(150:)Tj
+T*
+[(151:)-599.6(        Box box = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Box\(\);)Tj
+-15.6 -1.1 TD
+(152:)Tj
+T*
+[(153:)-599.6(        testVolume\(box\);)]TJ
+T*
+[(154:)-599.6(        testToString\(box\);)]TJ
+T*
+[(155:)-599.6(        testShow\(box\);)]TJ
+T*
+[(156:)-599.6(    })]TJ
+T*
+(157:)Tj
+T*
+[(158:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(159:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This is the main function of this demo class to call the other testing)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(160:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * methods.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(161:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(162:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( main\(String ... args\))Tj
+-16.2 -1.1 TD
+[(163:)-599.6(    {)]TJ
+T*
+[(164:)-599.6(        testThreeDimensions\(\);)]TJ
+T*
+[(165:)-599.6(        testCube\(\);)]TJ
+T*
+[(166:)-599.6(        testClone\(\);)]TJ
+T*
+[(167:)-599.6(        testDefault\(\);)]TJ
+T*
+[(168:)-599.6(    })]TJ
+T*
+[(169:)-599.6(})]TJ
+ET
+endstream
+endobj
+17 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+18 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+19 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+20 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+21 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+22 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+23 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 500 0 0 500 500 500 500 0 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 18 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 51
+/Widths [556 556 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 19 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 46
+/LastChar 120
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 667 0 722 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 444 0 0 0 444 0 0 0 0 278 0 0 778 
+0 500 0 0 0 0 0 0 500 0 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 20 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 125
+/Widths [600 0 0 0 0 0 0 0 600 600 0 600 600 0 600 0 
+600 600 600 600 600 600 600 600 600 600 600 600 0 600 0 600 
+0 0 600 600 600 600 0 0 0 0 0 0 0 0 0 0 
+0 0 0 600 600 0 600 0 0 0 0 0 0 0 0 0 
+0 600 600 0 600 600 600 600 600 600 0 0 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 0 600 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 21 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 145
+/Widths [600 0 0 0 0 0 0 0 600 600 600 0 600 0 600 600 
+600 600 600 0 0 0 600 600 0 0 0 0 0 0 0 0 
+600 600 600 600 0 0 600 0 0 600 0 0 0 0 0 0 
+0 0 600 600 600 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 22 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 120
+/Widths [600 0 600 0 0 0 0 0 0 0 600 0 600 600 0 0 
+0 0 0 0 0 0 0 0 0 0 600 0 0 600 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+0 0 600 600 600 600 0 600 600 600 600 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 600 600 600 600 600 600 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 23 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 14 0 R
+/Contents 13 0 R
+>>
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 17 0 R
+/Contents 16 0 R
+>>
+endobj
+24 0 obj
+<<
+/S /D
+>>
+endobj
+25 0 obj
+<<
+/Nums [0 24 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 12 0 R 15 0 R]
+/Count 3
+/MediaBox [0 0 595 842]
+>>
+endobj
+26 0 obj
+<<
+/CreationDate (D:20170622181930-07'00')
+/ModDate (D:20170622181930-07'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+27 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 25 0 R
+>>
+endobj
+xref
+0 28
+0000000000 65535 f 
+0000020530 00000 n 
+0000000016 00000 n 
+0000006703 00000 n 
+0000018410 00000 n 
+0000018614 00000 n 
+0000018792 00000 n 
+0000019130 00000 n 
+0000019585 00000 n 
+0000020082 00000 n 
+0000017070 00000 n 
+0000020847 00000 n 
+0000020611 00000 n 
+0000006856 00000 n 
+0000013901 00000 n 
+0000020695 00000 n 
+0000014055 00000 n 
+0000016916 00000 n 
+0000017211 00000 n 
+0000017413 00000 n 
+0000017619 00000 n 
+0000017816 00000 n 
+0000018007 00000 n 
+0000018208 00000 n 
+0000020779 00000 n 
+0000020807 00000 n 
+0000020943 00000 n 
+0000021066 00000 n 
+trailer
+<<
+/Size 28
+/Root 27 0 R
+/Info 26 0 R
+/ID [<581a703be6a5e3b7f7e5020579682c8c><581a703be6a5e3b7f7e5020579682c8c>]
+>>
+startxref
+21136
+%%EOF

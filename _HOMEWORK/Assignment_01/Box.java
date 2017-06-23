@@ -4,7 +4,7 @@
  * (effectively creating a cube), a Box object (to create a clone), or no
  * dimensions (creating a default box with dimensions of zero).
  *
- * @author  Ravi S. Rāmphal
+ * @author  Ravi S. Ramphal
  * @class   CCSF CS111B
  * @date    2017.06.22
  * @version 1.0

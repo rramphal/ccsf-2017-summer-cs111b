@@ -2,7 +2,7 @@
  * This program provides a series of tests and sample calls to demo the usage
  * and features of the `Box` class.
  *
- * @author  Ravi S. Rāmphal
+ * @author  Ravi S. Ramphal
  * @class   CCSF CS111B
  * @date    2017.06.22
  * @version 1.0

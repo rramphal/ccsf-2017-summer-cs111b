@@ -1,0 +1,1362 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 6535
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(06/22/17)Tj
+-0.0552 -1.0667 TD
+(18:18:11)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+14 0 0 14 272.4224 786.5 Tm
+0 g
+(Box.java)Tj
+/TT8 1 Tf
+10 0 0 10 54 769 Tm
+(1:)Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(2:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * This class allows the user to create a box defined by height, width, and)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(3:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * depth. Constructors exist to accept specific dimensions, one dimension)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(4:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * \(effectively creating a cube\), a Box object \(to create a clone\), or no)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(5:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * dimensions \(creating a default box with dimensions of zero\).)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(6:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( *)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(7:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @author  Ravi S. Ramphal)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(8:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @class   CCSF CS111B)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(9:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @date    2017.06.22)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @version 1.0)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(11:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+(12:)Tj
+T*
+(13:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( Box)Tj
+-9.6 -1.1 TD
+[(14:)-599.7({)]TJ
+T*
+[(15:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(16:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * Holds the height of a box.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(17:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(18:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( height;)Tj
+-6.6 -1.1 TD
+(19:)Tj
+T*
+[(20:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(21:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * Holds the width of a box.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(22:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(23:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( width;)Tj
+-6.6 -1.1 TD
+(24:)Tj
+T*
+[(25:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(26:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * Holds the depth of a box.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(27:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(28:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( depth;)Tj
+-6.6 -1.1 TD
+(29:)Tj
+T*
+[(30:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(31:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This is the parameterized constructor to create a box from a height,)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(32:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * width, and depth.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(33:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(34:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param height The height of the box)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(35:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param width  The width  of the box)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(36:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param depth  The depth  of the box)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(37:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(38:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( Box\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( height, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( width, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( depth\))Tj
+-27 -1.1 TD
+[(39:)-599.7(    {)]TJ
+T*
+[(40:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.height = height;)Tj
+-9.6 -1.1 TD
+[(41:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.width  = width;)Tj
+-9.6 -1.1 TD
+[(42:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.depth  = depth;)Tj
+-9.6 -1.1 TD
+[(43:)-599.7(    })]TJ
+T*
+(44:)Tj
+T*
+[(45:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(46:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This is the parameterized constructor to create a cube.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(47:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(48:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param dimension The value for the boxís height, width, and depth)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(49:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(50:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( Box\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( dimension\))Tj
+-13.2 -1.1 TD
+[(51:)-599.7(    {)]TJ
+T*
+[(52:)-599.7(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// this.height = dimension;)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(53:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// this.width  = dimension;)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(54:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// this.depth  = dimension;)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(55:)Tj
+0 g
+T*
+[(56:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\(dimension, dimension, dimension\);)Tj
+-9.6 -1.1 TD
+[(57:)-599.7(    })]TJ
+T*
+(58:)Tj
+T*
+[(59:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(60:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This is the parameterized constructor to clone a given Box.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(61:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(62:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * param box An instance of ëBoxë that you would like to clone)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(63:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(64:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( Box\(Box box\))Tj
+-8.4 -1.1 TD
+[(65:)-599.7(    {)]TJ
+T*
+[(66:)-599.7(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// this.height = box.height;)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(67:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// this.width  = box.width;)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(68:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// this.depth  = box.depth;)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+13 0 obj
+<<
+/Length 6906
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(06/22/17)Tj
+-0.0552 -1.0667 TD
+(18:18:11)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(2)Tj
+/TT6 1 Tf
+14 0 0 14 272.4224 786.5 Tm
+0 g
+(Box.java)Tj
+/TT8 1 Tf
+10 0 0 10 48 769 Tm
+0.698 0.133 0.133 rg
+(69:)Tj
+0 g
+0 -1.1 TD
+[(70:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\(box.height, box.width, box.depth\);)Tj
+-9.6 -1.1 TD
+[(71:)-599.7(    })]TJ
+T*
+(72:)Tj
+T*
+[(73:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(74:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This overrides the default constructor to create a box with)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(75:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * zero dimensions if nothing is passed in.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(76:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(77:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( Box\(\))Tj
+-8.4 -1.1 TD
+[(78:)-599.7(    {)]TJ
+T*
+[(79:)-599.7(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// this.height = 0;)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(80:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// this.width  = 0;)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(81:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// this.depth  = 0;)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(82:)Tj
+0 g
+T*
+[(83:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\(0, 0, 0\);)Tj
+-9.6 -1.1 TD
+[(84:)-599.7(    })]TJ
+T*
+(85:)Tj
+T*
+[(86:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(87:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method returns the volume of the box.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(88:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(89:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @return int This returns the volume of the box.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(90:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(91:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( volume\(\))Tj
+-10.8 -1.1 TD
+[(92:)-599.7(    {)]TJ
+T*
+[(93:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.height * )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+6 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.width * )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.depth;)Tj
+-30 -1.1 TD
+[(94:)-599.7(    })]TJ
+T*
+(95:)Tj
+T*
+[(96:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(97:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method allows a quick way for a user to output the dimensions of)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(98:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * a box.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(99:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(100:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( show\(\))Tj
+-12 -1.1 TD
+[(101:)-599.6(    {)]TJ
+T*
+[(102:)-599.6(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+("height : ")Tj
+/TT8 1 Tf
+0 g
+6.6 0 TD
+( + )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.height\);)Tj
+-30 -1.1 TD
+[(103:)-599.6(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+("width  : ")Tj
+/TT8 1 Tf
+0 g
+6.6 0 TD
+( + )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.width\);)Tj
+-30 -1.1 TD
+[(104:)-599.6(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+("depth  : ")Tj
+/TT8 1 Tf
+0 g
+6.6 0 TD
+( + )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.height\);)Tj
+-30 -1.1 TD
+[(105:)-599.6(    })]TJ
+T*
+(106:)Tj
+T*
+[(107:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(108:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method allows a quick way for a user to output the dimensions of)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(109:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * a box.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(110:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(111:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  box     A given box to test against)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(112:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return boolean Returns whether or not all the dimensions of a box match)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(113:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(114:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( equals\(Box box\))Tj
+-13.8 -1.1 TD
+[(115:)-599.6(    {)]TJ
+T*
+[(116:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( \()Tj
+-11.4 -1.1 TD
+[(117:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.height == box.height &&)Tj
+-12.6 -1.1 TD
+[(118:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.width  == box.width  &&)Tj
+-12.6 -1.1 TD
+[(119:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.depth  == box.depth)Tj
+-12.6 -1.1 TD
+[(120:)-599.6(        \);)]TJ
+T*
+[(121:)-599.6(    })]TJ
+T*
+(122:)Tj
+T*
+[(123:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(124:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method specifies what is returned when an instance of Box is cast)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(125:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * to a String.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(126:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(127:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( String toString\(\))Tj
+-9 -1.1 TD
+[(128:)-599.6(    {)]TJ
+T*
+[(129:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( \()Tj
+-11.4 -1.1 TD
+[(130:)-599.6(            String.format\()]TJ
+T*
+[(131:)-599.6(                )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+12.6 0 TD
+("\(instance of Box: @height = %d; @width = %d; @depth = %d\)")Tj
+/TT8 1 Tf
+0 g
+35.4 0 TD
+(,)Tj
+-48 -1.1 TD
+[(132:)-599.6(                                  )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+23.4 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.height,   )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+6.6 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.width,   )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+6 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(.depth)Tj
+-43.2 -1.1 TD
+[(133:)-599.6(            \))]TJ
+T*
+[(134:)-599.6(        \);)]TJ
+T*
+[(135:)-599.6(    })]TJ
+T*
+[(136:)-599.6(})]TJ
+ET
+endstream
+endobj
+14 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+15 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+16 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+17 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+18 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+19 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+20 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 500 0 0 0 500 500 500 0 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 15 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 50
+/Widths [556 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 16 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 46
+/LastChar 120
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 667 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 444 0 0 0 0 0 0 0 0 278 0 0 0 
+0 500 0 0 0 0 0 0 500 0 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 17 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 125
+/Widths [600 0 0 0 0 0 600 0 600 600 600 600 600 0 600 0 
+600 600 600 600 600 600 600 600 600 600 600 600 0 600 0 0 
+0 0 600 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 600 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 0 600 600 600 600 600 600 0 0 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 0 600 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 18 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 0 0 0 0 0 0 0 600 600 600 0 600 0 600 600 
+600 600 600 0 0 0 600 600 0 0 0 600 0 600 0 0 
+600 600 600 600 0 0 600 0 600 0 0 0 0 0 0 0 
+0 0 600 600 600 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 19 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 120
+/Widths [600 0 600 0 0 600 0 0 600 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 600 600 0 600 0 0 
+600 0 600 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 0 600 600 
+600 0 600 600 600 600 600 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 20 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 14 0 R
+/Contents 13 0 R
+>>
+endobj
+21 0 obj
+<<
+/S /D
+>>
+endobj
+22 0 obj
+<<
+/Nums [0 21 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 12 0 R]
+/Count 2
+/MediaBox [0 0 595 842]
+>>
+endobj
+23 0 obj
+<<
+/CreationDate (D:20170622181853-07'00')
+/ModDate (D:20170622181853-07'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+24 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 22 0 R
+>>
+endobj
+xref
+0 25
+0000000000 65535 f 
+0000017279 00000 n 
+0000000016 00000 n 
+0000006603 00000 n 
+0000015209 00000 n 
+0000015411 00000 n 
+0000015585 00000 n 
+0000015917 00000 n 
+0000016364 00000 n 
+0000016871 00000 n 
+0000013869 00000 n 
+0000017512 00000 n 
+0000017360 00000 n 
+0000006756 00000 n 
+0000013715 00000 n 
+0000014010 00000 n 
+0000014212 00000 n 
+0000014418 00000 n 
+0000014615 00000 n 
+0000014806 00000 n 
+0000015007 00000 n 
+0000017444 00000 n 
+0000017472 00000 n 
+0000017601 00000 n 
+0000017724 00000 n 
+trailer
+<<
+/Size 25
+/Root 24 0 R
+/Info 23 0 R
+/ID [<c4576efbc34546150d7564727e30f2ce><c4576efbc34546150d7564727e30f2ce>]
+>>
+startxref
+17794
+%%EOF
