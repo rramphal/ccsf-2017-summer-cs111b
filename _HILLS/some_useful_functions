@@ -43,4 +43,15 @@
           Thread.sleep(ms);
       }catch(InterruptedException e){}
    }
+//********************************gets()**********************************
+   public static String gets(String ... prompt)
+   {
+       if (prompt.length > 0) System.out.print(prompt[0]);
+       return((new Scanner(System.in)).nextLine());
+   }
+//*******************************reverse()********************************
+    public static String reverse(String s)
+    {
+       return((new StringBuilder(s)).reverse().toString());
+    }
 

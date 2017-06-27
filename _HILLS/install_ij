@@ -1,0 +1,19 @@
+#!/bin/bash
+#                 
+# Author:  Abbas Moghtanei
+# Date  :  08/26/13        
+# Program Name: install_ij 
+#                         
+
+OWNER=amoghtan
+MY_HOME=$(grep "^$OWNER"  /etc/passwd | cut -d: -f6)
+[ ! -f ${MY_HOME}/ij.jar ] && echo "ij.jar does not exist" && exit 1
+cp ${MY_HOME}/ij.jar . 
+unzip ij.jar ij Libij.java Libij.class
+javac -O Libij.java
+chmod +x ij
+ij -T
+[[ $(whoami) != "abbas" ]] && [[ $(whoami) != "amoghtan" ]] && rm -f Libij.java ij.jar
+
+
+
