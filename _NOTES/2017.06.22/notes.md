@@ -1,7 +1,5 @@
 # [CS111B] 2017.06.22
 
-***Chapter***
-
 ### Random Notes
 
 * to delete a set of files based on RegEx:
