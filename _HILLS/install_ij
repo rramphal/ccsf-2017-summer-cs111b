@@ -13,7 +13,7 @@ unzip ij.jar ij Libij.java Libij.class
 javac -O Libij.java
 chmod +x ij
 ij -T
-[[ $(whoami) != "abbas" ]] && [[ $(whoami) != "amoghtan" ]] && rm -f Libij.java ij.jar
+[[ $(whoami) != "abbas" ]] && [[ $(whoami) != "amoghtan" ]] && rm -f ij.jar
 
 
 
