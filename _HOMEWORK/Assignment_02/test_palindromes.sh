@@ -20,12 +20,17 @@
 # an `E` is printed to indicate an error. If all tests pass, the user should
 # only see a long string of periods.
 
-####### CONFIG #######
+##########################################
+################# CONFIG #################
+##########################################
 
 shouldPass="palindromes.txt"
 shouldFail="fake_palindromes.txt"
 
-####### SHOULD PASS #######
+##########################################
+
+echo;
+echo "SHOULD PASS";
 
 while read -r line
 do
@@ -36,7 +41,11 @@ do
     fi
 done < "$shouldPass"
 
-####### SHOULD FAIL #######
+##########################################
+
+echo;
+echo;
+echo "SHOULD FAIL";
 
 while read -r line
 do
