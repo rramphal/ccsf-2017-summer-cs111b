@@ -17,8 +17,7 @@
 # This script below confirms the findings yielded from the above process.
 # In two loops, the respective files are passed in. If the results are as
 # expected, then a period (`.`) is printed. If they are not as expected, then
-# an `E` is printed to indicate an error. If all tests pass, the user should
-# only see a long string of periods.
+# an `E` is printed to indicate an error.
 
 ##########################################
 ################# CONFIG #################
@@ -49,7 +48,7 @@ echo "SHOULD FAIL";
 
 while read -r line
 do
-    if java Palindrome "$line" | grep -q 'IS NOT a palindrome'; then
+    if java Palindrome "$line" | grep -q 'IS a palindrome'; then
         echo -n '.'
     else
         echo -n 'E'
