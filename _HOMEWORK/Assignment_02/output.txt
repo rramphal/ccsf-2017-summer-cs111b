@@ -1,0 +1,46 @@
+> javac Palindrome.java
+
+> java Palindrome
+
+Enter a phrase to test whether it is a palindrome.
+Type 'exit', 'end', or 'stop' to exit program.
+
+Please input phrase: test
+'test' IS NOT a palindrome.
+
+Please input phrase: MOOM
+'MOOM' IS a palindrome.
+
+Please input phrase: 123
+'123' IS NOT a palindrome.
+
+Please input phrase: 191
+'191' IS a palindrome.
+
+Please input phrase: MOOM!
+'MOOM!' IS a palindrome.
+
+Please input phrase: M o o M
+'M o o M' IS a palindrome.
+
+Please input phrase: M o O m
+'M o O m' IS a palindrome.
+
+Please input phrase: exit
+
+Exiting.
+
+> java Palindrome "MOOM"
+'MOOM' IS a palindrome.
+
+> java Palindrome "M o O m %"
+'M o O m %' IS a palindrome.
+
+> java Palindrome "M o O m %" "radar" "sonar" "191"
+'M o O m %' IS a palindrome.
+'radar' IS a palindrome.
+'sonar' IS NOT a palindrome.
+'191' IS a palindrome.
+
+> ./test_palindromes.sh
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
