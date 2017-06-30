@@ -1,0 +1,785 @@
+%PDF-1.3
+%âãÏÓ
+2 0 obj
+<<
+/Length 6259
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(06/29/17)Tj
+-0.0552 -1.0667 TD
+(17:26:31)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+14 0 0 14 241.7017 786.5 Tm
+0 g
+(test_palindromes.sh)Tj
+/TT8 1 Tf
+10 0 0 10 54 769 Tm
+(1:)Tj
+/TT10 1 Tf
+0.373 0.62 0.627 rg
+1.8 0 TD
+(#!/bin/bash)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(2:)Tj
+0 g
+T*
+(3:)Tj
+/TT12 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(# AUTHOR: Ravi S. Ramphal)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(4:)Tj
+/TT12 1 Tf
+1.8 0 TD
+(# CLASS:  CCSF CS111B)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(5:)Tj
+/TT12 1 Tf
+1.8 0 TD
+(# DATE:   2017.06.29)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(6:)Tj
+/TT12 1 Tf
+1.8 0 TD
+(#)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(7:)Tj
+/TT12 1 Tf
+1.8 0 TD
+(# These lists were created from scraping the lists of palindromes)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(8:)Tj
+/TT12 1 Tf
+1.8 0 TD
+(# available at http://www.palindromelist.net/. It was manually sanitized)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(9:)Tj
+/TT12 1 Tf
+1.8 0 TD
+(# to remove the comments \(Ex.: "Malayalam \(language\)" --> "Malayalam"\).)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(#)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(11:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(# The two files were created using the same ‘Palindrome‘ program tested below.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(12:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(# ‘shouldPass‘ were all the lines that passed, and)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(13:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(# ‘shouldFail‘ were all the lines that were presented as valid palidromes)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(14:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(#     on the website, but are in fact erroneous.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(15:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(# The validity of these two lists can be manually inspected to verify accuracy.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(16:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(#)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(17:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(# This script below confirms the findings yielded from the above process.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(18:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(# In two loops, the respective files are passed in. If the results are as)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(19:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(# expected, then a period \(‘.‘\) is printed. If they are not as expected, then)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(20:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(# an ‘F‘ is printed to indicate an error.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(21:)Tj
+0 g
+T*
+(22:)Tj
+/TT12 1 Tf
+0.698 0.133 0.133 rg
+2.4 0 TD
+(##########################################)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(23:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(################# CONFIG #################)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(24:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(##########################################)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(25:)Tj
+0 g
+T*
+[(26:)-599.7(shouldPass=)]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+("palindromes.txt")Tj
+/TT8 1 Tf
+0 g
+-9 -1.1 TD
+[(27:)-599.7(shouldFail=)]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+("fake_palindromes.txt")Tj
+/TT8 1 Tf
+0 g
+-9 -1.1 TD
+(28:)Tj
+T*
+(29:)Tj
+/TT12 1 Tf
+0.698 0.133 0.133 rg
+2.4 0 TD
+(##########################################)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(30:)Tj
+0 g
+T*
+(31:)Tj
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+2.4 0 TD
+(echo)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-4.8 -1.1 TD
+(32:)Tj
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+2.4 0 TD
+(echo)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( )Tj
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+0.6 0 TD
+("SHOULD PASS")Tj
+/TT8 1 Tf
+0 g
+7.8 0 TD
+(;)Tj
+-13.2 -1.1 TD
+(33:)Tj
+T*
+(34:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+0.6 0 TD
+(read)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( -r line)Tj
+-8.4 -1.1 TD
+(35:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(36:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( java Palindrome )Tj
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+("$line")Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( | grep -q ’IS a palindrome’; )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+18 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-37.2 -1.1 TD
+[(37:)-599.7(        )]TJ
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+7.2 0 TD
+(echo)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( -n ’.’)Tj
+-9.6 -1.1 TD
+[(38:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+-4.8 -1.1 TD
+[(39:)-599.7(        )]TJ
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+7.2 0 TD
+(echo)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( -n ’F’)Tj
+-9.6 -1.1 TD
+[(40:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(fi)Tj
+/TT8 1 Tf
+0 g
+-4.8 -1.1 TD
+(41:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(done)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( < )Tj
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+1.8 0 TD
+("$shouldPass")Tj
+/TT8 1 Tf
+0 g
+-6.6 -1.1 TD
+(42:)Tj
+T*
+(43:)Tj
+/TT12 1 Tf
+0.698 0.133 0.133 rg
+2.4 0 TD
+(##########################################)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(44:)Tj
+0 g
+T*
+(45:)Tj
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+2.4 0 TD
+(echo)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-4.8 -1.1 TD
+(46:)Tj
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+2.4 0 TD
+(echo)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-4.8 -1.1 TD
+(47:)Tj
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+2.4 0 TD
+(echo)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( )Tj
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+0.6 0 TD
+("SHOULD FAIL")Tj
+/TT8 1 Tf
+0 g
+7.8 0 TD
+(;)Tj
+-13.2 -1.1 TD
+(48:)Tj
+T*
+(49:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+0.6 0 TD
+(read)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( -r line)Tj
+-8.4 -1.1 TD
+(50:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(51:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( java Palindrome )Tj
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+("$line")Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( | grep -q ’IS a palindrome’; )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+18 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-38.4 -1.1 TD
+[(52:)-599.7(        )]TJ
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+7.2 0 TD
+(echo)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( -n ’.’)Tj
+-9.6 -1.1 TD
+[(53:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+-4.8 -1.1 TD
+[(54:)-599.7(        )]TJ
+/TT10 1 Tf
+0.855 0.439 0.839 rg
+7.2 0 TD
+(echo)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( -n ’F’)Tj
+-9.6 -1.1 TD
+[(55:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(fi)Tj
+/TT8 1 Tf
+0 g
+-4.8 -1.1 TD
+(56:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(done)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( < )Tj
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+1.8 0 TD
+("$shouldFail")Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+12 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+13 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+14 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+15 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+16 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+17 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 500 500 0 0 500 500 0 500 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 12 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 49
+/Widths [556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 13 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 46
+/LastChar 116
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 500 0 444 0 0 500 444 0 0 500 278 0 0 278 778 
+500 500 500 0 333 389 278 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 14 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 0 0 0 0 0 0 0 0 0 0 0 0 600 600 0 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 0 0 
+0 0 0 0 0 0 600 0 0 600 0 0 0 0 0 0 
+600 0 0 600 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 0 0 600 600 0 600 600 600 600 0 600 600 600 600 
+600 600 600 600 0 600 600 0 0 0 0 0 600 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 15 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 120
+/Widths [600 600 600 600 600 0 0 0 0 0 0 0 0 0 600 600 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 0 0 600 0 600 0 600 600 0 0 600 0 0 600 
+600 0 0 600 0 600 0 0 0 0 0 0 0 0 0 600 
+0 600 600 600 600 600 600 0 600 600 0 600 600 600 600 600 
+600 0 600 600 600 600 0 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 16 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 145
+/Widths [600 0 600 600 0 0 0 0 600 600 0 0 600 600 600 600 
+600 600 600 0 0 0 600 600 0 600 600 0 0 0 600 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 600 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 17 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+18 0 obj
+<<
+/S /D
+>>
+endobj
+19 0 obj
+<<
+/Nums [0 18 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R]
+/Count 1
+/MediaBox [0 0 595 842]
+>>
+endobj
+20 0 obj
+<<
+/CreationDate (D:20170629172703-07'00')
+/ModDate (D:20170629172703-07'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+21 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 19 0 R
+>>
+endobj
+xref
+0 22
+0000000000 65535 f 
+0000009956 00000 n 
+0000000016 00000 n 
+0000006327 00000 n 
+0000007820 00000 n 
+0000008024 00000 n 
+0000008194 00000 n 
+0000008534 00000 n 
+0000009011 00000 n 
+0000009435 00000 n 
+0000006480 00000 n 
+0000010105 00000 n 
+0000006621 00000 n 
+0000006823 00000 n 
+0000007029 00000 n 
+0000007226 00000 n 
+0000007417 00000 n 
+0000007619 00000 n 
+0000010037 00000 n 
+0000010065 00000 n 
+0000010187 00000 n 
+0000010310 00000 n 
+trailer
+<<
+/Size 22
+/Root 21 0 R
+/Info 20 0 R
+/ID [<dfb246dc6a98670bbec1ff445e91c908><dfb246dc6a98670bbec1ff445e91c908>]
+>>
+startxref
+10380
+%%EOF

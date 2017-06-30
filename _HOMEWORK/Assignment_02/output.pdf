@@ -1,0 +1,369 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 2614
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(06/29/17)Tj
+-0.0552 -1.0667 TD
+(17:26:54)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+14 0 0 14 270.4707 786.5 Tm
+0 g
+(output.txt)Tj
+/TT8 1 Tf
+10 0 0 10 54 769 Tm
+[(1:)-599.8(> javac Palindrome.java)]TJ
+0 -1.1 TD
+(2:)Tj
+T*
+[(3:)-599.8(> java Palindrome)]TJ
+T*
+(4:)Tj
+T*
+[(5:)-599.8(Enter a phrase to test whether it is a palindrome.)]TJ
+T*
+[(6:)-599.8(Type íexití, íendí, or ístopí to exit program.)]TJ
+T*
+(7:)Tj
+T*
+[(8:)-599.8(Please input phrase: test)]TJ
+T*
+[(9:)-599.8(ítestí IS NOT a palindrome.)]TJ
+-0.6 -1.1 TD
+(10:)Tj
+T*
+[(11:)-599.7(Please input phrase: MOOM)]TJ
+T*
+[(12:)-599.7(íMOOMí IS a palindrome.)]TJ
+T*
+(13:)Tj
+T*
+[(14:)-599.7(Please input phrase: 123)]TJ
+T*
+[(15:)-599.7(í123í IS NOT a palindrome.)]TJ
+T*
+(16:)Tj
+T*
+[(17:)-599.7(Please input phrase: 191)]TJ
+T*
+[(18:)-599.7(í191í IS a palindrome.)]TJ
+T*
+(19:)Tj
+T*
+[(20:)-599.7(Please input phrase: MOOM!)]TJ
+T*
+[(21:)-599.7(íMOOM!í IS a palindrome.)]TJ
+T*
+(22:)Tj
+T*
+[(23:)-599.7(Please input phrase: M o o M)]TJ
+T*
+[(24:)-599.7(íM o o Mí IS a palindrome.)]TJ
+T*
+(25:)Tj
+T*
+[(26:)-599.7(Please input phrase: M o O m)]TJ
+T*
+[(27:)-599.7(íM o O mí IS a palindrome.)]TJ
+T*
+(28:)Tj
+T*
+[(29:)-599.7(Please input phrase: exit)]TJ
+T*
+(30:)Tj
+T*
+[(31:)-599.7(Exiting.)]TJ
+T*
+(32:)Tj
+T*
+[(33:)-599.7(> java Palindrome "MOOM")]TJ
+T*
+[(34:)-599.7(íMOOMí IS a palindrome.)]TJ
+T*
+(35:)Tj
+T*
+[(36:)-599.7(> java Palindrome "M o O m %")]TJ
+T*
+[(37:)-599.7(íM o O m %í IS a palindrome.)]TJ
+T*
+(38:)Tj
+T*
+[(39:)-599.7(> java Palindrome "M o O m %" "radar" "sonar" "191")]TJ
+T*
+[(40:)-599.7(íM o O m %í IS a palindrome.)]TJ
+T*
+[(41:)-599.7(íradarí IS a palindrome.)]TJ
+T*
+[(42:)-599.7(ísonarí IS NOT a palindrome.)]TJ
+T*
+[(43:)-599.7(í191í IS a palindrome.)]TJ
+T*
+(44:)Tj
+T*
+[(45:)-599.7(> ./test_palindromes.sh)]TJ
+T*
+(46:)Tj
+T*
+[(47:)-599.7(SHOULD PASS)]TJ
+T*
+[(48:)-599.7(..................................................................................)]TJ
+-1.9 -1.1 TD
+(.........................................................................................)Tj
+T*
+(.........................................................................................)Tj
+T*
+(.........................................................................................)Tj
+T*
+(.........................................................................................)Tj
+T*
+(.....................................................)Tj
+1.9 -1.1 TD
+(49:)Tj
+T*
+[(50:)-599.7(SHOULD FAIL)]TJ
+T*
+[(51:)-599.7(FFF)]TJ
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+8 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+10 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+11 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+12 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+13 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 500 0 500 500 500 500 0 500 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 10 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 49
+/Widths [556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 11 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 46
+/LastChar 120
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 500 500 0 0 0 278 500 0 0 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 12 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 600 600 0 0 600 0 0 0 0 0 0 600 0 600 600 
+600 600 600 600 600 600 600 600 600 600 600 0 0 0 600 0 
+0 600 0 0 600 600 600 0 600 600 0 0 600 600 600 600 
+600 0 0 600 600 600 0 0 0 0 0 0 0 0 0 600 
+0 600 0 600 600 600 0 600 600 600 600 0 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 13 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+14 0 obj
+<<
+/S /D
+>>
+endobj
+15 0 obj
+<<
+/Nums [0 14 0 R ]
+>>
+endobj
+9 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R]
+/Count 1
+/MediaBox [0 0 595 842]
+>>
+endobj
+16 0 obj
+<<
+/CreationDate (D:20170629172704-07'00')
+/ModDate (D:20170629172704-07'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+17 0 obj
+<<
+/Type /Catalog
+/Pages 9 0 R
+/PageLabels 15 0 R
+>>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000004961 00000 n 
+0000000016 00000 n 
+0000002682 00000 n 
+0000003746 00000 n 
+0000003952 00000 n 
+0000004122 00000 n 
+0000004452 00000 n 
+0000002810 00000 n 
+0000005109 00000 n 
+0000002950 00000 n 
+0000003152 00000 n 
+0000003358 00000 n 
+0000003555 00000 n 
+0000005041 00000 n 
+0000005069 00000 n 
+0000005190 00000 n 
+0000005313 00000 n 
+trailer
+<<
+/Size 18
+/Root 17 0 R
+/Info 16 0 R
+/ID [<3b962504ef71b958bee12a21ff0e2091><3b962504ef71b958bee12a21ff0e2091>]
+>>
+startxref
+5382
+%%EOF
