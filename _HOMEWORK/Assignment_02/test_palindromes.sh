@@ -17,7 +17,7 @@
 # This script below confirms the findings yielded from the above process.
 # In two loops, the respective files are passed in. If the results are as
 # expected, then a period (`.`) is printed. If they are not as expected, then
-# an `E` is printed to indicate an error.
+# an `F` is printed to indicate an error.
 
 ##########################################
 ################# CONFIG #################
@@ -36,7 +36,7 @@ do
   if java Palindrome "$line" | grep -q 'IS a palindrome'; then
         echo -n '.'
     else
-        echo -n 'E'
+        echo -n 'F'
     fi
 done < "$shouldPass"
 
@@ -51,6 +51,6 @@ do
     if java Palindrome "$line" | grep -q 'IS a palindrome'; then
         echo -n '.'
     else
-        echo -n 'E'
+        echo -n 'F'
     fi
 done < "$shouldFail"
