@@ -108,5 +108,6 @@ public class NameSwapper
         File outputFile = createOutput(output);
 
         processFile(inputFile, outputFile);
+        System.out.println("File processed.");
     }
 }
