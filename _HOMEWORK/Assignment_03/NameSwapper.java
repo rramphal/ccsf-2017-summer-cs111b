@@ -170,6 +170,8 @@ public final class NameSwapper
 
             scanner.close();
             printWriter.close();
+
+            System.out.println("File processed.");
         }
         catch (FileNotFoundException e)
         {
@@ -203,6 +205,5 @@ public final class NameSwapper
         File outputFile = createOutput(output);
 
         processFile(inputFile, outputFile);
-        System.out.println("File processed.");
     }
 }
