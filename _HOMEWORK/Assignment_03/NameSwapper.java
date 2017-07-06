@@ -11,7 +11,7 @@ public class NameSwapper
 
     public static File validateInput(String filename)
     {
-        if (filename.length() < 1) die("Input filename not provided");
+        if (filename.length() < 1) die("Input filename not provided!");
 
         File file = new File(filename);
 
@@ -25,7 +25,7 @@ public class NameSwapper
 
     public static File createOutput(String filename)
     {
-        if (filename.length() < 1) die("Output filename not provided");
+        if (filename.length() < 1) die("Output filename not provided!");
 
         File file = new File(filename);
 
