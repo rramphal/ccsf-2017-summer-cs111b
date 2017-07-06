@@ -95,7 +95,7 @@ public final class NameSwapper
         }
         catch (IOException e)
         {
-            System.err.println(filename + " could not be created!");
+            die(filename + " could not be created!");
         }
 
         return file;
@@ -173,11 +173,11 @@ public final class NameSwapper
         }
         catch (FileNotFoundException e)
         {
-            System.err.println("Input file not found!");
+            die("Input file not found!");
         }
         catch (IOException e)
         {
-            System.err.println("Output file not found!");
+            die("Output file not found!");
         }
     }
 
