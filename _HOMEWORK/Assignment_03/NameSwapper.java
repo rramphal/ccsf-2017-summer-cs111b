@@ -34,7 +34,7 @@ public final class NameSwapper
      * This is a die method that prints a message to the stderr stream and
      * exits the program with an error code.
      *
-     * @param  errorMessage  The error message to be displayed to users
+     * @param errorMessage The error message to be displayed to users
      */
     private static void die(String errorMessage)
     {
