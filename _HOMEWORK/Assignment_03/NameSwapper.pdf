@@ -1,0 +1,1992 @@
+%PDF-1.3
+%âãÏÓ
+2 0 obj
+<<
+/Length 7700
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/06/17)Tj
+-0.0552 -1.0667 TD
+(16:40:09)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+14 0 0 14 242.8843 786.5 Tm
+0 g
+(NameSwapper.java)Tj
+/TT8 1 Tf
+10 0 0 10 54 769 Tm
+(1:)Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(2:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * This class allows the user to process a datafile to fix incorrectly inputted)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(3:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * names. It assumes a file format where headers \(which remain untouched\) are)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(4:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * marked with pound signs at the beginning of the line. Blank lines are)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(5:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * maintained. The only lines which are changed are those containing names in)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(6:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * the format ‘firstname,lastname‘ which are then corrected to the format)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(7:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * ‘lastname, firstname‘.)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(8:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( *)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(9:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * The user can call the program WITHOUT command-line arguments which will)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * default to the input filename ‘datafile‘ and output filename ‘datafile.fix‘.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(11:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(12:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * The user can also call the program WITH command-line arguments where the)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(13:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * first is the name of the file that is to be processed and the second is that)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(14:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * of the file that is to be outputted to.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(15:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(16:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * NOTE: This program is not destructive and will die if the output file)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(17:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * already exists and will not overwrite files. It leaves the input file intact.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(18:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(19:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * The program can be modified in the future to get rid of hard-coded filenames)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(20:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * and instead to ask for the filenames interactively. It can also be modified)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(21:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * to ask the user for permission to overwrite an existing file.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(22:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(23:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @name    NameSwapper)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(24:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @author  Ravi S. Ramphal)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(25:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @class   CCSF CS111B)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(26:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @date    2017.07.06)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(27:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @version 1.0)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(28:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+(29:)Tj
+T*
+(30:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( java.io.*;)Tj
+-6 -1.1 TD
+(31:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( java.util.*;)Tj
+-6 -1.1 TD
+(32:)Tj
+T*
+(33:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( NameSwapper)Tj
+-13.2 -1.1 TD
+[(34:)-599.7({)]TJ
+T*
+[(35:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(36:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This is a die method that prints a message to the stderr stream and)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(37:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * exits the program with an error code.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(38:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(39:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param errorMessage The error message to be displayed to users)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(40:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(41:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( die\(String errorMessage\))Tj
+-16.2 -1.1 TD
+[(42:)-599.7(    {)]TJ
+T*
+[(43:)-599.7(        System.err.println\(errorMessage\);)]TJ
+T*
+[(44:)-599.7(        System.exit\(1\);)]TJ
+T*
+[(45:)-599.7(    })]TJ
+T*
+(46:)Tj
+T*
+[(47:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(48:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method validates the input file for the program to work with and)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(49:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * returns its ‘File‘ object. It will cause the program to die if:)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(50:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *     - the input name is not provided)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(51:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *     - the file does not exist exists)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(52:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *     - the file is not a file)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(53:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *     - the file is a directory)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(54:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *     - the file does exist and is a file, but cannot be read)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(55:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(56:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  filename  A string containing the name of the input file)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(57:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @return File      The File object of the file with the name provided)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(58:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(59:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( File validateInput\(String filename\))Tj
+-13.2 -1.1 TD
+[(60:)-599.7(    {)]TJ
+T*
+[(61:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(filename.length\(\) < 1\) die\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+("Input filename not provided!")Tj
+/TT8 1 Tf
+0 g
+18 0 TD
+(\);)Tj
+-43.8 -1.1 TD
+(62:)Tj
+T*
+[(63:)-599.7(        File file = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( File\(filename\);)Tj
+-16.2 -1.1 TD
+(64:)Tj
+T*
+[(65:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(!file.exists\(\)\)      die\(filename + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+22.8 0 TD
+(" does not exist!")Tj
+/TT8 1 Tf
+0 g
+10.8 0 TD
+(\);)Tj
+-42 -1.1 TD
+[(66:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(!file.isFile\(\)\)      die\(filename + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+22.8 0 TD
+(" is not a file!")Tj
+/TT8 1 Tf
+0 g
+10.2 0 TD
+(\);)Tj
+-41.4 -1.1 TD
+[(67:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \( file.isDirectory\(\)\) die\(filename + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+22.8 0 TD
+(" is a directory!")Tj
+/TT8 1 Tf
+0 g
+10.8 0 TD
+(\);)Tj
+-42 -1.1 TD
+[(68:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(!file.canRead\(\)\)     die\(filename + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+22.8 0 TD
+(" cannot be read!")Tj
+/TT8 1 Tf
+0 g
+10.8 0 TD
+(\);)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+13 0 obj
+<<
+/Length 7451
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/06/17)Tj
+-0.0552 -1.0667 TD
+(16:40:09)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(2)Tj
+/TT6 1 Tf
+14 0 0 14 242.8843 786.5 Tm
+0 g
+(NameSwapper.java)Tj
+/TT8 1 Tf
+10 0 0 10 48 769 Tm
+(69:)Tj
+0 -1.1 TD
+[(70:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( file;)Tj
+-10.8 -1.1 TD
+[(71:)-599.7(    })]TJ
+T*
+(72:)Tj
+T*
+[(73:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(74:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method creates the output file for the program to work with and)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(75:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * returns its ‘File‘ object. It will cause the program to die if:)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(76:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *     - the output name is not provided)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(77:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *     - the file already exists)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(78:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *     - the file could not be created)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(79:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *     - the file could be created, but not written to)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(80:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(81:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  filename  A string containing the name of the desired output file)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(82:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @return File      The File object of the file with the name provided)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(83:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(84:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( File createOutput\(String filename\))Tj
+-13.2 -1.1 TD
+[(85:)-599.7(    {)]TJ
+T*
+[(86:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(filename.length\(\) < 1\) die\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+("Output filename not provided!")Tj
+/TT8 1 Tf
+0 g
+18.6 0 TD
+(\);)Tj
+-44.4 -1.1 TD
+(87:)Tj
+T*
+[(88:)-599.7(        File file = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( File\(filename\);)Tj
+-16.2 -1.1 TD
+(89:)Tj
+T*
+[(90:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(file.exists\(\)\) die\(filename + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+(" already exists!")Tj
+/TT8 1 Tf
+0 g
+10.8 0 TD
+(\);)Tj
+-38.4 -1.1 TD
+(91:)Tj
+T*
+[(92:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(try)Tj
+/TT8 1 Tf
+0 g
+-7.2 -1.1 TD
+[(93:)-599.7(        {)]TJ
+T*
+[(94:)-599.7(            file.createNewFile\(\);)]TJ
+T*
+(95:)Tj
+T*
+[(96:)-599.7(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(!file.canWrite\(\)\) die\(filename + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+21 0 TD
+(" cannot be written to!")Tj
+/TT8 1 Tf
+0 g
+14.4 0 TD
+(\);)Tj
+-46.2 -1.1 TD
+[(97:)-599.7(        })]TJ
+T*
+[(98:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(catch)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( \(IOException e\))Tj
+-10.2 -1.1 TD
+[(99:)-599.7(        {)]TJ
+-0.6 -1.1 TD
+[(100:)-599.6(            die\(filename + )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+(" could not be created!")Tj
+/TT8 1 Tf
+0 g
+14.4 0 TD
+(\);)Tj
+-33.6 -1.1 TD
+[(101:)-599.6(        })]TJ
+T*
+(102:)Tj
+T*
+[(103:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( file;)Tj
+-11.4 -1.1 TD
+[(104:)-599.6(    })]TJ
+T*
+(105:)Tj
+T*
+[(106:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(107:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * The method checks whether or not the line is a header.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(108:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * It defaults to ‘false‘ and will return ‘false‘ on an empty string.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(109:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * Otherwise, if the line begins with a pound sign, it returns ‘true‘.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(110:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(111:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  line    The string containing the line to be processed)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(112:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return boolean A boolean value as to whether the line is a header or not)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(113:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(114:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( isHeader\(String line\))Tj
+-18.6 -1.1 TD
+[(115:)-599.6(    {)]TJ
+T*
+[(116:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(line.length\(\) == 0\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+13.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(false)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-29.4 -1.1 TD
+[(117:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(line.charAt\(0\) == )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+12 0 TD
+(’#’)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(true)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-30.6 -1.1 TD
+[(118:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(false)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-15 -1.1 TD
+[(119:)-599.6(    })]TJ
+T*
+(120:)Tj
+T*
+[(121:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(122:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method is responsible for processing each line.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(123:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(124:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * The line is returned unmodified if:)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(125:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *     - it is a header)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(126:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *     - there are no commas)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(127:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *     - there is more than one comma)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(128:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(129:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * Otherwise, the line is returned swapped with a comma and a space between.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(130:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(131:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  line   The string containing the line to be processed)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(132:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return String The processed string)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(133:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(134:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( String processLine\(String line\))Tj
+-13.8 -1.1 TD
+[(135:)-599.6(    {)]TJ
+T*
+[(136:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(isHeader\(line\)\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( line;          )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+9.6 0 TD
+(// do not change header)Tj
+ET
+endstream
+endobj
+14 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+16 0 obj
+<<
+/Length 6894
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/06/17)Tj
+-0.0552 -1.0667 TD
+(16:40:09)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(3)Tj
+/TT6 1 Tf
+14 0 0 14 242.8843 786.5 Tm
+0 g
+(NameSwapper.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+0.698 0.133 0.133 rg
+(137:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(line.indexOf\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(",")Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) == -1\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( line; )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.2 0 TD
+(// only change comma lines)Tj
+/TT8 1 Tf
+-33 -1.1 TD
+(138:)Tj
+0 g
+T*
+[(139:)-599.6(        String[] parts = line.split\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+24.6 0 TD
+(",")Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\);)Tj
+-26.4 -1.1 TD
+(140:)Tj
+T*
+[(141:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(parts.length > 2\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( line;        )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+8.4 0 TD
+(// too many parts to process)Tj
+/TT8 1 Tf
+-33 -1.1 TD
+(142:)Tj
+0 g
+T*
+[(143:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( parts[1] + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+7.2 0 TD
+(", ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( + parts[0];)Tj
+-21 -1.1 TD
+[(144:)-599.6(    })]TJ
+T*
+(145:)Tj
+T*
+[(146:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(147:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method takes in the two files \(already validated\). Technically,)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(148:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * error handling is not necessary in this method since the input and)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(149:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * output files would have already been validated in the main method.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(150:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(151:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * A ‘Scanner‘ object is created to iterate over each line of the input file)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(152:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * and each line is processed and then written to the output file.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(153:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(154:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param inputFile  The File that is to be processed)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(155:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param outputFile The File that is to be outputted to)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(156:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(157:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( processFile\(File inputFile, File outputFile\))Tj
+-16.8 -1.1 TD
+[(158:)-599.6(    {)]TJ
+T*
+[(159:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(try)Tj
+/TT8 1 Tf
+0 g
+-7.8 -1.1 TD
+[(160:)-599.6(        {)]TJ
+T*
+[(161:)-599.6(            Scanner     scanner     = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+25.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Scanner\(inputFile\);)Tj
+-27.6 -1.1 TD
+[(162:)-599.6(            FileWriter  fileWriter  = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+25.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( FileWriter\(outputFile, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(true)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-44.4 -1.1 TD
+[(163:)-599.6(            PrintWriter printWriter = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+25.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( PrintWriter\(fileWriter\);)Tj
+-27.6 -1.1 TD
+(164:)Tj
+T*
+[(165:)-599.6(            String line;)]TJ
+T*
+(166:)Tj
+T*
+[(167:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(\(scanner.hasNext\(\)\))Tj
+-13.2 -1.1 TD
+[(168:)-599.6(            {)]TJ
+T*
+[(169:)-599.6(                line = scanner.nextLine\(\);)]TJ
+T*
+[(170:)-599.6(                printWriter.println\(processLine\(line\)\);)]TJ
+T*
+[(171:)-599.6(            })]TJ
+T*
+(172:)Tj
+T*
+[(173:)-599.6(            scanner.close\(\);)]TJ
+T*
+[(174:)-599.6(            printWriter.close\(\);)]TJ
+T*
+(175:)Tj
+T*
+[(176:)-599.6(            System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+21.6 0 TD
+("File processed.")Tj
+/TT8 1 Tf
+0 g
+10.2 0 TD
+(\);)Tj
+-31.8 -1.1 TD
+[(177:)-599.6(        })]TJ
+T*
+[(178:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(catch)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( \(FileNotFoundException e\))Tj
+-10.8 -1.1 TD
+[(179:)-599.6(        {)]TJ
+T*
+[(180:)-599.6(            die\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+12.6 0 TD
+("Input file not found!")Tj
+/TT8 1 Tf
+0 g
+13.8 0 TD
+(\);)Tj
+-26.4 -1.1 TD
+[(181:)-599.6(        })]TJ
+T*
+[(182:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(catch)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( \(IOException e\))Tj
+-10.8 -1.1 TD
+[(183:)-599.6(        {)]TJ
+T*
+[(184:)-599.6(            die\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+12.6 0 TD
+("Output file not found!")Tj
+/TT8 1 Tf
+0 g
+14.4 0 TD
+(\);)Tj
+-27 -1.1 TD
+[(185:)-599.6(        })]TJ
+T*
+[(186:)-599.6(    })]TJ
+T*
+(187:)Tj
+T*
+[(188:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(189:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This is the ‘main‘ method of this class. It sets up default filenames)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(190:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * but also allows for names to be passed in through command-line arguments.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(191:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * File validation is done here and then the file is processed.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(192:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(193:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param array An array of arguments provided to the program)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(194:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(195:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( main \(String ... args\))Tj
+-16.2 -1.1 TD
+[(196:)-599.6(    {)]TJ
+T*
+[(197:)-599.6(        String input  = )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+("datafile")Tj
+/TT8 1 Tf
+0 g
+6 0 TD
+(;)Tj
+-23.4 -1.1 TD
+[(198:)-599.6(        String output = )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+("datafile.fix")Tj
+/TT8 1 Tf
+0 g
+8.4 0 TD
+(;)Tj
+-25.8 -1.1 TD
+(199:)Tj
+T*
+[(200:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(args.length == 2\))Tj
+-9 -1.1 TD
+[(201:)-599.6(        {)]TJ
+T*
+[(202:)-599.6(            input  = args[0];)]TJ
+T*
+[(203:)-599.6(            output = args[1];)]TJ
+T*
+[(204:)-599.6(        })]TJ
+ET
+endstream
+endobj
+17 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+19 0 obj
+<<
+/Length 623
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/06/17)Tj
+-0.0552 -1.0667 TD
+(16:40:09)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(4)Tj
+/TT6 1 Tf
+14 0 0 14 242.8843 786.5 Tm
+0 g
+(NameSwapper.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+(205:)Tj
+0 -1.1 TD
+[(206:)-599.6(        File inputFile  = validateInput\(input\);)]TJ
+T*
+[(207:)-599.6(        File outputFile = createOutput\(output\);)]TJ
+T*
+(208:)Tj
+T*
+[(209:)-599.6(        processFile\(inputFile, outputFile\);)]TJ
+T*
+[(210:)-599.6(    })]TJ
+T*
+[(211:)-599.6(})]TJ
+ET
+endstream
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+21 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+22 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+23 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+24 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+25 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+26 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 0 0 500 0 500 500 0 500 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 21 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 52
+/Widths [556 556 556 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 22 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 46
+/LastChar 119
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+722 0 0 0 0 556 0 0 0 0 0 0 0 0 0 0 
+0 0 0 444 0 0 0 444 0 0 0 0 278 0 0 778 
+0 0 500 0 333 0 0 0 500 722 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 23 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 125
+/Widths [600 600 0 0 0 0 0 0 600 600 600 600 600 600 600 0 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 0 
+0 600 0 0 600 600 600 0 600 600 0 0 600 600 600 600 
+600 0 600 600 0 0 0 600 0 0 0 600 0 600 0 0 
+0 600 0 600 600 600 600 600 600 600 600 0 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 0 600 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 24 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 145
+/Widths [600 0 0 0 0 0 0 0 600 600 600 0 600 600 600 600 
+600 600 600 0 0 0 600 600 0 0 600 0 0 0 0 0 
+600 600 600 600 0 600 600 0 600 600 0 0 0 600 600 600 
+0 0 600 600 600 600 0 600 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 25 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 600 600 600 0 0 0 0 0 0 0 0 600 0 600 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 600 0 0 600 0 0 0 0 0 600 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 0 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 26 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 14 0 R
+/Contents 13 0 R
+>>
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 17 0 R
+/Contents 16 0 R
+>>
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 20 0 R
+/Contents 19 0 R
+>>
+endobj
+27 0 obj
+<<
+/S /D
+>>
+endobj
+28 0 obj
+<<
+/Nums [0 27 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 12 0 R 15 0 R 18 0 R]
+/Count 4
+/MediaBox [0 0 595 842]
+>>
+endobj
+29 0 obj
+<<
+/CreationDate (D:20170706164321-07'00')
+/ModDate (D:20170706164321-07'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+30 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 28 0 R
+>>
+endobj
+xref
+0 31
+0000000000 65535 f 
+0000027005 00000 n 
+0000000016 00000 n 
+0000007768 00000 n 
+0000024825 00000 n 
+0000025027 00000 n 
+0000025209 00000 n 
+0000025547 00000 n 
+0000026028 00000 n 
+0000026541 00000 n 
+0000023485 00000 n 
+0000027406 00000 n 
+0000027086 00000 n 
+0000007921 00000 n 
+0000015425 00000 n 
+0000027170 00000 n 
+0000015579 00000 n 
+0000022526 00000 n 
+0000027254 00000 n 
+0000022680 00000 n 
+0000023355 00000 n 
+0000023626 00000 n 
+0000023828 00000 n 
+0000024034 00000 n 
+0000024231 00000 n 
+0000024422 00000 n 
+0000024623 00000 n 
+0000027338 00000 n 
+0000027366 00000 n 
+0000027509 00000 n 
+0000027632 00000 n 
+trailer
+<<
+/Size 31
+/Root 30 0 R
+/Info 29 0 R
+/ID [<4967025b6ab418f15103c12c44183c27><4967025b6ab418f15103c12c44183c27>]
+>>
+startxref
+27702
+%%EOF
