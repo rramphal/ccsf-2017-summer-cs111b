@@ -8,8 +8,6 @@
  *
  * The user can call the program WITHOUT command-line arguments which will
  * default to the input filename `datafile` and output filename `datafile.fix`.
- * The program can be modified in the future to get rid of hard-coded filenames
- * and instead ask for the filenames.
  *
  * The user can also call the program WITH command-line arguments where the
  * first is the name of the file that is to be processed and the second is that
@@ -17,6 +15,10 @@
  *
  * NOTE: This program is not destructive and will die if the output file
  * already exists and will not overwrite files. It leaves the input file intact.
+ *
+ * The program can be modified in the future to get rid of hard-coded filenames
+ * and instead to ask for the filenames interactively. It can also be modified
+ * to ask the user for permission to overwrite an existing file.
  *
  * @name    NameSwapper
  * @author  Ravi S. Ramphal
