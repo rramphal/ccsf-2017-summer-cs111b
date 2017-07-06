@@ -5,8 +5,8 @@ public class NameSwapper
 {
     private static void die(String message)
     {
-        System.out.println(message);
-        System.exit(0);
+        System.err.println(errorMessage);
+        System.exit(1);
     }
 
     public static File validateInput(String filename)
