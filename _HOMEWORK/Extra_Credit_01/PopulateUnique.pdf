@@ -1,0 +1,1366 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 7865
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/07/17)Tj
+-0.0552 -1.0667 TD
+(05:45:06)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+14 0 0 14 238.9878 786.5 Tm
+0 g
+(PopulateUnique.java)Tj
+/TT8 1 Tf
+10 0 0 10 54 769 Tm
+(1:)Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(2:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * This class populates an array with 1000 unique random numbers between)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(3:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * 1 and 2000. It also checks uniqueness of the final array.)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(4:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( *)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(5:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @name    PopulateUnique \(Extra Credit Assignment\))Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(6:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @author  Ravi S. Ramphal)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(7:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @class   CCSF CS111B)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(8:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @date    2017.07.12)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(9:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @version 1.0)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+(11:)Tj
+T*
+(12:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( java.util.*;)Tj
+-6 -1.1 TD
+(13:)Tj
+T*
+(14:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( PopulateUnique)Tj
+-9.6 -1.1 TD
+[(15:)-599.7({)]TJ
+T*
+[(16:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(17:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method returns a random integer between the provided lower limit)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(18:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * and upper limit.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(19:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(20:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  a   An int representing the lower limit)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(21:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  b   An int representing the upper limit)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(22:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @return int A random number between the two limits)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(23:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(24:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( rand\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( a, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( b\))Tj
+-25.2 -1.1 TD
+[(25:)-599.7(    {)]TJ
+T*
+[(26:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( \(\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\)\(\(b - a + 1\) * Math.random\(\) + a\)\);)Tj
+-14.4 -1.1 TD
+[(27:)-599.7(    })]TJ
+T*
+(28:)Tj
+T*
+[(29:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(30:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method sorts the array using quicksort and then compares each)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(31:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * element to its next neighbor to return a boolean representing uniqueness.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(32:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(33:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  set     An array of integers to check against)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(34:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @return boolean A boolean for if all the elements of the array are unique)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(35:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(36:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( isUniq\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] set\))Tj
+-24.6 -1.1 TD
+[(37:)-599.7(    {)]TJ
+T*
+[(38:)-599.7(        Arrays.sort\(set\); )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+18 0 TD
+(// quicksort)Tj
+/TT8 1 Tf
+-18 -1.1 TD
+(39:)Tj
+0 g
+T*
+[(40:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < set.length - 1; i++\))Tj
+-12 -1.1 TD
+[(41:)-599.7(        {)]TJ
+T*
+[(42:)-599.7(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(set[i] == set[i + 1]\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(false)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-32.4 -1.1 TD
+[(43:)-599.7(        })]TJ
+T*
+[(44:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(true)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-13.8 -1.1 TD
+[(45:)-599.7(    })]TJ
+T*
+(46:)Tj
+T*
+[(47:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(48:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method iterates through an array searching for a target number and)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(49:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * returns a boolean if it is/is not found. It performs sequential search,)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(50:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * but it only searchs over elements that have already been populated)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(51:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * \(represented by the ëlimitë param\).)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(52:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(53:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  set     An array of integers to check against)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(54:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  target  The integer that is being searched for)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(55:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  limit   The last index that has already been populated)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(56:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @return boolean A boolean for if the number already exists in the set)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(57:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(58:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( isRepeated\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] set, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( target, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( limit\))Tj
+-40.8 -1.1 TD
+[(59:)-599.7(    {)]TJ
+T*
+[(60:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < limit + 1; i++\))Tj
+-12 -1.1 TD
+[(61:)-599.7(        {)]TJ
+T*
+[(62:)-599.7(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(target == set[i]\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(true)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-29.4 -1.1 TD
+[(63:)-599.7(        })]TJ
+T*
+(64:)Tj
+T*
+[(65:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(false)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-14.4 -1.1 TD
+[(66:)-599.7(    })]TJ
+T*
+(67:)Tj
+T*
+[(68:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+13 0 obj
+<<
+/Length 6116
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/07/17)Tj
+-0.0552 -1.0667 TD
+(05:45:06)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(2)Tj
+/TT6 1 Tf
+14 0 0 14 238.9878 786.5 Tm
+0 g
+(PopulateUnique.java)Tj
+/TT8 1 Tf
+10 0 0 10 48 769 Tm
+0.698 0.133 0.133 rg
+(69:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method generates an array of given number of random integers between)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(70:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * the lower and upper limits provided and returns the array.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(71:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(72:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  count The number of numbers that should be generated)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(73:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  lower An int representing the lower limit)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(74:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  upper An int representing the upper limit)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(75:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @return int[] An array of integers that were generated)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(76:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(77:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] generateUniqueNumbers\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( count, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( lower, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( upper\))Tj
+-45.6 -1.1 TD
+[(78:)-599.7(    {)]TJ
+T*
+[(79:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] numbers = )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([count];)Tj
+-21 -1.1 TD
+(80:)Tj
+T*
+[(81:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < numbers.length; i++\))Tj
+-12 -1.1 TD
+[(82:)-599.7(        {)]TJ
+T*
+[(83:)-599.7(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( randomNumber = rand\(lower, upper\);)Tj
+-11.4 -1.1 TD
+[(84:)-599.7(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( \(isRepeated\(numbers, randomNumber, i\)\))Tj
+-12.6 -1.1 TD
+[(85:)-599.7(            {)]TJ
+T*
+[(86:)-599.7(                randomNumber = rand\(lower, upper\);)]TJ
+T*
+[(87:)-599.7(            })]TJ
+T*
+[(88:)-599.7(            numbers[i] = randomNumber;)]TJ
+T*
+[(89:)-599.7(        })]TJ
+T*
+(90:)Tj
+T*
+[(91:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( numbers;)Tj
+-10.8 -1.1 TD
+[(92:)-599.7(    })]TJ
+T*
+(93:)Tj
+T*
+[(94:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(95:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method evaluates a provided array of integers for uniqueness and)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(96:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * displays the result to the user.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(97:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(98:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param numbers An array of integers that should be evaluated)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(99:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(100:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( printEvaluation\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] numbers\))Tj
+-28.8 -1.1 TD
+[(101:)-599.6(    {)]TJ
+T*
+[(102:)-599.6(        System.out.println\(\);)]TJ
+T*
+[(103:)-599.6(        System.out.print\(numbers.length + )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+28.2 0 TD
+(" ELEMENTS ")Tj
+/TT8 1 Tf
+0 g
+7.2 0 TD
+(\);)Tj
+-35.4 -1.1 TD
+[(104:)-599.6(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+("ARE ALL ")Tj
+/TT8 1 Tf
+0 g
+6 0 TD
+( +)Tj
+-25.2 -1.1 TD
+[(105:)-599.6(                            \(isUniq\(numbers\) ? )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+31.2 0 TD
+("")Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( : )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+1.8 0 TD
+("NOT ")Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+(\) + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+2.4 0 TD
+("UNIQUE:")Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+(\);)Tj
+-45.6 -1.1 TD
+[(106:)-599.6(        System.out.println\(\);)]TJ
+T*
+[(107:)-599.6(        System.out.println\(Arrays.toString\(numbers\)\);)]TJ
+T*
+[(108:)-599.6(    })]TJ
+T*
+(109:)Tj
+T*
+[(110:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(111:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This is the ëmainë method of this class. It generates 1000 random numbers)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(112:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * between 1 and 2000 and inputs them into an array. Finally, the array is)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(113:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * checked for uniqueness and the result is output.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(114:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(115:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param args An array of arguments provided to the program \(unused\))Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(116:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(117:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( main\(String ... args\))Tj
+-16.2 -1.1 TD
+[(118:)-599.6(    {)]TJ
+T*
+[(119:)-599.6(        printEvaluation\(generateUniqueNumbers\(1000, 1, 2000\)\);)]TJ
+T*
+[(120:)-599.6(    })]TJ
+T*
+[(121:)-599.6(})]TJ
+ET
+endstream
+endobj
+14 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+15 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+16 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+17 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+18 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+19 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+20 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 0 0 500 500 500 500 0 0 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 15 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 50
+/Widths [556 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 16 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 46
+/LastChar 118
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 556 0 0 0 0 722 0 0 0 0 0 0 0 0 
+0 0 0 444 0 0 0 444 0 0 0 278 278 0 278 0 
+500 500 500 500 0 0 278 500 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 17 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 125
+/Widths [600 0 0 0 0 0 0 0 600 600 600 600 600 600 600 0 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 0 600 
+0 600 0 0 0 600 0 0 0 0 0 0 0 600 600 0 
+600 0 600 600 0 600 0 0 0 0 0 600 0 600 0 0 
+0 600 600 600 600 600 0 600 600 600 600 0 600 600 600 600 
+600 600 600 600 600 600 600 600 0 600 0 600 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 18 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 145
+/Widths [600 0 0 0 0 0 0 0 600 600 600 0 600 0 600 600 
+600 600 600 0 0 0 0 600 0 0 0 0 0 0 0 0 
+600 600 600 600 0 600 600 0 0 600 0 0 0 0 0 0 
+600 0 600 600 600 600 0 0 0 0 0 600 0 600 0 0 
+0 600 600 600 600 600 600 600 600 600 0 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 19 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 119
+/Widths [600 0 600 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 600 0 0 0 0 0 
+0 600 0 0 0 600 0 0 0 600 0 0 600 600 600 600 
+0 600 600 600 600 600 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 0 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 20 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 14 0 R
+/Contents 13 0 R
+>>
+endobj
+21 0 obj
+<<
+/S /D
+>>
+endobj
+22 0 obj
+<<
+/Nums [0 21 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 12 0 R]
+/Count 2
+/MediaBox [0 0 595 842]
+>>
+endobj
+23 0 obj
+<<
+/CreationDate (D:20170707054824-07'00')
+/ModDate (D:20170707054824-07'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+24 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 22 0 R
+>>
+endobj
+xref
+0 25
+0000000000 65535 f 
+0000017853 00000 n 
+0000000016 00000 n 
+0000007933 00000 n 
+0000015749 00000 n 
+0000015951 00000 n 
+0000016125 00000 n 
+0000016469 00000 n 
+0000016936 00000 n 
+0000017439 00000 n 
+0000014409 00000 n 
+0000018086 00000 n 
+0000017934 00000 n 
+0000008086 00000 n 
+0000014255 00000 n 
+0000014550 00000 n 
+0000014752 00000 n 
+0000014958 00000 n 
+0000015155 00000 n 
+0000015346 00000 n 
+0000015547 00000 n 
+0000018018 00000 n 
+0000018046 00000 n 
+0000018175 00000 n 
+0000018298 00000 n 
+trailer
+<<
+/Size 25
+/Root 24 0 R
+/Info 23 0 R
+/ID [<e85016583dc01b2982f3cdd3bd0a5792><e85016583dc01b2982f3cdd3bd0a5792>]
+>>
+startxref
+18368
+%%EOF
