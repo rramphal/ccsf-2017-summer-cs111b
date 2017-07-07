@@ -199,7 +199,7 @@ System.out.println("Youngest: " + youngest);
 
     for (int i = 0; i < ages.length; i++)
     {
-        if (target === age[i])
+        if (target == age[i])
         {
             System.out.println("Found.");
             System.exit(0);
