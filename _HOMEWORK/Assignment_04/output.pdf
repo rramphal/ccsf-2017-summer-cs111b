@@ -1,0 +1,389 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 2947
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/10/17)Tj
+-0.0552 -1.0667 TD
+(16:23:47)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+14 0 0 14 270.4707 786.5 Tm
+0 g
+(output.txt)Tj
+/TT8 1 Tf
+10 0 0 10 54 769 Tm
+[(1:)-599.8(> java SuperLotto)]TJ
+0 -1.1 TD
+[(2:)-599.8(Missing argument!)]TJ
+T*
+(3:)Tj
+T*
+[(4:)-599.8(> java SuperLotto 0)]TJ
+T*
+[(5:)-599.8(Invalid number of lines!)]TJ
+T*
+(6:)Tj
+T*
+[(7:)-599.8(> java SuperLotto -1)]TJ
+T*
+[(8:)-599.8(Invalid number of lines!)]TJ
+T*
+(9:)Tj
+-0.6 -1.1 TD
+[(10:)-599.7(> java SuperLotto 1 2)]TJ
+T*
+[(11:)-599.7(Too many arguments!)]TJ
+T*
+(12:)Tj
+T*
+[(13:)-599.7(> java SuperLotto 1)]TJ
+T*
+(14:)Tj
+T*
+[(15:)-599.7(#############################)]TJ
+T*
+[(16:)-599.7(### CALIFORNIA SUPERLOTTO ###)]TJ
+T*
+[(17:)-599.7(#############################)]TJ
+T*
+(18:)Tj
+T*
+[(19:)-599.7(                        MEGA)]TJ
+T*
+[(20:)-599.7( A   17  18  34  39  40  07)]TJ
+T*
+(21:)Tj
+T*
+[(22:)-599.7(> java SuperLotto 10)]TJ
+T*
+(23:)Tj
+T*
+[(24:)-599.7(#############################)]TJ
+T*
+[(25:)-599.7(### CALIFORNIA SUPERLOTTO ###)]TJ
+T*
+[(26:)-599.7(#############################)]TJ
+T*
+(27:)Tj
+T*
+[(28:)-599.7(                        MEGA)]TJ
+T*
+[(29:)-599.7( A   15  20  28  33  40  25)]TJ
+T*
+[(30:)-599.7( B   09  11  14  21  23  27)]TJ
+T*
+[(31:)-599.7( C   03  05  07  39  43  02)]TJ
+T*
+[(32:)-599.7( D   02  10  27  29  43  06)]TJ
+T*
+[(33:)-599.7( E   01  03  05  07  17  16)]TJ
+T*
+[(34:)-599.7( F   01  27  33  34  37  10)]TJ
+T*
+[(35:)-599.7( G   08  22  24  36  41  23)]TJ
+T*
+[(36:)-599.7( H   02  26  27  36  39  07)]TJ
+T*
+[(37:)-599.7( I   10  12  22  23  43  01)]TJ
+T*
+[(38:)-599.7( J   20  21  27  34  43  11)]TJ
+T*
+(39:)Tj
+T*
+[(40:)-599.7(> java SuperLotto 14)]TJ
+T*
+(41:)Tj
+T*
+[(42:)-599.7(#############################)]TJ
+T*
+[(43:)-599.7(### CALIFORNIA SUPERLOTTO ###)]TJ
+T*
+[(44:)-599.7(#############################)]TJ
+T*
+(45:)Tj
+T*
+[(46:)-599.7(                        MEGA)]TJ
+T*
+[(47:)-599.7( A   02  13  23  29  31  22)]TJ
+T*
+[(48:)-599.7( B   04  15  20  35  40  08)]TJ
+T*
+[(49:)-599.7( C   14  17  32  35  41  26)]TJ
+T*
+[(50:)-599.7( D   12  16  19  20  31  21)]TJ
+T*
+[(51:)-599.7( E   16  18  20  23  42  04)]TJ
+T*
+[(52:)-599.7( F   02  08  19  33  34  15)]TJ
+T*
+[(53:)-599.7( G   07  17  33  34  36  16)]TJ
+T*
+[(54:)-599.7( H   13  21  22  24  39  13)]TJ
+T*
+[(55:)-599.7( I   11  13  19  22  35  11)]TJ
+T*
+[(56:)-599.7( J   07  15  21  22  26  15)]TJ
+T*
+(57:)Tj
+T*
+(58:)Tj
+T*
+[(59:)-599.7(#############################)]TJ
+T*
+[(60:)-599.7(### CALIFORNIA SUPERLOTTO ###)]TJ
+T*
+[(61:)-599.7(#############################)]TJ
+T*
+(62:)Tj
+T*
+[(63:)-599.7(                        MEGA)]TJ
+T*
+[(64:)-599.7( A   02  03  13  21  23  05)]TJ
+T*
+[(65:)-599.7( B   07  10  12  17  23  05)]TJ
+T*
+[(66:)-599.7( C   10  16  17  25  28  05)]TJ
+T*
+[(67:)-599.7( D   09  15  21  31  36  24)]TJ
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+8 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+10 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+11 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+12 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+13 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 500 500 500 0 500 500 0 0 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 10 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 49
+/Widths [556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 11 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 46
+/LastChar 120
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 500 500 0 0 0 278 500 0 0 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 12 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 121
+/Widths [600 600 0 600 0 0 0 0 0 0 0 0 0 600 0 0 
+600 600 600 600 600 600 600 600 600 600 600 0 0 0 600 0 
+0 600 600 600 600 600 600 600 600 600 600 0 600 600 600 600 
+600 0 600 600 600 600 0 0 0 0 0 0 0 0 0 0 
+0 600 600 0 600 600 600 600 0 600 600 0 600 600 600 600 
+600 0 600 600 600 600 600 0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 13 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+14 0 obj
+<<
+/S /D
+>>
+endobj
+15 0 obj
+<<
+/Nums [0 14 0 R ]
+>>
+endobj
+9 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R]
+/Count 1
+/MediaBox [0 0 595 842]
+>>
+endobj
+16 0 obj
+<<
+/CreationDate (D:20170710162350-07'00')
+/ModDate (D:20170710162350-07'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+17 0 obj
+<<
+/Type /Catalog
+/Pages 9 0 R
+/PageLabels 15 0 R
+>>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000005236 00000 n 
+0000000016 00000 n 
+0000003015 00000 n 
+0000004079 00000 n 
+0000004283 00000 n 
+0000004453 00000 n 
+0000004783 00000 n 
+0000003143 00000 n 
+0000005384 00000 n 
+0000003283 00000 n 
+0000003485 00000 n 
+0000003691 00000 n 
+0000003888 00000 n 
+0000005316 00000 n 
+0000005344 00000 n 
+0000005465 00000 n 
+0000005588 00000 n 
+trailer
+<<
+/Size 18
+/Root 17 0 R
+/Info 16 0 R
+/ID [<c6e95ac06bc15282bc3b1b78f8878087><c6e95ac06bc15282bc3b1b78f8878087>]
+>>
+startxref
+5657
+%%EOF

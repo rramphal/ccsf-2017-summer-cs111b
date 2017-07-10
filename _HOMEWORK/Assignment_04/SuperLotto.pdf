@@ -1,0 +1,3037 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 6354
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/10/17)Tj
+-0.0552 -1.0667 TD
+(16:25:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+14 0 0 14 252.5947 786.5 Tm
+0 g
+(SuperLotto.java)Tj
+/TT8 1 Tf
+10 0 0 10 54 769 Tm
+(1:)Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(2:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * This program emulates the California SuperLotto PLUS\(R\) Quick Pick\(R\))Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(3:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * functionality. Each ticket contains a maximum of 10 lines. Remaining lines)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(4:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * will overflow into as many additional tickets as needed. Each line of numbers)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(5:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * contains 5 unique numbers between 1 and 43 \(printed in ascending order with)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(6:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * leading zeroes\) and a sixth "Meganumber," a number between 1 and 27 which)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(7:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * does not need to be unique from the other numbers. Each line is alpha)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(8:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * enumerated with uppercase letters from A to J \(correlating to 1 to 10\).)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(9:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * The mega column is headed with the word "MEGA" and there should be a header)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * at the top of each ticket.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(11:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(12:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * Here is a sample call to the program:)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(13:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(14:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *     > java SuperLotto 14)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(15:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(16:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *     #############################)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(17:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *     ### CALIFORNIA SUPERLOTTO ###)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(18:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *     #############################)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(19:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(20:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *                             MEGA)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(21:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      A   06  14  24  28  43  12)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(22:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      B   08  11  18  31  36  15)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(23:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      C   14  18  33  41  42  21)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(24:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      D   07  19  30  38  39  26)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(25:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      E   07  08  19  32  41  26)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(26:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      F   09  14  16  19  41  24)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(27:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      G   03  09  24  28  37  05)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(28:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      H   08  09  14  24  30  10)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(29:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      I   03  17  37  39  42  17)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(30:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      J   08  12  14  23  41  13)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(31:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(32:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(33:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *     #############################)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(34:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *     ### CALIFORNIA SUPERLOTTO ###)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(35:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *     #############################)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(36:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(37:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *                             MEGA)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(38:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      A   17  18  23  32  37  02)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(39:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      B   02  12  19  24  42  07)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(40:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      C   01  07  09  11  31  02)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(41:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *      D   01  06  15  26  32  15)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(42:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(43:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @name    SuperLotto)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(44:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @author  Ravi S. Ramphal)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(45:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @class   CCSF CS111B)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(46:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @date    2017.07.10)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(47:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @version 1.0)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(48:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+(49:)Tj
+T*
+(50:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( java.util.*;)Tj
+-6 -1.1 TD
+(51:)Tj
+T*
+(52:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( SuperLotto)Tj
+-9.6 -1.1 TD
+[(53:)-599.7({)]TJ
+T*
+[(54:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(55:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This is a die method that prints a message to the stderr stream and)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(56:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * exits the program with an error code.)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(57:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(58:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param errorMessage The error message to be displayed to users)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(59:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(60:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( die\(String errorMessage\))Tj
+-16.2 -1.1 TD
+[(61:)-599.7(    {)]TJ
+T*
+[(62:)-599.7(        System.err.println\(errorMessage\);)]TJ
+T*
+[(63:)-599.7(        System.exit\(1\);)]TJ
+T*
+[(64:)-599.7(    })]TJ
+T*
+(65:)Tj
+T*
+[(66:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(67:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method repeats a character at the beginning of a String, padding the)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(68:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * String until it reaches a desired width.)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+13 0 obj
+<<
+/Length 8371
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/10/17)Tj
+-0.0552 -1.0667 TD
+(16:25:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(2)Tj
+/TT6 1 Tf
+14 0 0 14 252.5947 786.5 Tm
+0 g
+(SuperLotto.java)Tj
+/TT8 1 Tf
+10 0 0 10 48 769 Tm
+0.698 0.133 0.133 rg
+(69:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     *)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(70:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  input  The String to be padded)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(71:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  width  An integer for the desired final width of the String)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(72:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @param  padder The character to be repeated to go get to final width)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(73:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * @return String The final padded String)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(74:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+[(75:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( String leftPad \(String input, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( width, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(char)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( padder\))Tj
+-40.8 -1.1 TD
+[(76:)-599.7(    {)]TJ
+T*
+[(77:)-599.7(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// cache number of characters in input)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(78:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( inputWidth = input.length\(\);)Tj
+-9 -1.1 TD
+(79:)Tj
+T*
+[(80:)-599.7(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// if user desires a width shorter than input width, return unchanged)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(81:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(inputWidth >= width\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( input;)Tj
+-25.8 -1.1 TD
+(82:)Tj
+T*
+[(83:)-599.7(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// initialize a StringBuilder with capacity set to desired width)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(84:)Tj
+0 g
+2.4 0 TD
+(        StringBuilder output = )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( StringBuilder\(width\);)Tj
+-22.8 -1.1 TD
+(85:)Tj
+T*
+[(86:)-599.7(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// repeat characters to fill missing width)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(87:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < \(width - inputWidth\); i++\))Tj
+-12 -1.1 TD
+[(88:)-599.7(        {)]TJ
+T*
+[(89:)-599.7(            output.append\(padder\);)]TJ
+T*
+[(90:)-599.7(        })]TJ
+T*
+(91:)Tj
+T*
+[(92:)-599.7(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// append original input to end of repeated characters and return String)Tj
+/TT8 1 Tf
+-7.2 -1.1 TD
+(93:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( output.append\(input\).toString\(\);)Tj
+-10.8 -1.1 TD
+[(94:)-599.7(    })]TJ
+T*
+(95:)Tj
+T*
+[(96:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(97:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * This method converts an integer into a String and then repeats a)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(98:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * character at the beginning of the String until it reaches a desired)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(99:)Tj
+/TT10 1 Tf
+2.4 0 TD
+(     * width.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(100:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(101:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  input  The integer to be padded)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(102:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  width  An integer for the desired final width of the String)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(103:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  padder The character to be repeated to go get to final width)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(104:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return String The final padded string)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(105:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(106:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( String leftPad \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( input, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( width, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(char)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( padder\))Tj
+-39.6 -1.1 TD
+[(107:)-599.6(    {)]TJ
+T*
+[(108:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( leftPad\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+5.4 0 TD
+("")Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( + input, width, padder\);)Tj
+-18 -1.1 TD
+[(109:)-599.6(    })]TJ
+T*
+(110:)Tj
+T*
+[(111:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(112:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method returns a random integer between the provided lower limit)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(113:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * and upper limit.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(114:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(115:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  a   An int representing the lower limit \(inclusive\))Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(116:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  b   An int representing the upper limit \(inclusive\))Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(117:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return int A random number between the two limits)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(118:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(119:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( getRandomNumber\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( a, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( b\))Tj
+-32.4 -1.1 TD
+[(120:)-599.6(    {)]TJ
+T*
+[(121:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( \(\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\)\(\(b - a + 1\) * Math.random\(\) + a\)\);)Tj
+-15 -1.1 TD
+[(122:)-599.6(    })]TJ
+T*
+(123:)Tj
+T*
+[(124:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(125:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method iterates through an array searching for a target number and)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(126:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * returns a boolean if it is/is not found. It performs sequential search,)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(127:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * but it only searchs over elements that have already been populated)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(128:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * \(represented by the ëlimitë param\).)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(129:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(130:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  set     An array of integers to check against)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(131:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  target  The integer that is being searched for)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(132:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  limit   The last index that has already been populated)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(133:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return boolean A boolean for if the number already exists in the set)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(134:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(135:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( isRepeated\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] set, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( target, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( limit\))Tj
+-41.4 -1.1 TD
+[(136:)-599.6(    {)]TJ
+ET
+endstream
+endobj
+14 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+16 0 obj
+<<
+/Length 7823
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/10/17)Tj
+-0.0552 -1.0667 TD
+(16:25:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(3)Tj
+/TT6 1 Tf
+14 0 0 14 252.5947 786.5 Tm
+0 g
+(SuperLotto.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+[(137:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < limit + 1; i++\))Tj
+-12.6 -1.1 TD
+[(138:)-599.6(        {)]TJ
+T*
+[(139:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(target == set[i]\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(true)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-30 -1.1 TD
+[(140:)-599.6(        })]TJ
+T*
+(141:)Tj
+T*
+[(142:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(false)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-15 -1.1 TD
+[(143:)-599.6(    })]TJ
+T*
+(144:)Tj
+T*
+[(145:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(146:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method generates an array of given number of random integers between)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(147:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * the lower and upper limits provided and returns the array.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(148:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(149:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  count The number of numbers that should be generated)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(150:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  lower An int representing the lower limit)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(151:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  upper An int representing the upper limit)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(152:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return int[] An array of integers that were generated)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(153:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(154:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] getUniqueNumbers\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( count, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( lower, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( upper\))Tj
+-43.2 -1.1 TD
+[(155:)-599.6(    {)]TJ
+T*
+[(156:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] numbers = )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([count];)Tj
+-21.6 -1.1 TD
+(157:)Tj
+T*
+[(158:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < numbers.length; i++\))Tj
+-12.6 -1.1 TD
+[(159:)-599.6(        {)]TJ
+T*
+[(160:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( randomNumber = getRandomNumber\(lower, upper\);)Tj
+-12 -1.1 TD
+[(161:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( \(isRepeated\(numbers, randomNumber, i\)\))Tj
+-13.2 -1.1 TD
+[(162:)-599.6(            {)]TJ
+T*
+[(163:)-599.6(                randomNumber = getRandomNumber\(lower, upper\);)]TJ
+T*
+[(164:)-599.6(            })]TJ
+T*
+[(165:)-599.6(            numbers[i] = randomNumber;)]TJ
+T*
+[(166:)-599.6(        })]TJ
+T*
+(167:)Tj
+T*
+[(168:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( numbers;)Tj
+-11.4 -1.1 TD
+[(169:)-599.6(    })]TJ
+T*
+(170:)Tj
+T*
+[(171:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(172:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method accepts an array of lines where each element is itself)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(173:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * an array of integers and formats the output to resemble a)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(174:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * California SuperLotto PLUS\(R\) Quick Pick\(R\) tickets.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(175:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(176:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * NOTE: This method does NOT validate input format or sanitize the data)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(177:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *       in any way. The user must do this before invoking this function.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(178:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(179:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param lines An array of lines \(a line being an array of integers\))Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(180:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(181:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( printTicket \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([][] lines\) {)Tj
+-27 -1.1 TD
+[(182:)-599.6(        System.out.println\(\);)]TJ
+T*
+[(183:)-599.6(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+("#############################")Tj
+/TT8 1 Tf
+0 g
+18.6 0 TD
+(\);)Tj
+-37.8 -1.1 TD
+[(184:)-599.6(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+("### CALIFORNIA SUPERLOTTO ###")Tj
+/TT8 1 Tf
+0 g
+18.6 0 TD
+(\);)Tj
+-37.8 -1.1 TD
+[(185:)-599.6(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+("#############################")Tj
+/TT8 1 Tf
+0 g
+18.6 0 TD
+(\);)Tj
+-37.8 -1.1 TD
+[(186:)-599.6(        System.out.println\(\);)]TJ
+T*
+[(187:)-599.6(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+("                        MEGA ")Tj
+/TT8 1 Tf
+0 g
+18.6 0 TD
+(\);)Tj
+-37.8 -1.1 TD
+(188:)Tj
+T*
+[(189:)-599.6(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// iterate over lines)Tj
+/TT8 1 Tf
+-7.8 -1.1 TD
+(190:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < lines.length; i++\))Tj
+-12.6 -1.1 TD
+[(191:)-599.6(        {)]TJ
+T*
+[(192:)-599.6(            System.out.print\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+20.4 0 TD
+(" ")Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( + String.valueOf\(\()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(char)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\)\(i + 65\)\) + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+7.8 0 TD
+("   ")Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(\);)Tj
+-46.8 -1.1 TD
+(193:)Tj
+T*
+[(194:)-599.6(            )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+10.2 0 TD
+(// iterate over numbers)Tj
+/TT8 1 Tf
+-10.2 -1.1 TD
+(195:)Tj
+0 g
+3 0 TD
+(            )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( j = 0; j < lines[i].length; j++\))Tj
+-15 -1.1 TD
+[(196:)-599.6(            {)]TJ
+T*
+[(197:)-599.6(                System.out.print\(leftPad\(lines[i][j], 2, )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+37.2 0 TD
+(í0í)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+2.4 0 TD
+("  ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-43.8 -1.1 TD
+[(198:)-599.6(            })]TJ
+T*
+[(199:)-599.6(            System.out.println\(\);)]TJ
+T*
+[(200:)-599.6(        })]TJ
+T*
+(201:)Tj
+T*
+[(202:)-599.6(        System.out.println\(\);)]TJ
+T*
+[(203:)-599.6(    })]TJ
+T*
+(204:)Tj
+ET
+endstream
+endobj
+17 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+19 0 obj
+<<
+/Length 8279
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/10/17)Tj
+-0.0552 -1.0667 TD
+(16:25:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(4)Tj
+/TT6 1 Tf
+14 0 0 14 252.5947 786.5 Tm
+0 g
+(SuperLotto.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+[(205:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(206:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method generates a California SuperLotto PLUS\(R\) Quick Pick\(R\) line.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(207:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * Each line contains 5 unique numbers between 1 and 43 and a sixth)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(208:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * "Meganumber," a number between 1 and 27 which does not need to be unique)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(209:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * from the other numbers.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(210:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(211:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return int[] An array of integers representing a Quick Pick\(R\) line)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(212:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(213:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] generateLine \(\))Tj
+-16.2 -1.1 TD
+[(214:)-599.6(    {)]TJ
+T*
+[(215:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] line = )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([6];)Tj
+-19.8 -1.1 TD
+[(216:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] numbers = getUniqueNumbers\(5, 1, 43\);)Tj
+-9.6 -1.1 TD
+[(217:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( meganumber = getRandomNumber\(1, 27\);)Tj
+-9.6 -1.1 TD
+(218:)Tj
+T*
+[(219:)-599.6(        Arrays.sort\(numbers\);)]TJ
+T*
+(220:)Tj
+T*
+[(221:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < numbers.length; i++\) line[i] = numbers[i];)Tj
+-12.6 -1.1 TD
+[(222:)-599.6(        line[5] = meganumber;)]TJ
+T*
+(223:)Tj
+T*
+[(224:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( line;)Tj
+-11.4 -1.1 TD
+[(225:)-599.6(    })]TJ
+T*
+(226:)Tj
+T*
+[(227:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(228:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method takes a desired number of lines and generates a)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(229:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * California SuperLotto PLUS\(R\) Quick Pick\(R\) ticket \(where each ticket)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(230:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * can only have a maximum of 10 lines\).)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(231:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(232:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * NOTE: This method does NOT validate input format or sanitize the data)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(233:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *       in any way. The user must do this before invoking this function.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(234:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(235:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param numOfLines The number of lines to generate a ticket for)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(236:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return int[][][] An array of lines \(which are arrays of integers\))Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(237:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(238:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([][] generateTicket \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( numOfLines\))Tj
+-30.6 -1.1 TD
+[(239:)-599.6(    {)]TJ
+T*
+[(240:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([][] ticket = )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([numOfLines][6];)Tj
+-22.2 -1.1 TD
+(241:)Tj
+T*
+[(242:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < numOfLines; i++\))Tj
+-12.6 -1.1 TD
+[(243:)-599.6(        {)]TJ
+T*
+[(244:)-599.6(            ticket[i] = generateLine\(\);)]TJ
+T*
+[(245:)-599.6(        })]TJ
+T*
+(246:)Tj
+T*
+[(247:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( ticket;)Tj
+-11.4 -1.1 TD
+[(248:)-599.6(    })]TJ
+T*
+(249:)Tj
+T*
+[(250:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(251:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method takes a number to chunk and the chunk size and returns an)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(252:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * array of integers representing the chunks.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(253:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(254:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * For example, ëgenerateChunks\(41, 10\)ë returns ë{ 10, 10, 10, 10, 1 }ë)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(255:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(256:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  totalNum  The total number that is to be chunked)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(257:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param  chunkSize The integer size of each chunk)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(258:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return int[]     An array of integers representing the chunks)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(259:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(260:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] generateChunks \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( totalNum, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+6.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( chunkSize\))Tj
+-37.8 -1.1 TD
+[(261:)-599.6(    {)]TJ
+T*
+[(262:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(totalNum < 1 || chunkSize < 1\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+19.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] {};)Tj
+-37.2 -1.1 TD
+[(263:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(totalNum <= chunkSize\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] { totalNum };)Tj
+-32.4 -1.1 TD
+(264:)Tj
+T*
+[(265:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( numOfChunks      = totalNum / chunkSize;)Tj
+-9.6 -1.1 TD
+[(266:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( partialChunkSize = totalNum % chunkSize;)Tj
+-9.6 -1.1 TD
+(267:)Tj
+T*
+[(268:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(boolean)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( hasPartialChunk = partialChunkSize != 0;)Tj
+-12 -1.1 TD
+(269:)Tj
+T*
+[(270:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(hasPartialChunk\) numOfChunks++;)Tj
+-9 -1.1 TD
+(271:)Tj
+T*
+[(272:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] chunks = )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([numOfChunks];)Tj
+ET
+endstream
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+22 0 obj
+<<
+/Length 5099
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/10/17)Tj
+-0.0552 -1.0667 TD
+(16:25:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(5)Tj
+/TT6 1 Tf
+14 0 0 14 252.5947 786.5 Tm
+0 g
+(SuperLotto.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+(273:)Tj
+0 -1.1 TD
+[(274:)-599.6(        Arrays.fill\(chunks, chunkSize\);)]TJ
+T*
+(275:)Tj
+T*
+[(276:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(hasPartialChunk\) chunks[numOfChunks - 1] = partialChunkSize;)Tj
+-9 -1.1 TD
+(277:)Tj
+T*
+[(278:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( chunks;)Tj
+-11.4 -1.1 TD
+[(279:)-599.6(    })]TJ
+T*
+(280:)Tj
+T*
+[(281:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(282:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This method accepts a desired number of lines and then generates tickets)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(283:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * \(an array of lines where each element is itself an array of integers\))Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(284:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * and prints each ticket out to the user.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(285:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(286:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param numOfLines The number of lines to generate and print tickets for)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(287:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(288:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( printTickets \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( numOfLines\) {)Tj
+-27.6 -1.1 TD
+[(289:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([] ticketChunkSizes = generateChunks\(numOfLines, 10\);)Tj
+-9.6 -1.1 TD
+(290:)Tj
+T*
+[(291:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( size : ticketChunkSizes\))Tj
+-12.6 -1.1 TD
+[(292:)-599.6(        {)]TJ
+T*
+[(293:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+([][] ticket = generateTicket\(size\);)Tj
+-12 -1.1 TD
+[(294:)-599.6(            printTicket\(ticket\);)]TJ
+T*
+[(295:)-599.6(        })]TJ
+T*
+[(296:)-599.6(    })]TJ
+T*
+(297:)Tj
+T*
+[(298:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(299:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * This is the ëmainë method of this class. It validates arguments passed)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(300:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * in and then prints \(a\) ticket\(s\) containing the desired number of lines.)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(301:)Tj
+/TT10 1 Tf
+3 0 TD
+(     *)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(302:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @param array An array of arguments provided to the program)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(303:)Tj
+/TT10 1 Tf
+3 0 TD
+(     */)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1 TD
+[(304:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( main \(String ... args\))Tj
+-16.2 -1.1 TD
+[(305:)-599.6(    {)]TJ
+T*
+[(306:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(args.length == 0\) die\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+14.4 0 TD
+("Missing argument!")Tj
+/TT8 1 Tf
+0 g
+11.4 0 TD
+(\);)Tj
+-34.8 -1.1 TD
+[(307:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(args.length > 1\) die\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+13.8 0 TD
+("Too many arguments!")Tj
+/TT8 1 Tf
+0 g
+12.6 0 TD
+(\);)Tj
+-35.4 -1.1 TD
+(308:)Tj
+T*
+[(309:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(try)Tj
+/TT8 1 Tf
+0 g
+-7.8 -1.1 TD
+[(310:)-599.6(        {)]TJ
+T*
+[(311:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( numOfLines = Integer.parseInt\(args[0]\);)Tj
+-12 -1.1 TD
+(312:)Tj
+T*
+[(313:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(numOfLines < 1\) die\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+13.2 0 TD
+("Invalid number of lines!")Tj
+/TT8 1 Tf
+0 g
+15.6 0 TD
+(\);)Tj
+-40.2 -1.1 TD
+(314:)Tj
+T*
+[(315:)-599.6(            printTickets\(numOfLines\);)]TJ
+T*
+[(316:)-599.6(        })]TJ
+T*
+[(317:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(catch)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( \(NumberFormatException e\))Tj
+-10.8 -1.1 TD
+[(318:)-599.6(        {)]TJ
+T*
+[(319:)-599.6(            die\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+12.6 0 TD
+("Invalid argument!")Tj
+/TT8 1 Tf
+0 g
+11.4 0 TD
+(\);)Tj
+-24 -1.1 TD
+[(320:)-599.6(        })]TJ
+T*
+[(321:)-599.6(    })]TJ
+T*
+[(322:)-599.6(})]TJ
+ET
+endstream
+endobj
+23 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+24 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+25 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+26 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+27 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+28 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+29 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 500 500 0 500 500 500 500 0 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 24 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 53
+/Widths [556 556 556 556 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 25 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 46
+/LastChar 118
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 611 0 
+0 0 0 0 0 556 0 0 0 0 0 0 0 0 0 0 
+0 0 0 444 0 0 0 444 0 0 0 0 278 0 0 0 
+0 500 500 0 333 0 278 500 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 26 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 125
+/Widths [600 600 0 0 0 600 0 0 600 600 600 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 0 
+0 600 600 600 0 600 600 0 0 600 0 0 600 600 600 600 
+600 0 600 600 600 600 0 600 0 0 0 600 0 600 0 0 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 27 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 145
+/Widths [600 0 600 600 0 0 0 0 600 600 600 0 600 0 600 600 
+600 600 600 600 600 600 600 600 600 600 600 0 0 0 600 0 
+600 600 600 600 600 600 600 600 600 600 600 0 600 600 600 600 
+600 600 600 600 600 600 0 0 0 0 0 600 0 600 0 0 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 0 600 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 28 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 600 600 600 0 0 0 0 0 0 0 0 0 0 0 0 
+600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 0 600 0 600 600 600 0 600 0 0 600 600 600 600 
+600 0 600 600 600 600 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 600 0 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 29 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 14 0 R
+/Contents 13 0 R
+>>
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 17 0 R
+/Contents 16 0 R
+>>
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 20 0 R
+/Contents 19 0 R
+>>
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 23 0 R
+/Contents 22 0 R
+>>
+endobj
+30 0 obj
+<<
+/S /D
+>>
+endobj
+31 0 obj
+<<
+/Nums [0 30 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 12 0 R 15 0 R 18 0 R 21 0 R]
+/Count 5
+/MediaBox [0 0 595 842]
+>>
+endobj
+32 0 obj
+<<
+/CreationDate (D:20170710162601-07'00')
+/ModDate (D:20170710162601-07'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+33 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 31 0 R
+>>
+endobj
+xref
+0 34
+0000000000 65535 f 
+0000040579 00000 n 
+0000000016 00000 n 
+0000006422 00000 n 
+0000038315 00000 n 
+0000038521 00000 n 
+0000038707 00000 n 
+0000039045 00000 n 
+0000039544 00000 n 
+0000040093 00000 n 
+0000036975 00000 n 
+0000041064 00000 n 
+0000040660 00000 n 
+0000006575 00000 n 
+0000014999 00000 n 
+0000040744 00000 n 
+0000015153 00000 n 
+0000023029 00000 n 
+0000040828 00000 n 
+0000023183 00000 n 
+0000031515 00000 n 
+0000040912 00000 n 
+0000031669 00000 n 
+0000036821 00000 n 
+0000037116 00000 n 
+0000037318 00000 n 
+0000037524 00000 n 
+0000037721 00000 n 
+0000037912 00000 n 
+0000038113 00000 n 
+0000040996 00000 n 
+0000041024 00000 n 
+0000041174 00000 n 
+0000041297 00000 n 
+trailer
+<<
+/Size 34
+/Root 33 0 R
+/Info 32 0 R
+/ID [<c1e24578ffa14608b12c0d3df65e0fdb><c1e24578ffa14608b12c0d3df65e0fdb>]
+>>
+startxref
+41367
+%%EOF
