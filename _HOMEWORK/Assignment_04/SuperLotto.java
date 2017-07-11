@@ -178,7 +178,8 @@ public class SuperLotto
      *
      * @param lines An array of lines (a line being an array of integers)
      */
-    private static void printTicket (int[][] lines) {
+    private static void printTicket (int[][] lines)
+    {
         System.out.println();
         System.out.println("#############################");
         System.out.println("### CALIFORNIA SUPERLOTTO ###");
@@ -285,7 +286,8 @@ public class SuperLotto
      *
      * @param numOfLines The number of lines to generate and print tickets for
      */
-    private static void printTickets (int numOfLines) {
+    private static void printTickets (int numOfLines)
+    {
         int[] ticketChunkSizes = generateChunks(numOfLines, 10);
 
         for (int size : ticketChunkSizes)

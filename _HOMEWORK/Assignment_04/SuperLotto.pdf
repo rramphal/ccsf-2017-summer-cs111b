@@ -20,7 +20,7 @@ BT
 0 Tw
 (07/10/17)Tj
 -0.0552 -1.0667 TD
-(16:25:38)Tj
+(19:48:44)Tj
 ET
 0.7 g
 499 818 72 -36 re
@@ -490,7 +490,7 @@ BT
 0 Tw
 (07/10/17)Tj
 -0.0552 -1.0667 TD
-(16:25:38)Tj
+(19:48:44)Tj
 ET
 0.7 g
 499 818 72 -36 re
@@ -1098,7 +1098,7 @@ endobj
 endobj
 16 0 obj
 <<
-/Length 7823
+/Length 7836
 >>
 stream
 0.95 g
@@ -1116,7 +1116,7 @@ BT
 0 Tw
 (07/10/17)Tj
 -0.0552 -1.0667 TD
-(16:25:38)Tj
+(19:48:44)Tj
 ET
 0.7 g
 499 818 72 -36 re
@@ -1500,25 +1500,17 @@ T*
 /TT8 1 Tf
 0 g
 1.8 0 TD
-([][] lines\) {)Tj
+([][] lines\))Tj
 -27 -1.1 TD
-[(182:)-599.6(        System.out.println\(\);)]TJ
+[(182:)-599.6(    {)]TJ
 T*
-[(183:)-599.6(        System.out.println\()]TJ
-/TT12 1 Tf
-0.737 0.561 0.561 rg
-19.2 0 TD
-("#############################")Tj
-/TT8 1 Tf
-0 g
-18.6 0 TD
-(\);)Tj
--37.8 -1.1 TD
+[(183:)-599.6(        System.out.println\(\);)]TJ
+T*
 [(184:)-599.6(        System.out.println\()]TJ
 /TT12 1 Tf
 0.737 0.561 0.561 rg
 19.2 0 TD
-("### CALIFORNIA SUPERLOTTO ###")Tj
+("#############################")Tj
 /TT8 1 Tf
 0 g
 18.6 0 TD
@@ -1528,15 +1520,25 @@ T*
 /TT12 1 Tf
 0.737 0.561 0.561 rg
 19.2 0 TD
+("### CALIFORNIA SUPERLOTTO ###")Tj
+/TT8 1 Tf
+0 g
+18.6 0 TD
+(\);)Tj
+-37.8 -1.1 TD
+[(186:)-599.6(        System.out.println\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
 ("#############################")Tj
 /TT8 1 Tf
 0 g
 18.6 0 TD
 (\);)Tj
 -37.8 -1.1 TD
-[(186:)-599.6(        System.out.println\(\);)]TJ
+[(187:)-599.6(        System.out.println\(\);)]TJ
 T*
-[(187:)-599.6(        System.out.println\()]TJ
+[(188:)-599.6(        System.out.println\()]TJ
 /TT12 1 Tf
 0.737 0.561 0.561 rg
 19.2 0 TD
@@ -1546,16 +1548,16 @@ T*
 18.6 0 TD
 (\);)Tj
 -37.8 -1.1 TD
-(188:)Tj
+(189:)Tj
 T*
-[(189:)-599.6(        )]TJ
+[(190:)-599.6(        )]TJ
 /TT10 1 Tf
 0.698 0.133 0.133 rg
 7.8 0 TD
 (// iterate over lines)Tj
 /TT8 1 Tf
 -7.8 -1.1 TD
-(190:)Tj
+(191:)Tj
 0 g
 3 0 TD
 (        )Tj
@@ -1576,9 +1578,9 @@ T*
 1.8 0 TD
 ( i = 0; i < lines.length; i++\))Tj
 -12.6 -1.1 TD
-[(191:)-599.6(        {)]TJ
+[(192:)-599.6(        {)]TJ
 T*
-[(192:)-599.6(            System.out.print\()]TJ
+[(193:)-599.6(            System.out.print\()]TJ
 /TT12 1 Tf
 0.737 0.561 0.561 rg
 20.4 0 TD
@@ -1604,16 +1606,16 @@ T*
 3 0 TD
 (\);)Tj
 -46.8 -1.1 TD
-(193:)Tj
+(194:)Tj
 T*
-[(194:)-599.6(            )]TJ
+[(195:)-599.6(            )]TJ
 /TT10 1 Tf
 0.698 0.133 0.133 rg
 10.2 0 TD
 (// iterate over numbers)Tj
 /TT8 1 Tf
 -10.2 -1.1 TD
-(195:)Tj
+(196:)Tj
 0 g
 3 0 TD
 (            )Tj
@@ -1634,9 +1636,9 @@ T*
 1.8 0 TD
 ( j = 0; j < lines[i].length; j++\))Tj
 -15 -1.1 TD
-[(196:)-599.6(            {)]TJ
+[(197:)-599.6(            {)]TJ
 T*
-[(197:)-599.6(                System.out.print\(leftPad\(lines[i][j], 2, )]TJ
+[(198:)-599.6(                System.out.print\(leftPad\(lines[i][j], 2, )]TJ
 /TT12 1 Tf
 0.737 0.561 0.561 rg
 37.2 0 TD
@@ -1654,19 +1656,17 @@ T*
 2.4 0 TD
 (\);)Tj
 -43.8 -1.1 TD
-[(198:)-599.6(            })]TJ
+[(199:)-599.6(            })]TJ
 T*
-[(199:)-599.6(            System.out.println\(\);)]TJ
+[(200:)-599.6(            System.out.println\(\);)]TJ
 T*
-[(200:)-599.6(        })]TJ
+[(201:)-599.6(        })]TJ
 T*
-(201:)Tj
+(202:)Tj
 T*
-[(202:)-599.6(        System.out.println\(\);)]TJ
+[(203:)-599.6(        System.out.println\(\);)]TJ
 T*
-[(203:)-599.6(    })]TJ
-T*
-(204:)Tj
+[(204:)-599.6(    })]TJ
 ET
 endstream
 endobj
@@ -1688,7 +1688,7 @@ endobj
 endobj
 19 0 obj
 <<
-/Length 8279
+/Length 8010
 >>
 stream
 0.95 g
@@ -1706,7 +1706,7 @@ BT
 0 Tw
 (07/10/17)Tj
 -0.0552 -1.0667 TD
-(16:25:38)Tj
+(19:48:44)Tj
 ET
 0.7 g
 499 818 72 -36 re
@@ -1722,57 +1722,59 @@ BT
 (SuperLotto.java)Tj
 /TT8 1 Tf
 10 0 0 10 42 769 Tm
-[(205:)-599.6(    )]TJ
+(205:)Tj
+0 -1.1 TD
+[(206:)-599.6(    )]TJ
 /TT10 1 Tf
 0.698 0.133 0.133 rg
 5.4 0 TD
 (/**)Tj
 /TT8 1 Tf
 -5.4 -1.1 TD
-(206:)Tj
+(207:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * This method generates a California SuperLotto PLUS\(R\) Quick Pick\(R\) line.)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(207:)Tj
+(208:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * Each line contains 5 unique numbers between 1 and 43 and a sixth)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(208:)Tj
+(209:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * "Meganumber," a number between 1 and 27 which does not need to be unique)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(209:)Tj
+(210:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * from the other numbers.)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(210:)Tj
+(211:)Tj
 /TT10 1 Tf
 3 0 TD
 (     *)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(211:)Tj
+(212:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * @return int[] An array of integers representing a Quick Pick\(R\) line)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(212:)Tj
+(213:)Tj
 /TT10 1 Tf
 3 0 TD
 (     */)Tj
 /TT8 1 Tf
 0 g
 -3 -1.1 TD
-[(213:)-599.6(    )]TJ
+[(214:)-599.6(    )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 5.4 0 TD
@@ -1798,9 +1800,9 @@ BT
 1.8 0 TD
 ([] generateLine \(\))Tj
 -16.2 -1.1 TD
-[(214:)-599.6(    {)]TJ
+[(215:)-599.6(    {)]TJ
 T*
-[(215:)-599.6(        )]TJ
+[(216:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -1826,7 +1828,7 @@ T*
 1.8 0 TD
 ([6];)Tj
 -19.8 -1.1 TD
-[(216:)-599.6(        )]TJ
+[(217:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -1836,7 +1838,7 @@ T*
 1.8 0 TD
 ([] numbers = getUniqueNumbers\(5, 1, 43\);)Tj
 -9.6 -1.1 TD
-[(217:)-599.6(        )]TJ
+[(218:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -1846,13 +1848,13 @@ T*
 1.8 0 TD
 ( meganumber = getRandomNumber\(1, 27\);)Tj
 -9.6 -1.1 TD
-(218:)Tj
+(219:)Tj
 T*
-[(219:)-599.6(        Arrays.sort\(numbers\);)]TJ
+[(220:)-599.6(        Arrays.sort\(numbers\);)]TJ
 T*
-(220:)Tj
+(221:)Tj
 T*
-[(221:)-599.6(        )]TJ
+[(222:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -1870,11 +1872,11 @@ T*
 1.8 0 TD
 ( i = 0; i < numbers.length; i++\) line[i] = numbers[i];)Tj
 -12.6 -1.1 TD
-[(222:)-599.6(        line[5] = meganumber;)]TJ
+[(223:)-599.6(        line[5] = meganumber;)]TJ
 T*
-(223:)Tj
+(224:)Tj
 T*
-[(224:)-599.6(        )]TJ
+[(225:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -1884,79 +1886,79 @@ T*
 3.6 0 TD
 ( line;)Tj
 -11.4 -1.1 TD
-[(225:)-599.6(    })]TJ
+[(226:)-599.6(    })]TJ
 T*
-(226:)Tj
+(227:)Tj
 T*
-[(227:)-599.6(    )]TJ
+[(228:)-599.6(    )]TJ
 /TT10 1 Tf
 0.698 0.133 0.133 rg
 5.4 0 TD
 (/**)Tj
 /TT8 1 Tf
 -5.4 -1.1 TD
-(228:)Tj
+(229:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * This method takes a desired number of lines and generates a)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(229:)Tj
+(230:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * California SuperLotto PLUS\(R\) Quick Pick\(R\) ticket \(where each ticket)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(230:)Tj
+(231:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * can only have a maximum of 10 lines\).)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(231:)Tj
-/TT10 1 Tf
-3 0 TD
-(     *)Tj
-/TT8 1 Tf
--3 -1.1 TD
 (232:)Tj
 /TT10 1 Tf
 3 0 TD
-(     * NOTE: This method does NOT validate input format or sanitize the data)Tj
+(     *)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (233:)Tj
 /TT10 1 Tf
 3 0 TD
-(     *       in any way. The user must do this before invoking this function.)Tj
+(     * NOTE: This method does NOT validate input format or sanitize the data)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (234:)Tj
 /TT10 1 Tf
 3 0 TD
-(     *)Tj
+(     *       in any way. The user must do this before invoking this function.)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (235:)Tj
 /TT10 1 Tf
 3 0 TD
-(     * @param numOfLines The number of lines to generate a ticket for)Tj
+(     *)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (236:)Tj
 /TT10 1 Tf
 3 0 TD
-(     * @return int[][][] An array of lines \(which are arrays of integers\))Tj
+(     * @param numOfLines The number of lines to generate a ticket for)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (237:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return int[][][] An array of lines \(which are arrays of integers\))Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(238:)Tj
 /TT10 1 Tf
 3 0 TD
 (     */)Tj
 /TT8 1 Tf
 0 g
 -3 -1.1 TD
-[(238:)-599.6(    )]TJ
+[(239:)-599.6(    )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 5.4 0 TD
@@ -1990,9 +1992,9 @@ T*
 1.8 0 TD
 ( numOfLines\))Tj
 -30.6 -1.1 TD
-[(239:)-599.6(    {)]TJ
+[(240:)-599.6(    {)]TJ
 T*
-[(240:)-599.6(        )]TJ
+[(241:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2018,9 +2020,9 @@ T*
 1.8 0 TD
 ([numOfLines][6];)Tj
 -22.2 -1.1 TD
-(241:)Tj
+(242:)Tj
 T*
-[(242:)-599.6(        )]TJ
+[(243:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2038,15 +2040,15 @@ T*
 1.8 0 TD
 ( i = 0; i < numOfLines; i++\))Tj
 -12.6 -1.1 TD
-[(243:)-599.6(        {)]TJ
+[(244:)-599.6(        {)]TJ
 T*
-[(244:)-599.6(            ticket[i] = generateLine\(\);)]TJ
+[(245:)-599.6(            ticket[i] = generateLine\(\);)]TJ
 T*
-[(245:)-599.6(        })]TJ
+[(246:)-599.6(        })]TJ
 T*
-(246:)Tj
+(247:)Tj
 T*
-[(247:)-599.6(        )]TJ
+[(248:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2056,73 +2058,73 @@ T*
 3.6 0 TD
 ( ticket;)Tj
 -11.4 -1.1 TD
-[(248:)-599.6(    })]TJ
+[(249:)-599.6(    })]TJ
 T*
-(249:)Tj
+(250:)Tj
 T*
-[(250:)-599.6(    )]TJ
+[(251:)-599.6(    )]TJ
 /TT10 1 Tf
 0.698 0.133 0.133 rg
 5.4 0 TD
 (/**)Tj
 /TT8 1 Tf
 -5.4 -1.1 TD
-(251:)Tj
+(252:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * This method takes a number to chunk and the chunk size and returns an)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(252:)Tj
+(253:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * array of integers representing the chunks.)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(253:)Tj
-/TT10 1 Tf
-3 0 TD
-(     *)Tj
-/TT8 1 Tf
--3 -1.1 TD
 (254:)Tj
 /TT10 1 Tf
 3 0 TD
-(     * For example, ‘generateChunks\(41, 10\)‘ returns ‘{ 10, 10, 10, 10, 1 }‘)Tj
+(     *)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (255:)Tj
 /TT10 1 Tf
 3 0 TD
-(     *)Tj
+(     * For example, ‘generateChunks\(41, 10\)‘ returns ‘{ 10, 10, 10, 10, 1 }‘)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (256:)Tj
 /TT10 1 Tf
 3 0 TD
-(     * @param  totalNum  The total number that is to be chunked)Tj
+(     *)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (257:)Tj
 /TT10 1 Tf
 3 0 TD
-(     * @param  chunkSize The integer size of each chunk)Tj
+(     * @param  totalNum  The total number that is to be chunked)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (258:)Tj
 /TT10 1 Tf
 3 0 TD
-(     * @return int[]     An array of integers representing the chunks)Tj
+(     * @param  chunkSize The integer size of each chunk)Tj
 /TT8 1 Tf
 -3 -1.1 TD
 (259:)Tj
+/TT10 1 Tf
+3 0 TD
+(     * @return int[]     An array of integers representing the chunks)Tj
+/TT8 1 Tf
+-3 -1.1 TD
+(260:)Tj
 /TT10 1 Tf
 3 0 TD
 (     */)Tj
 /TT8 1 Tf
 0 g
 -3 -1.1 TD
-[(260:)-599.6(    )]TJ
+[(261:)-599.6(    )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 5.4 0 TD
@@ -2164,9 +2166,9 @@ T*
 1.8 0 TD
 ( chunkSize\))Tj
 -37.8 -1.1 TD
-[(261:)-599.6(    {)]TJ
+[(262:)-599.6(    {)]TJ
 T*
-[(262:)-599.6(        )]TJ
+[(263:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2200,7 +2202,7 @@ T*
 1.8 0 TD
 ([] {};)Tj
 -37.2 -1.1 TD
-[(263:)-599.6(        )]TJ
+[(264:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2234,9 +2236,9 @@ T*
 1.8 0 TD
 ([] { totalNum };)Tj
 -32.4 -1.1 TD
-(264:)Tj
+(265:)Tj
 T*
-[(265:)-599.6(        )]TJ
+[(266:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2246,7 +2248,7 @@ T*
 1.8 0 TD
 ( numOfChunks      = totalNum / chunkSize;)Tj
 -9.6 -1.1 TD
-[(266:)-599.6(        )]TJ
+[(267:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2256,9 +2258,9 @@ T*
 1.8 0 TD
 ( partialChunkSize = totalNum % chunkSize;)Tj
 -9.6 -1.1 TD
-(267:)Tj
+(268:)Tj
 T*
-[(268:)-599.6(        )]TJ
+[(269:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2268,9 +2270,9 @@ T*
 4.2 0 TD
 ( hasPartialChunk = partialChunkSize != 0;)Tj
 -12 -1.1 TD
-(269:)Tj
+(270:)Tj
 T*
-[(270:)-599.6(        )]TJ
+[(271:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2280,9 +2282,63 @@ T*
 1.2 0 TD
 ( \(hasPartialChunk\) numOfChunks++;)Tj
 -9 -1.1 TD
-(271:)Tj
-T*
-[(272:)-599.6(        )]TJ
+(272:)Tj
+ET
+endstream
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+22 0 obj
+<<
+/Length 5414
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/10/17)Tj
+-0.0552 -1.0667 TD
+(19:48:44)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(5)Tj
+/TT6 1 Tf
+14 0 0 14 252.5947 786.5 Tm
+0 g
+(SuperLotto.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+[(273:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2307,68 +2363,14 @@ T*
 0 g
 1.8 0 TD
 ([numOfChunks];)Tj
-ET
-endstream
-endobj
-20 0 obj
-<<
-/ProcSet [/PDF /Text ]
-/Font <<
-/TT2 4 0 R
-/TT4 5 0 R
-/TT6 6 0 R
-/TT8 7 0 R
-/TT10 8 0 R
-/TT12 9 0 R
->>
-/ExtGState <<
-/GS1 10 0 R
->>
->>
-endobj
-22 0 obj
-<<
-/Length 5099
->>
-stream
-0.95 g
-/GS1 gs
-24 800 547 -18 re
-f
-0.7 g
-24 818 72 -36 re
-f
-BT
-/TT2 1 Tf
-12 0 0 12 38.666 802 Tm
-0 g
-0 Tc
-0 Tw
-(07/10/17)Tj
--0.0552 -1.0667 TD
-(16:25:38)Tj
-ET
-0.7 g
-499 818 72 -36 re
-f
-BT
-/TT4 1 Tf
-28.8 0 0 28.8 526.9914 789.2 Tm
-1 g
-(5)Tj
-/TT6 1 Tf
-14 0 0 14 252.5947 786.5 Tm
-0 g
-(SuperLotto.java)Tj
-/TT8 1 Tf
-10 0 0 10 42 769 Tm
-(273:)Tj
-0 -1.1 TD
-[(274:)-599.6(        Arrays.fill\(chunks, chunkSize\);)]TJ
+-21 -1.1 TD
+(274:)Tj
 T*
-(275:)Tj
+[(275:)-599.6(        Arrays.fill\(chunks, chunkSize\);)]TJ
 T*
-[(276:)-599.6(        )]TJ
+(276:)Tj
+T*
+[(277:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2378,9 +2380,9 @@ T*
 1.2 0 TD
 ( \(hasPartialChunk\) chunks[numOfChunks - 1] = partialChunkSize;)Tj
 -9 -1.1 TD
-(277:)Tj
+(278:)Tj
 T*
-[(278:)-599.6(        )]TJ
+[(279:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2390,55 +2392,55 @@ T*
 3.6 0 TD
 ( chunks;)Tj
 -11.4 -1.1 TD
-[(279:)-599.6(    })]TJ
+[(280:)-599.6(    })]TJ
 T*
-(280:)Tj
+(281:)Tj
 T*
-[(281:)-599.6(    )]TJ
+[(282:)-599.6(    )]TJ
 /TT10 1 Tf
 0.698 0.133 0.133 rg
 5.4 0 TD
 (/**)Tj
 /TT8 1 Tf
 -5.4 -1.1 TD
-(282:)Tj
+(283:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * This method accepts a desired number of lines and then generates tickets)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(283:)Tj
+(284:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * \(an array of lines where each element is itself an array of integers\))Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(284:)Tj
+(285:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * and prints each ticket out to the user.)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(285:)Tj
+(286:)Tj
 /TT10 1 Tf
 3 0 TD
 (     *)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(286:)Tj
+(287:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * @param numOfLines The number of lines to generate and print tickets for)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(287:)Tj
+(288:)Tj
 /TT10 1 Tf
 3 0 TD
 (     */)Tj
 /TT8 1 Tf
 0 g
 -3 -1.1 TD
-[(288:)-599.6(    )]TJ
+[(289:)-599.6(    )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 5.4 0 TD
@@ -2470,9 +2472,11 @@ T*
 /TT8 1 Tf
 0 g
 1.8 0 TD
-( numOfLines\) {)Tj
+( numOfLines\))Tj
 -27.6 -1.1 TD
-[(289:)-599.6(        )]TJ
+[(290:)-599.6(    {)]TJ
+T*
+[(291:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2482,9 +2486,9 @@ T*
 1.8 0 TD
 ([] ticketChunkSizes = generateChunks\(numOfLines, 10\);)Tj
 -9.6 -1.1 TD
-(290:)Tj
+(292:)Tj
 T*
-[(291:)-599.6(        )]TJ
+[(293:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2502,9 +2506,9 @@ T*
 1.8 0 TD
 ( size : ticketChunkSizes\))Tj
 -12.6 -1.1 TD
-[(292:)-599.6(        {)]TJ
+[(294:)-599.6(        {)]TJ
 T*
-[(293:)-599.6(            )]TJ
+[(295:)-599.6(            )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 10.2 0 TD
@@ -2514,53 +2518,53 @@ T*
 1.8 0 TD
 ([][] ticket = generateTicket\(size\);)Tj
 -12 -1.1 TD
-[(294:)-599.6(            printTicket\(ticket\);)]TJ
+[(296:)-599.6(            printTicket\(ticket\);)]TJ
 T*
-[(295:)-599.6(        })]TJ
+[(297:)-599.6(        })]TJ
 T*
-[(296:)-599.6(    })]TJ
+[(298:)-599.6(    })]TJ
 T*
-(297:)Tj
+(299:)Tj
 T*
-[(298:)-599.6(    )]TJ
+[(300:)-599.6(    )]TJ
 /TT10 1 Tf
 0.698 0.133 0.133 rg
 5.4 0 TD
 (/**)Tj
 /TT8 1 Tf
 -5.4 -1.1 TD
-(299:)Tj
+(301:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * This is the ‘main‘ method of this class. It validates arguments passed)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(300:)Tj
+(302:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * in and then prints \(a\) ticket\(s\) containing the desired number of lines.)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(301:)Tj
+(303:)Tj
 /TT10 1 Tf
 3 0 TD
 (     *)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(302:)Tj
+(304:)Tj
 /TT10 1 Tf
 3 0 TD
 (     * @param array An array of arguments provided to the program)Tj
 /TT8 1 Tf
 -3 -1.1 TD
-(303:)Tj
+(305:)Tj
 /TT10 1 Tf
 3 0 TD
 (     */)Tj
 /TT8 1 Tf
 0 g
 -3 -1.1 TD
-[(304:)-599.6(    )]TJ
+[(306:)-599.6(    )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 5.4 0 TD
@@ -2586,9 +2590,9 @@ T*
 2.4 0 TD
 ( main \(String ... args\))Tj
 -16.2 -1.1 TD
-[(305:)-599.6(    {)]TJ
+[(307:)-599.6(    {)]TJ
 T*
-[(306:)-599.6(        )]TJ
+[(308:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2606,7 +2610,7 @@ T*
 11.4 0 TD
 (\);)Tj
 -34.8 -1.1 TD
-[(307:)-599.6(        )]TJ
+[(309:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2624,9 +2628,9 @@ T*
 12.6 0 TD
 (\);)Tj
 -35.4 -1.1 TD
-(308:)Tj
+(310:)Tj
 T*
-[(309:)-599.6(        )]TJ
+[(311:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2634,9 +2638,9 @@ T*
 /TT8 1 Tf
 0 g
 -7.8 -1.1 TD
-[(310:)-599.6(        {)]TJ
+[(312:)-599.6(        {)]TJ
 T*
-[(311:)-599.6(            )]TJ
+[(313:)-599.6(            )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 10.2 0 TD
@@ -2646,9 +2650,9 @@ T*
 1.8 0 TD
 ( numOfLines = Integer.parseInt\(args[0]\);)Tj
 -12 -1.1 TD
-(312:)Tj
+(314:)Tj
 T*
-[(313:)-599.6(            )]TJ
+[(315:)-599.6(            )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 10.2 0 TD
@@ -2666,13 +2670,13 @@ T*
 15.6 0 TD
 (\);)Tj
 -40.2 -1.1 TD
-(314:)Tj
+(316:)Tj
 T*
-[(315:)-599.6(            printTickets\(numOfLines\);)]TJ
+[(317:)-599.6(            printTickets\(numOfLines\);)]TJ
 T*
-[(316:)-599.6(        })]TJ
+[(318:)-599.6(        })]TJ
 T*
-[(317:)-599.6(        )]TJ
+[(319:)-599.6(        )]TJ
 /TT12 1 Tf
 0.627 0.125 0.941 rg
 7.8 0 TD
@@ -2682,9 +2686,9 @@ T*
 3 0 TD
 ( \(NumberFormatException e\))Tj
 -10.8 -1.1 TD
-[(318:)-599.6(        {)]TJ
+[(320:)-599.6(        {)]TJ
 T*
-[(319:)-599.6(            die\()]TJ
+[(321:)-599.6(            die\()]TJ
 /TT12 1 Tf
 0.737 0.561 0.561 rg
 12.6 0 TD
@@ -2694,11 +2698,11 @@ T*
 11.4 0 TD
 (\);)Tj
 -24 -1.1 TD
-[(320:)-599.6(        })]TJ
+[(322:)-599.6(        })]TJ
 T*
-[(321:)-599.6(    })]TJ
+[(323:)-599.6(    })]TJ
 T*
-[(322:)-599.6(})]TJ
+[(324:)-599.6(})]TJ
 ET
 endstream
 endobj
@@ -2828,7 +2832,7 @@ endobj
 /Subtype /TrueType
 /FirstChar 47
 /LastChar 58
-/Widths [278 500 500 500 500 0 500 500 500 500 0 333 ]
+/Widths [278 500 500 0 0 500 0 0 500 500 500 333 ]
 /Encoding /WinAnsiEncoding
 /BaseFont /Times-Bold
 /FontDescriptor 24 0 R
@@ -2977,8 +2981,8 @@ endobj
 endobj
 32 0 obj
 <<
-/CreationDate (D:20170710162601-07'00')
-/ModDate (D:20170710162601-07'00')
+/CreationDate (D:20170710211546-07'00')
+/ModDate (D:20170710211546-07'00')
 /Producer (Apple pstopdf)
 >>
 endobj
@@ -2992,46 +2996,46 @@ endobj
 xref
 0 34
 0000000000 65535 f 
-0000040579 00000 n 
+0000040634 00000 n 
 0000000016 00000 n 
 0000006422 00000 n 
-0000038315 00000 n 
-0000038521 00000 n 
-0000038707 00000 n 
-0000039045 00000 n 
-0000039544 00000 n 
-0000040093 00000 n 
-0000036975 00000 n 
-0000041064 00000 n 
-0000040660 00000 n 
+0000038374 00000 n 
+0000038576 00000 n 
+0000038762 00000 n 
+0000039100 00000 n 
+0000039599 00000 n 
+0000040148 00000 n 
+0000037034 00000 n 
+0000041119 00000 n 
+0000040715 00000 n 
 0000006575 00000 n 
 0000014999 00000 n 
-0000040744 00000 n 
+0000040799 00000 n 
 0000015153 00000 n 
-0000023029 00000 n 
-0000040828 00000 n 
-0000023183 00000 n 
-0000031515 00000 n 
-0000040912 00000 n 
-0000031669 00000 n 
-0000036821 00000 n 
-0000037116 00000 n 
-0000037318 00000 n 
-0000037524 00000 n 
-0000037721 00000 n 
-0000037912 00000 n 
-0000038113 00000 n 
-0000040996 00000 n 
-0000041024 00000 n 
-0000041174 00000 n 
-0000041297 00000 n 
+0000023042 00000 n 
+0000040883 00000 n 
+0000023196 00000 n 
+0000031259 00000 n 
+0000040967 00000 n 
+0000031413 00000 n 
+0000036880 00000 n 
+0000037175 00000 n 
+0000037377 00000 n 
+0000037583 00000 n 
+0000037780 00000 n 
+0000037971 00000 n 
+0000038172 00000 n 
+0000041051 00000 n 
+0000041079 00000 n 
+0000041229 00000 n 
+0000041352 00000 n 
 trailer
 <<
 /Size 34
 /Root 33 0 R
 /Info 32 0 R
-/ID [<c1e24578ffa14608b12c0d3df65e0fdb><c1e24578ffa14608b12c0d3df65e0fdb>]
+/ID [<c94b273522b048331f0a9582f1ac3a5a><c94b273522b048331f0a9582f1ac3a5a>]
 >>
 startxref
-41367
+41422
 %%EOF
