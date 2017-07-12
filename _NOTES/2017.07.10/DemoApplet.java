@@ -3,6 +3,7 @@ import java.applet.*;
 
 // <applet code="DemoApplet.java" height="300" width="400"></applet>
 
+@SuppressWarnings("serial")
 public class DemoApplet extends Applet
 {
     // public void init() {}
