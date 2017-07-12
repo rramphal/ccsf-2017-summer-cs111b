@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.applet.*;
 
-// <applet code="DemoApplet" height="300" width="400"></applet>
+// <applet code="DemoApplet.java" height="300" width="400"></applet>
 
 public class DemoApplet extends Applet
 {
