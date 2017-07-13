@@ -121,7 +121,7 @@ catch (IOException e) {}
     * restrictions
         * cannot write to files
         * cannot access operating system
-    * **callbacks** - programs that are not called directly by programmers
+    * **callbacks** - methods that are not called directly by programmers
     * **lifecycle**:
         * `public void init()` - called only once at the very beginning of the program; automatically calls `start()` - entry point (similar to `main()`)
         * `public void start()` - will then call `paint()`
