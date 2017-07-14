@@ -29,8 +29,6 @@ public class DemoApplet extends Applet
         setBackground(rgb(0, 0, 255));
     }
 
-    // public void start() {}
-
     public void paint (Graphics g)
     {
         // [Graphics].drawString(String string, int x, int y)
@@ -51,8 +49,4 @@ public class DemoApplet extends Applet
 
         // g.setColor only works on foreground colors, not background colors
     }
-
-    // public void stop() {}
-
-    // public void destroy() {}
 }
