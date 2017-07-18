@@ -130,7 +130,7 @@ public class DrawArc extends Applet
 
 ```java
 public void drawTriangle (int x1, int y1,
-                          int  x2, int y2,
+                          int x2, int y2,
                           int x3, int y3)
 {
     Graphics g = getGraphics(); // is created in the heap (and won't be cleaned up by garbage collection)
