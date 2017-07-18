@@ -18,7 +18,7 @@ public class DemoApplet extends Applet
         return (new Color(red, green, blue));
     }
 
-    public Color getRandomColor (int red, int green, int blue)
+    public Color getRandomColor ()
     {
         return (new Color(rand(0, 255), rand(0, 255), rand(0, 255)));
     }
