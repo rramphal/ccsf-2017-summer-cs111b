@@ -22,7 +22,7 @@ import java.awt.*;
 import java.applet.*;
 
 // <applet code="ScreenSaver" width="0" height="0">
-//     <param name="shape" value="circle">
+//     <param name="shape" value="square">
 // </applet>
 
 public class ScreenSaver extends Applet
