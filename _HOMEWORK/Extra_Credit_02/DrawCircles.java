@@ -1,10 +1,17 @@
 /**
- * [DESCRIPTION]
+ * This applet generates shapes using Java's AWT Graphics API.
+ * It allows the user to click a button to generate a given shape in random
+ * sizes, colors, and locations set against a white background.
+ * The applet's height and width is set to the screen's height and width.
+ * The shape is defined as a parameter passed to the applet.
+ * Possible shapes include: `circle`, `square`, `rectangle`, and `line`.
+ * If the user does not pass a `shape` param or if param passed does not match
+ * one of the possible shapes, the applet defaults to drawing circles.
  *
- * @name    DrawCircles (Extra Credit 02)
+ * @name    DrawShapes (Extra Credit 02)
  * @author  Ravi S. Ramphal
  * @class   CCSF CS111B
- * @date    2017.07.26
+ * @date    2017.07.27
  * @version 1.0
  */
 
@@ -12,11 +19,11 @@ import java.awt.*;
 import java.awt.event.*;
 import java.applet.*;
 
-// <applet code="DrawCircles" width="0" height="0">
-//     <param name="shape" value="square">
+// <applet code="DrawShapes" width="0" height="0">
+//     <param name="shape" value="circle">
 // </applet>
 
-public class DrawCircles extends Applet implements ActionListener
+public class DrawShapes extends Applet implements ActionListener
 {
     /**
      * The current resolution of the target screen
@@ -38,7 +45,39 @@ public class DrawCircles extends Applet implements ActionListener
      */
     private final int MAX_SIZE = 100;
 
+    /**
+     * The size of the margin of the generating area
+     */
+    private final int MARGIN = 50;
+
+    /**
+     * The X lower limit for any shape generated
+     */
+    private int minX;
+
+    /**
+     * The X upper limit for any shape generated
+     */
+    private int maxX;
+
+    /**
+     * The Y lower limit for any shape generated
+     */
+    private int minY;
+
+    /**
+     * The Y upper limit for any shape generated
+     */
+    private int maxY;
+
+    /**
+     * The button to add a shape
+     */
     Button addButton;
+
+    /**
+     * The button to clear the screen
+     */
     Button clearButton;
 
     /**
@@ -90,13 +129,27 @@ public class DrawCircles extends Applet implements ActionListener
     }
 
     /**
+     * This method defines the boundaries of the generation area.
+     */
+    private void defineBoundaries ()
+    {
+        minX = MARGIN;
+        maxX = screenSize.width - MARGIN;
+        minY = MARGIN;
+        maxY = screenSize.height - (MARGIN * 2);
+    }
+
+    /**
      * This is the `init` lifecycle method of the applet. It is executed once
-     * on applet instantiation. It sets the applet size to the screen size and
-     * sets the background color.
+     * on applet instantiation. It sets the applet size to the screen size,
+     * defines the boundaries of the generation area, and sets the background
+     * color. It also adds two buttons to the applet and assigns listeners.
      */
     public void init ()
     {
         setToScreenSize();
+        defineBoundaries();
+
         setBackground(BACKGROUND_COLOR);
 
         addButton = new Button("Add Shape");
@@ -109,20 +162,24 @@ public class DrawCircles extends Applet implements ActionListener
         clearButton.addActionListener(this);
     }
 
+    /**
+     * This is the `actionPerformed` handler for the two buttons. They call
+     * the correct respective actions depending on which button was pressed.
+     *
+     * @param event The ActionEvent fired by the buttons
+     */
     public void actionPerformed (ActionEvent event)
     {
-        Graphics g = getGraphics();
-
         if (event.getSource() == addButton)
         {
+            Graphics g = getGraphics();
             paint(g);
+            g.dispose();
         }
         else if (event.getSource() == clearButton)
         {
             clearScreen();
         }
-
-        g.dispose();
     }
 
     /**
@@ -138,71 +195,79 @@ public class DrawCircles extends Applet implements ActionListener
     }
 
     /**
-     * This method draws a circle at the provided X and Y location.
+     * This method draws a circle.
      *
      * @param graphics An instance of the Graphics class
-     * @param startX   The X integer value of the location to draw the circle
-     * @param startY   The Y integer value of the location to draw the circle
      */
-    private void drawCircle (Graphics graphics, int startX, int startY)
+    private void drawCircle (Graphics graphics)
     {
+        int startX   = rand(minX, maxX);
+        int startY   = rand(minY, maxY);
         int diameter = rand(MIN_SIZE, MAX_SIZE);
+
+        if ((startX + diameter) >= maxX) startX = maxX - diameter;
+        if ((startY + diameter) >= maxY) startY = maxY - diameter;
+
         graphics.fillOval(startX, startY, diameter, diameter);
     }
 
     /**
-     * This method draws a square at the provided X and Y location.
+     * This method draws a square.
      *
      * @param graphics An instance of the Graphics class
-     * @param startX   The X integer value of the location to draw the square
-     * @param startY   The Y integer value of the location to draw the square
      */
-    private void drawSquare (Graphics graphics, int startX, int startY)
+    private void drawSquare (Graphics graphics)
     {
+        int startX    = rand(minX, maxX);
+        int startY    = rand(minY, maxY);
         int dimension = rand(MIN_SIZE, MAX_SIZE);
+
+        if ((startX + dimension) >= maxX) startX = maxX - dimension;
+        if ((startY + dimension) >= maxY) startY = maxY - dimension;
+
         graphics.fillRect(startX, startY, dimension, dimension);
     }
 
     /**
-     * This method draws a rectangle at the provided X and Y location.
+     * This method draws a rectangle.
      *
      * @param graphics An instance of the Graphics class
-     * @param startX   The X integer value of the location to draw the rectangle
-     * @param startY   The Y integer value of the location to draw the rectangle
      */
-    private void drawRectangle (Graphics graphics, int startX, int startY)
+    private void drawRectangle (Graphics graphics)
     {
+        int startX = rand(minX, maxX);
+        int startY = rand(minY, maxY);
         int width  = rand(MIN_SIZE, MAX_SIZE);
         int height = rand(MIN_SIZE, MAX_SIZE);
+
+        if ((startX + width)  >= maxX) startX = maxX - width;
+        if ((startY + height) >= maxY) startY = maxY - height;
+
         graphics.fillRect(startX, startY, width, height);
     }
 
     /**
-     * This method draws a line at the provided X and Y location.
+     * This method draws a line.
      *
      * @param graphics An instance of the Graphics class
-     * @param startX   The X integer value of the location to draw the line
-     * @param startY   The Y integer value of the location to draw the line
      */
-    private void drawLine (Graphics graphics, int startX, int startY)
+    private void drawLine (Graphics graphics)
     {
-        int endX = rand(0, screenSize.width);
-        int endY = rand(0, screenSize.height);
+        int startX = rand(minX, maxX);
+        int startY = rand(minY, maxY);
+        int endX   = rand(minX, maxX);
+        int endY   = rand(minY, maxY);
+
         graphics.drawLine(startX, startY, endX, endY);
     }
 
     /**
      * This is the `paint` lifecycle method of the applet. It generates random
      * shapes of random color, location, and sizes and paints them to the
-     * screen with a set delay in between each render. Once the number of shapes
-     * on the screen has hit the maximum limit, the screen is cleared and
-     * the counter is reset to start afresh.
+     * screen.
      */
     public void paint (Graphics graphics)
     {
-        int startX = rand(0, screenSize.width);
-        int startY = rand(0, screenSize.height);
-
         Color color = getRandomColor();
         graphics.setColor(color);
 
@@ -211,19 +276,19 @@ public class DrawCircles extends Applet implements ActionListener
         switch (shape)
         {
             case "circle":
-                drawCircle(graphics, startX, startY);
+                drawCircle(graphics);
                 break;
             case "square":
-                drawSquare(graphics, startX, startY);
+                drawSquare(graphics);
                 break;
             case "rectangle":
-                drawRectangle(graphics, startX, startY);
+                drawRectangle(graphics);
                 break;
             case "line":
-                drawLine(graphics, startX, startY);
+                drawLine(graphics);
                 break;
             default:
-                drawCircle(graphics, startX, startY);
+                drawCircle(graphics);
                 break;
         }
     }
