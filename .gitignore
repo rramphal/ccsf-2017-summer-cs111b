@@ -1,6 +1,8 @@
 .DS_Store
-_OBSERVATIONS.md
+
 *.alias
 *.class
+
 _EXTERNAL
 _CHAPTERS
+_OBSERVATIONS.md
