@@ -1,0 +1,3156 @@
+%PDF-1.3
+%ту╧╙
+2 0 obj
+<<
+/Length 7371
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/27/17)Tj
+-0.0552 -1.0667 TD
+(18:52:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+14 0 0 14 246.7637 786.5 Tm
+0 g
+(ColorFactory.java)Tj
+/TT8 1 Tf
+10 0 0 10 54 769 Tm
+(1:)Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(/**)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(2:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * This application allows the user to generate different colors using sliders)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(3:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * representing Red, Green, and Blue values and outputs the color with a circle)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(4:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * in the middle of the window as well as the numeric representation and a bar)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(5:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * graph visually representing the ratio of component primary colors. The)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(6:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * numeric representations can be either decimal, binary, octal, or hexadecimal.)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(7:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( *)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(8:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @name    ColorFactory \(Homework Assignment 06\))Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(9:)Tj
+/TT10 1 Tf
+1.8 0 TD
+( * @author  Ravi S. Ramphal)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @class   CCSF CS111B)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(11:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @date    2017.07.27)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(12:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( * @version 1.0)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(13:)Tj
+/TT10 1 Tf
+2.4 0 TD
+( */)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1 TD
+(14:)Tj
+T*
+(15:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( java.awt.*;)Tj
+-6 -1.1 TD
+(16:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( java.awt.event.*;)Tj
+-6 -1.1 TD
+(17:)Tj
+T*
+(18:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(class)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( Circle )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(extends)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( Canvas)Tj
+-14.4 -1.1 TD
+[(19:)-599.7({)]TJ
+T*
+[(20:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( circleSize;)Tj
+-6.6 -1.1 TD
+(21:)Tj
+T*
+[(22:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// ================================ paint\(\) ================================)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(23:)Tj
+0 g
+T*
+[(24:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( paint \(Graphics graphicsContext\))Tj
+-11.4 -1.1 TD
+[(25:)-599.7(    {)]TJ
+T*
+[(26:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( x = \(getWidth\(\)  / 2\) - \(circleSize / 2\);)Tj
+-9 -1.1 TD
+[(27:)-599.7(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( y = \(getHeight\(\) / 2\) - \(circleSize / 2\);)Tj
+-9 -1.1 TD
+[(28:)-599.7(        graphicsContext.fillOval\(x, y, circleSize, circleSize\);)]TJ
+T*
+[(29:)-599.7(    })]TJ
+T*
+(30:)Tj
+T*
+[(31:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// =============================== Circle\(\) ===============================)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(32:)Tj
+0 g
+T*
+[(33:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( Circle \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( size\))Tj
+-15.6 -1.1 TD
+[(34:)-599.7(    {)]TJ
+T*
+[(35:)-599.7(        circleSize = size;)]TJ
+T*
+[(36:)-599.7(    })]TJ
+T*
+[(37:)-599.7(})]TJ
+T*
+(38:)Tj
+T*
+(39:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(class)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( Bars )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(extends)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( Canvas)Tj
+-13.2 -1.1 TD
+[(40:)-599.7({)]TJ
+T*
+[(41:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(final)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(double)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( SCALE = 0.4;)Tj
+-12 -1.1 TD
+(42:)Tj
+T*
+[(43:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(final)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( BAR_WIDTH   = \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(20.0 * SCALE\); )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+10.8 0 TD
+(// relative to 256 then scaled)Tj
+/TT8 1 Tf
+-32.4 -1.1 TD
+(44:)Tj
+0 g
+2.4 0 TD
+(    )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(final)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( BAR_GAP     = \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(10.0 * SCALE\); )Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+10.8 0 TD
+(// relative to 256 then scaled)Tj
+/TT8 1 Tf
+-32.4 -1.1 TD
+(45:)Tj
+0 g
+T*
+[(46:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( redValue   = 0;)Tj
+-10.8 -1.1 TD
+[(47:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( blueValue  = 0;)Tj
+-10.8 -1.1 TD
+[(48:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( greenValue = 0;)Tj
+-10.8 -1.1 TD
+(49:)Tj
+T*
+[(50:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( horizontalOffset = 100;)Tj
+-6.6 -1.1 TD
+[(51:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( verticalOffset = 10;)Tj
+-6.6 -1.1 TD
+(52:)Tj
+T*
+[(53:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// ================================ paint\(\) ================================)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(54:)Tj
+0 g
+T*
+[(55:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( paint \(Graphics graphicsContext\))Tj
+-11.4 -1.1 TD
+[(56:)-599.7(    {)]TJ
+T*
+[(57:)-599.7(        graphicsContext.setColor\(Color.RED\);)]TJ
+T*
+[(58:)-599.7(        graphicsContext.fillRect\()]TJ
+T*
+[(59:)-599.7(            horizontalOffset + BAR_GAP,)]TJ
+T*
+[(60:)-599.7(            verticalOffset + \()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+20.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(255.0 * SCALE\) - \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(redValue * SCALE\),)Tj
+-36.6 -1.1 TD
+[(61:)-599.7(            BAR_WIDTH,)]TJ
+T*
+[(62:)-599.7(            \()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(redValue * SCALE\))Tj
+-12 -1.1 TD
+[(63:)-599.7(        \);)]TJ
+T*
+(64:)Tj
+T*
+[(65:)-599.7(        graphicsContext.setColor\(Color.GREEN\);)]TJ
+T*
+[(66:)-599.7(        graphicsContext.fillRect\()]TJ
+T*
+[(67:)-599.7(            horizontalOffset + \(2 * BAR_GAP\) + BAR_WIDTH,)]TJ
+T*
+[(68:)-599.7(            verticalOffset + \()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+20.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(255.0 * SCALE\) - \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(greenValue * SCALE\),)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+13 0 obj
+<<
+/Length 8596
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/27/17)Tj
+-0.0552 -1.0667 TD
+(18:52:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(2)Tj
+/TT6 1 Tf
+14 0 0 14 246.7637 786.5 Tm
+0 g
+(ColorFactory.java)Tj
+/TT8 1 Tf
+10 0 0 10 48 769 Tm
+[(69:)-599.7(            BAR_WIDTH,)]TJ
+0 -1.1 TD
+[(70:)-599.7(            \()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(greenValue * SCALE\))Tj
+-12 -1.1 TD
+[(71:)-599.7(        \);)]TJ
+T*
+(72:)Tj
+T*
+[(73:)-599.7(        graphicsContext.setColor\(Color.BLUE\);)]TJ
+T*
+[(74:)-599.7(        graphicsContext.fillRect\()]TJ
+T*
+[(75:)-599.7(            horizontalOffset + \(3 * BAR_GAP\) + \(2 * BAR_WIDTH\),)]TJ
+T*
+[(76:)-599.7(            verticalOffset + \()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+20.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(255.0 * SCALE\) - \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(blueValue * SCALE\),)Tj
+-36.6 -1.1 TD
+[(77:)-599.7(            BAR_WIDTH,)]TJ
+T*
+[(78:)-599.7(            \()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) \(blueValue * SCALE\))Tj
+-12 -1.1 TD
+[(79:)-599.7(        \);)]TJ
+T*
+[(80:)-599.7(    })]TJ
+T*
+(81:)Tj
+T*
+[(82:)-599.7(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// ============================= updateBars\(\) =============================)Tj
+/TT8 1 Tf
+-4.8 -1.1 TD
+(83:)Tj
+0 g
+T*
+[(84:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( updateBars \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( red, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( green, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( blue\))Tj
+-33 -1.1 TD
+[(85:)-599.7(    {)]TJ
+T*
+[(86:)-599.7(        redValue   = red;)]TJ
+T*
+[(87:)-599.7(        greenValue = green;)]TJ
+T*
+[(88:)-599.7(        blueValue  = blue;)]TJ
+T*
+[(89:)-599.7(        repaint\(\);)]TJ
+T*
+[(90:)-599.7(    })]TJ
+T*
+[(91:)-599.7(})]TJ
+T*
+(92:)Tj
+T*
+(93:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( ColorFactory )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(extends)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( Frame )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(implements)Tj
+/TT8 1 Tf
+0 g
+6 0 TD
+( AdjustmentListener,)Tj
+-32.4 -1.1 TD
+[(94:)-599.7(                                                   ItemListener)]TJ
+T*
+[(95:)-599.7({)]TJ
+T*
+[(96:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(final)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( String TITLE = )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+9.6 0 TD
+("Color Factory")Tj
+/TT8 1 Tf
+0 g
+9 0 TD
+(;)Tj
+-26.4 -1.1 TD
+[(97:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(final)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( DIRECTION = Scrollbar.HORIZONTAL;)Tj
+-10.2 -1.1 TD
+[(98:)-599.7(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(final)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( CIRCLE_SIZE = 200;)Tj
+-10.2 -1.1 TD
+(99:)Tj
+-0.6 -1.1 TD
+[(100:)-599.6(    Dimension screenSize;)]TJ
+T*
+[(101:)-599.6(    Dimension windowSize;)]TJ
+T*
+(102:)Tj
+T*
+[(103:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( redValue   = 0;)Tj
+-7.2 -1.1 TD
+[(104:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( greenValue = 0;)Tj
+-7.2 -1.1 TD
+[(105:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( blueValue  = 0;)Tj
+-7.2 -1.1 TD
+(106:)Tj
+T*
+[(107:)-599.6(    Label header = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Label\(TITLE, Label.CENTER\);)Tj
+-16.2 -1.1 TD
+(108:)Tj
+T*
+[(109:)-599.6(    Panel columns = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Panel\(\);)Tj
+-16.8 -1.1 TD
+(110:)Tj
+T*
+[(111:)-599.6(    Panel         outputPanel    = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+24 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Panel\(\);)Tj
+-25.8 -1.1 TD
+[(112:)-599.6(    CheckboxGroup outputGroup    = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+24 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( CheckboxGroup\(\);)Tj
+-25.8 -1.1 TD
+[(113:)-599.6(    Checkbox      decimal        = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+24 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Checkbox\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+6 0 TD
+("Decimal")Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+(, outputGroup, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(true)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( \);)Tj
+-48.6 -1.1 TD
+[(114:)-599.6(    Checkbox      binary         = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+24 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Checkbox\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+6 0 TD
+("Binary")Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+(,  outputGroup, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(false)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(\);)Tj
+-49.2 -1.1 TD
+[(115:)-599.6(    Checkbox      octal          = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+24 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Checkbox\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+6 0 TD
+("Octal")Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+(,   outputGroup, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(false)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(\);)Tj
+-49.2 -1.1 TD
+[(116:)-599.6(    Checkbox      hex            = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+24 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Checkbox\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+6 0 TD
+("Hex")Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(,     outputGroup, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(false)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(\);)Tj
+-49.2 -1.1 TD
+[(117:)-599.6(    Label         output         = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+24 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Label\(getOutput\(\), Label.CENTER\);)Tj
+-25.8 -1.1 TD
+(118:)Tj
+T*
+[(119:)-599.6(    Circle display = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+15.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Circle\(CIRCLE_SIZE\);)Tj
+-17.4 -1.1 TD
+(120:)Tj
+T*
+[(121:)-599.6(    Panel rgbPanel = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+15.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Panel\(\);)Tj
+-17.4 -1.1 TD
+(122:)Tj
+T*
+[(123:)-599.6(    Panel sliderPanel = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+17.4 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Panel\(\);)Tj
+-19.2 -1.1 TD
+(124:)Tj
+T*
+[(125:)-599.6(    Label     redLabel  = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Label\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+4.2 0 TD
+("Red  ")Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+(, Label.RIGHT\);)Tj
+-28.8 -1.1 TD
+[(126:)-599.6(    Scrollbar redSlider = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Scrollbar\(DIRECTION, redValue, 1, 0, 256\);)Tj
+-20.4 -1.1 TD
+[(127:)-599.6(    Label     redNumber = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Label\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+4.2 0 TD
+("  ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( + redValue, Label.LEFT\);)Tj
+-27 -1.1 TD
+(128:)Tj
+T*
+[(129:)-599.6(    Label     greenLabel  = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+19.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Label\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+4.2 0 TD
+("Green  ")Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+(, Label.RIGHT\);)Tj
+-31.2 -1.1 TD
+[(130:)-599.6(    Scrollbar greenSlider = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+19.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Scrollbar\(DIRECTION, greenValue, 1, 0, 256\);)Tj
+-21.6 -1.1 TD
+[(131:)-599.6(    Label     greenNumber = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+19.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Label\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+4.2 0 TD
+("  ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( + greenValue, Label.LEFT\);)Tj
+-28.2 -1.1 TD
+(132:)Tj
+T*
+[(133:)-599.6(    Label     blueLabel  = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+19.2 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Label\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+4.2 0 TD
+("Blue  ")Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+(, Label.RIGHT\);)Tj
+-30 -1.1 TD
+[(134:)-599.6(    Scrollbar blueSlider = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+19.2 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Scrollbar\(DIRECTION, blueValue, 1, 0, 256\);)Tj
+-21 -1.1 TD
+[(135:)-599.6(    Label     blueNumber = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+19.2 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Label\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+4.2 0 TD
+("  ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( + blueValue, Label.LEFT\);)Tj
+-27.6 -1.1 TD
+(136:)Tj
+ET
+endstream
+endobj
+14 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+16 0 obj
+<<
+/Length 6789
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/27/17)Tj
+-0.0552 -1.0667 TD
+(18:52:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(3)Tj
+/TT6 1 Tf
+14 0 0 14 246.7637 786.5 Tm
+0 g
+(ColorFactory.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+[(137:)-599.6(    Panel barsPanel = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+16.2 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Panel\(\);)Tj
+-18 -1.1 TD
+[(138:)-599.6(    Bars  bars      = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+16.2 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Bars\(\);)Tj
+-18 -1.1 TD
+(139:)Tj
+T*
+[(140:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================== leftPad\(\) ================================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(141:)Tj
+0 g
+T*
+[(142:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( String leftPad \(String input, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( width, )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(char)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( padder\))Tj
+-41.4 -1.1 TD
+[(143:)-599.6(    {)]TJ
+T*
+[(144:)-599.6(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// cache number of characters in input)Tj
+/TT8 1 Tf
+-7.8 -1.1 TD
+(145:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( inputWidth = input.length\(\);)Tj
+-9.6 -1.1 TD
+(146:)Tj
+T*
+[(147:)-599.6(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// if user desires a width shorter than input width, return unchanged)Tj
+/TT8 1 Tf
+-7.8 -1.1 TD
+(148:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(inputWidth >= width\) )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( input;)Tj
+-26.4 -1.1 TD
+(149:)Tj
+T*
+[(150:)-599.6(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// initialize a StringBuilder with capacity set to desired width)Tj
+/TT8 1 Tf
+-7.8 -1.1 TD
+(151:)Tj
+0 g
+3 0 TD
+(        StringBuilder output = )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( StringBuilder\(width\);)Tj
+-23.4 -1.1 TD
+(152:)Tj
+T*
+[(153:)-599.6(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// repeat characters to fill missing width)Tj
+/TT8 1 Tf
+-7.8 -1.1 TD
+(154:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < \(width - inputWidth\); i++\))Tj
+-12.6 -1.1 TD
+[(155:)-599.6(        {)]TJ
+T*
+[(156:)-599.6(            output.append\(padder\);)]TJ
+T*
+[(157:)-599.6(        })]TJ
+T*
+(158:)Tj
+T*
+[(159:)-599.6(        )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// append original input to end of repeated characters and return String)Tj
+/TT8 1 Tf
+-7.8 -1.1 TD
+(160:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( output.append\(input\).toString\(\);)Tj
+-11.4 -1.1 TD
+[(161:)-599.6(    })]TJ
+T*
+(162:)Tj
+T*
+[(163:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================ setWindowSize\(\) ============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(164:)Tj
+0 g
+T*
+[(165:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( setWindowSize \(\))Tj
+-12.6 -1.1 TD
+[(166:)-599.6(    {)]TJ
+T*
+[(167:)-599.6(        Toolkit toolkit = Toolkit.getDefaultToolkit\(\);)]TJ
+T*
+[(168:)-599.6(        screenSize = toolkit.getScreenSize\(\);)]TJ
+T*
+[(169:)-599.6(        windowSize = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+15.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Dimension\(screenSize.width / 2, screenSize.height / 3\);)Tj
+-17.4 -1.1 TD
+[(170:)-599.6(        setSize\(windowSize\);)]TJ
+T*
+[(171:)-599.6(    })]TJ
+T*
+(172:)Tj
+T*
+[(173:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================= setupOutput\(\) =============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(174:)Tj
+0 g
+T*
+[(175:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( setupOutput \(\))Tj
+-12.6 -1.1 TD
+[(176:)-599.6(    {)]TJ
+T*
+[(177:)-599.6(        decimal.addItemListener\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+22.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-24.6 -1.1 TD
+[(178:)-599.6(        binary.addItemListener\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+21.6 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-24 -1.1 TD
+[(179:)-599.6(        octal.addItemListener\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+21 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-23.4 -1.1 TD
+[(180:)-599.6(        hex.addItemListener\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+19.8 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-22.2 -1.1 TD
+(181:)Tj
+T*
+[(182:)-599.6(        output.setFont\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+16.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Font\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+3.6 0 TD
+("Dialog")Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+(, Font.BOLD, 12\)\);)Tj
+-27 -1.1 TD
+(183:)Tj
+T*
+[(184:)-599.6(        outputPanel.setLayout\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+21 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( GridLayout\(5, 1, 0, 0\)\);)Tj
+-22.8 -1.1 TD
+(185:)Tj
+T*
+[(186:)-599.6(        outputPanel.add\(decimal\);)]TJ
+T*
+[(187:)-599.6(        outputPanel.add\(binary\);)]TJ
+T*
+[(188:)-599.6(        outputPanel.add\(octal\);)]TJ
+T*
+[(189:)-599.6(        outputPanel.add\(hex\);)]TJ
+T*
+[(190:)-599.6(        outputPanel.add\(output\);)]TJ
+T*
+(191:)Tj
+T*
+[(192:)-599.6(        columns.add\(outputPanel\);)]TJ
+T*
+[(193:)-599.6(    })]TJ
+T*
+(194:)Tj
+T*
+[(195:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================ setupDisplay\(\) ============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(196:)Tj
+0 g
+T*
+[(197:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( setupDisplay \(\))Tj
+-12.6 -1.1 TD
+[(198:)-599.6(    {)]TJ
+T*
+[(199:)-599.6(        columns.add\(display\);)]TJ
+T*
+[(200:)-599.6(    })]TJ
+T*
+(201:)Tj
+T*
+[(202:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================== setupRGB\(\) ==============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(203:)Tj
+0 g
+T*
+[(204:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( setupRGB \(\))Tj
+ET
+endstream
+endobj
+17 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+19 0 obj
+<<
+/Length 5548
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/27/17)Tj
+-0.0552 -1.0667 TD
+(18:52:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(4)Tj
+/TT6 1 Tf
+14 0 0 14 246.7637 786.5 Tm
+0 g
+(ColorFactory.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+[(205:)-599.6(    {)]TJ
+0 -1.1 TD
+[(206:)-599.6(        Font rgbFont = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+16.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Font\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+3.6 0 TD
+("Dialog")Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+(, Font.BOLD, 12\);)Tj
+-27 -1.1 TD
+(207:)Tj
+T*
+[(208:)-599.6(        sliderPanel.setLayout\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+21 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( GridLayout\(3, 3\)\);)Tj
+-22.8 -1.1 TD
+(209:)Tj
+T*
+[(210:)-599.6(        redLabel.setFont\(rgbFont\);)]TJ
+T*
+[(211:)-599.6(        redSlider.addAdjustmentListener\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+27 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-29.4 -1.1 TD
+[(212:)-599.6(        redNumber.setFont\(rgbFont\);)]TJ
+T*
+[(213:)-599.6(        sliderPanel.add\(redLabel\);)]TJ
+T*
+[(214:)-599.6(        sliderPanel.add\(redSlider\);)]TJ
+T*
+[(215:)-599.6(        sliderPanel.add\(redNumber\);)]TJ
+T*
+(216:)Tj
+T*
+[(217:)-599.6(        greenLabel.setFont\(rgbFont\);)]TJ
+T*
+[(218:)-599.6(        greenSlider.addAdjustmentListener\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+28.2 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-30.6 -1.1 TD
+[(219:)-599.6(        greenNumber.setFont\(rgbFont\);)]TJ
+T*
+[(220:)-599.6(        sliderPanel.add\(greenLabel\);)]TJ
+T*
+[(221:)-599.6(        sliderPanel.add\(greenSlider\);)]TJ
+T*
+[(222:)-599.6(        sliderPanel.add\(greenNumber\);)]TJ
+T*
+(223:)Tj
+T*
+[(224:)-599.6(        blueLabel.setFont\(rgbFont\);)]TJ
+T*
+[(225:)-599.6(        blueSlider.addAdjustmentListener\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+27.6 0 TD
+(this)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-30 -1.1 TD
+[(226:)-599.6(        blueNumber.setFont\(rgbFont\);)]TJ
+T*
+[(227:)-599.6(        sliderPanel.add\(blueLabel\);)]TJ
+T*
+[(228:)-599.6(        sliderPanel.add\(blueSlider\);)]TJ
+T*
+[(229:)-599.6(        sliderPanel.add\(blueNumber\);)]TJ
+T*
+(230:)Tj
+T*
+[(231:)-599.6(        rgbPanel.setLayout\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+19.2 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( GridLayout\(2, 1, 0, 0\)\);)Tj
+-21 -1.1 TD
+(232:)Tj
+T*
+[(233:)-599.6(        rgbPanel.add\(sliderPanel\);)]TJ
+T*
+[(234:)-599.6(        rgbPanel.add\(bars\);)]TJ
+T*
+(235:)Tj
+T*
+[(236:)-599.6(        columns.add\(rgbPanel\);)]TJ
+T*
+[(237:)-599.6(    })]TJ
+T*
+(238:)Tj
+T*
+[(239:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ========================== updateColorValues\(\) ==========================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(240:)Tj
+0 g
+T*
+[(241:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( updateColorValues \(\))Tj
+-12 -1.1 TD
+[(242:)-599.6(    {)]TJ
+T*
+[(243:)-599.6(        redValue   = redSlider.getValue\(\);)]TJ
+T*
+[(244:)-599.6(        greenValue = greenSlider.getValue\(\);)]TJ
+T*
+[(245:)-599.6(        blueValue  = blueSlider.getValue\(\);)]TJ
+T*
+[(246:)-599.6(    })]TJ
+T*
+(247:)Tj
+T*
+[(248:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================ updateNumbers\(\) ============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(249:)Tj
+0 g
+T*
+[(250:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( updateNumbers \(\))Tj
+-12 -1.1 TD
+[(251:)-599.6(    {)]TJ
+T*
+[(252:)-599.6(        redNumber.setText\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+18.6 0 TD
+("")Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( + redValue\);)Tj
+-19.8 -1.1 TD
+[(253:)-599.6(        greenNumber.setText\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.8 0 TD
+("")Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( + greenValue\);)Tj
+-21 -1.1 TD
+[(254:)-599.6(        blueNumber.setText\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+19.2 0 TD
+("")Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( + blueValue\);)Tj
+-20.4 -1.1 TD
+[(255:)-599.6(    })]TJ
+T*
+(256:)Tj
+T*
+[(257:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ========================= updateDisplayColor\(\) =========================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(258:)Tj
+0 g
+T*
+[(259:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( updateDisplayColor \(\))Tj
+-12 -1.1 TD
+[(260:)-599.6(    {)]TJ
+T*
+[(261:)-599.6(        display.setForeground\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+21 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Color\(redValue, greenValue, blueValue\)\);)Tj
+-22.8 -1.1 TD
+[(262:)-599.6(    })]TJ
+T*
+(263:)Tj
+T*
+[(264:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================= updateBars\(\) =============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(265:)Tj
+0 g
+T*
+[(266:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( updateBars \(\))Tj
+-12 -1.1 TD
+[(267:)-599.6(    {)]TJ
+T*
+[(268:)-599.6(        bars.updateBars\(redValue, greenValue, blueValue\);)]TJ
+T*
+[(269:)-599.6(    })]TJ
+T*
+(270:)Tj
+T*
+[(271:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================= getOutput\(\) =============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(272:)Tj
+ET
+endstream
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+22 0 obj
+<<
+/Length 6661
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/27/17)Tj
+-0.0552 -1.0667 TD
+(18:52:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(5)Tj
+/TT6 1 Tf
+14 0 0 14 246.7637 786.5 Tm
+0 g
+(ColorFactory.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+[(273:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( String getOutput \(\))Tj
+-9 -1.1 TD
+[(274:)-599.6(    {)]TJ
+T*
+[(275:)-599.6(        Checkbox selectedOutput = outputGroup.getSelectedCheckbox\(\);)]TJ
+T*
+(276:)Tj
+T*
+[(277:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(selectedOutput == decimal\))Tj
+-9 -1.1 TD
+[(278:)-599.6(        {)]TJ
+T*
+[(279:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( \()Tj
+-13.8 -1.1 TD
+[(280:)-599.6(                redValue   + )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+20.4 0 TD
+(", ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( +)Tj
+-22.8 -1.1 TD
+[(281:)-599.6(                greenValue + )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+20.4 0 TD
+(", ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( +)Tj
+-22.8 -1.1 TD
+[(282:)-599.6(                blueValue)]TJ
+T*
+[(283:)-599.6(            \);)]TJ
+T*
+[(284:)-599.6(        })]TJ
+T*
+[(285:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(selectedOutput == binary\))Tj
+-12 -1.1 TD
+[(286:)-599.6(        {)]TJ
+T*
+[(287:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( \()Tj
+-13.8 -1.1 TD
+[(288:)-599.6(                leftPad\(Integer.toBinaryString\(redValue\),   8, )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+40.8 0 TD
+(Т0Т)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+2.4 0 TD
+(", ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( +)Tj
+-47.4 -1.1 TD
+[(289:)-599.6(                leftPad\(Integer.toBinaryString\(greenValue\), 8, )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+40.8 0 TD
+(Т0Т)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) + )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+2.4 0 TD
+(", ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( +)Tj
+-47.4 -1.1 TD
+[(290:)-599.6(                leftPad\(Integer.toBinaryString\(blueValue\),  8, )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+40.8 0 TD
+(Т0Т)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\))Tj
+-42.6 -1.1 TD
+[(291:)-599.6(            \);)]TJ
+T*
+[(292:)-599.6(        })]TJ
+T*
+[(293:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(selectedOutput == octal\))Tj
+-12 -1.1 TD
+[(294:)-599.6(        {)]TJ
+T*
+[(295:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( \()Tj
+-13.8 -1.1 TD
+[(296:)-599.6(                Integer.toOctalString\(redValue\)   + )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+34.2 0 TD
+(", ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( +)Tj
+-36.6 -1.1 TD
+[(297:)-599.6(                Integer.toOctalString\(greenValue\) + )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+34.2 0 TD
+(", ")Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( +)Tj
+-36.6 -1.1 TD
+[(298:)-599.6(                Integer.toOctalString\(blueValue\))]TJ
+T*
+[(299:)-599.6(            \);)]TJ
+T*
+[(300:)-599.6(        })]TJ
+T*
+[(301:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( \(selectedOutput == hex\))Tj
+-12 -1.1 TD
+[(302:)-599.6(        {)]TJ
+T*
+[(303:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( \()Tj
+-13.8 -1.1 TD
+[(304:)-599.6(                )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+12.6 0 TD
+("#")Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( +)Tj
+-14.4 -1.1 TD
+[(305:)-599.6(                leftPad\(Integer.toHexString\(redValue\),   2, )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+39 0 TD
+(Т0Т)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) +)Tj
+-40.8 -1.1 TD
+[(306:)-599.6(                leftPad\(Integer.toHexString\(greenValue\), 2, )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+39 0 TD
+(Т0Т)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) +)Tj
+-40.8 -1.1 TD
+[(307:)-599.6(                leftPad\(Integer.toHexString\(blueValue\),  2, )]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+39 0 TD
+(Т0Т)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\))Tj
+-40.8 -1.1 TD
+[(308:)-599.6(            \).toUpperCase\(\);)]TJ
+T*
+[(309:)-599.6(        })]TJ
+T*
+(310:)Tj
+T*
+[(311:)-599.6(        )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+0.6 0 TD
+("")Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+(;)Tj
+-13.2 -1.1 TD
+[(312:)-599.6(    })]TJ
+T*
+(313:)Tj
+T*
+[(314:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================ updateOutput\(\) ============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(315:)Tj
+0 g
+T*
+[(316:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( updateOutput \(\))Tj
+-12 -1.1 TD
+[(317:)-599.6(    {)]TJ
+T*
+[(318:)-599.6(        output.setText\(getOutput\(\)\);)]TJ
+T*
+[(319:)-599.6(    })]TJ
+T*
+(320:)Tj
+T*
+[(321:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ======================= adjustmentValueChanged\(\) =======================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(322:)Tj
+0 g
+T*
+[(323:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( adjustmentValueChanged \(AdjustmentEvent event\))Tj
+-12 -1.1 TD
+[(324:)-599.6(    {)]TJ
+T*
+[(325:)-599.6(        updateColorValues\(\);)]TJ
+T*
+[(326:)-599.6(        updateOutput\(\);)]TJ
+T*
+[(327:)-599.6(        updateDisplayColor\(\);)]TJ
+T*
+[(328:)-599.6(        updateNumbers\(\);)]TJ
+T*
+[(329:)-599.6(        updateBars\(\);)]TJ
+T*
+[(330:)-599.6(    })]TJ
+T*
+(331:)Tj
+T*
+[(332:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ========================== itemStateChanged\(\) ==========================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(333:)Tj
+0 g
+T*
+[(334:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( itemStateChanged \(ItemEvent event\))Tj
+-12 -1.1 TD
+[(335:)-599.6(    {)]TJ
+T*
+[(336:)-599.6(        updateOutput\(\);)]TJ
+T*
+[(337:)-599.6(    })]TJ
+T*
+(338:)Tj
+T*
+[(339:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================ ColorFactory\(\) ============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(340:)Tj
+ET
+endstream
+endobj
+23 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+25 0 obj
+<<
+/Length 3546
+>>
+stream
+0.95 g
+/GS1 gs
+24 800 547 -18 re
+f
+0.7 g
+24 818 72 -36 re
+f
+BT
+/TT2 1 Tf
+12 0 0 12 38.666 802 Tm
+0 g
+0 Tc
+0 Tw
+(07/27/17)Tj
+-0.0552 -1.0667 TD
+(18:52:38)Tj
+ET
+0.7 g
+499 818 72 -36 re
+f
+BT
+/TT4 1 Tf
+28.8 0 0 28.8 526.9914 789.2 Tm
+1 g
+(6)Tj
+/TT6 1 Tf
+14 0 0 14 246.7637 786.5 Tm
+0 g
+(ColorFactory.java)Tj
+/TT8 1 Tf
+10 0 0 10 42 769 Tm
+[(341:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( ColorFactory \(\))Tj
+-9 -1.1 TD
+[(342:)-599.6(    {)]TJ
+T*
+[(343:)-599.6(        setWindowSize\(\);)]TJ
+T*
+[(344:)-599.6(        setTitle\(TITLE\);)]TJ
+T*
+[(345:)-599.6(        setLayout\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( BorderLayout\(0, 0\)\);)Tj
+-15.6 -1.1 TD
+(346:)Tj
+T*
+[(347:)-599.6(        header.setFont\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+16.8 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( Font\()Tj
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+3.6 0 TD
+("Dialog")Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+(, Font.BOLD, 24\)\);)Tj
+-27 -1.1 TD
+[(348:)-599.6(        add\(header, BorderLayout.PAGE_START\);)]TJ
+T*
+(349:)Tj
+T*
+[(350:)-599.6(        columns.setLayout\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( GridLayout\(1, 3\)\);)Tj
+-20.4 -1.1 TD
+[(351:)-599.6(        add\(columns, BorderLayout.CENTER\);)]TJ
+T*
+(352:)Tj
+T*
+[(353:)-599.6(        setupOutput\(\);)]TJ
+T*
+[(354:)-599.6(        setupDisplay\(\);)]TJ
+T*
+[(355:)-599.6(        setupRGB\(\);)]TJ
+T*
+(356:)Tj
+T*
+[(357:)-599.6(        setVisible\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(true)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-16.8 -1.1 TD
+[(358:)-599.6(    })]TJ
+T*
+(359:)Tj
+T*
+[(360:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ============================= closeFrame\(\) =============================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(361:)Tj
+0 g
+T*
+[(362:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( closeFrame \(Frame frame\))Tj
+-16.2 -1.1 TD
+[(363:)-599.6(    {)]TJ
+T*
+[(364:)-599.6(        frame.addWindowListener\()]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+22.2 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( WindowAdapter \(\))Tj
+-24 -1.1 TD
+[(365:)-599.6(        {)]TJ
+T*
+[(366:)-599.6(            )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( windowClosing \(WindowEvent event\))Tj
+-16.8 -1.1 TD
+[(367:)-599.6(            {)]TJ
+T*
+[(368:)-599.6(                System.exit\(0\);)]TJ
+T*
+[(369:)-599.6(            })]TJ
+T*
+[(370:)-599.6(        }\);)]TJ
+T*
+[(371:)-599.6(    })]TJ
+T*
+(372:)Tj
+T*
+[(373:)-599.6(    )]TJ
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(// ================================ main\(\) ================================)Tj
+/TT8 1 Tf
+-5.4 -1.1 TD
+(374:)Tj
+0 g
+T*
+[(375:)-599.6(    )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( main \(String ... args\) {)Tj
+-16.2 -1.1 TD
+[(376:)-599.6(        ColorFactory colorFactory = )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+24.6 0 TD
+(new)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( ColorFactory\(\);)Tj
+-26.4 -1.1 TD
+[(377:)-599.6(        closeFrame\(colorFactory\);)]TJ
+T*
+[(378:)-599.6(    })]TJ
+T*
+[(379:)-599.6(})]TJ
+ET
+endstream
+endobj
+26 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+27 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+28 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+29 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+30 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+31 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+32 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 500 500 0 500 0 500 500 0 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 27 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 54
+/Widths [556 556 556 556 556 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 28 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 46
+/LastChar 121
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 667 0 0 556 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 444 0 444 0 0 0 0 0 0 278 0 278 0 
+0 500 0 0 333 0 278 0 500 0 0 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 29 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 125
+/Widths [600 0 0 0 0 0 0 0 600 600 600 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 0 600 600 
+600 0 600 600 600 600 600 600 0 0 600 0 0 0 0 600 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 600 600 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 30 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 122
+/Widths [600 0 0 0 0 0 0 0 600 600 600 0 600 0 600 600 
+600 600 600 0 0 600 600 600 0 0 0 0 0 600 0 0 
+600 600 600 600 600 0 600 600 600 0 0 0 0 0 600 600 
+600 0 600 600 600 0 600 600 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 31 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 0 600 600 0 0 0 0 0 0 0 0 600 0 0 0 
+600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 600 600 0 600 600 600 0 0 0 0 0 0 600 
+0 0 600 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 32 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 14 0 R
+/Contents 13 0 R
+>>
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 17 0 R
+/Contents 16 0 R
+>>
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 20 0 R
+/Contents 19 0 R
+>>
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 23 0 R
+/Contents 22 0 R
+>>
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 26 0 R
+/Contents 25 0 R
+>>
+endobj
+33 0 obj
+<<
+/S /D
+>>
+endobj
+34 0 obj
+<<
+/Nums [0 33 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 12 0 R 15 0 R 18 0 R 21 0 R 24 0 R]
+/Count 6
+/MediaBox [0 0 595 842]
+>>
+endobj
+35 0 obj
+<<
+/CreationDate (D:20170727190029-07'00')
+/ModDate (D:20170727190029-07'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+36 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 34 0 R
+>>
+endobj
+xref
+0 37
+0000000000 65535 f 
+0000043281 00000 n 
+0000000016 00000 n 
+0000007439 00000 n 
+0000041107 00000 n 
+0000041311 00000 n 
+0000041501 00000 n 
+0000041845 00000 n 
+0000042342 00000 n 
+0000042807 00000 n 
+0000039767 00000 n 
+0000043850 00000 n 
+0000043362 00000 n 
+0000007592 00000 n 
+0000016241 00000 n 
+0000043446 00000 n 
+0000016395 00000 n 
+0000023237 00000 n 
+0000043530 00000 n 
+0000023391 00000 n 
+0000028992 00000 n 
+0000043614 00000 n 
+0000029146 00000 n 
+0000035860 00000 n 
+0000043698 00000 n 
+0000036014 00000 n 
+0000039613 00000 n 
+0000039908 00000 n 
+0000040110 00000 n 
+0000040316 00000 n 
+0000040513 00000 n 
+0000040704 00000 n 
+0000040905 00000 n 
+0000043782 00000 n 
+0000043810 00000 n 
+0000043967 00000 n 
+0000044090 00000 n 
+trailer
+<<
+/Size 37
+/Root 36 0 R
+/Info 35 0 R
+/ID [<4dded28e048127ce047b11093828cea3><4dded28e048127ce047b11093828cea3>]
+>>
+startxref
+44160
+%%EOF
